@@ -1,0 +1,9 @@
+muse: local session messaging disabled: session logging is required
+muse: workspace root: __JL_DEMO_WORKSPACE__/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/rounds/4c822456-a6f0-476e-a7fe-19cea6ed9543/candidate (explicit)
+muse: warning: rules file at __JL_REPO__/AGENTS.md exists, but the workspace is untrusted, so it is skipped for this session; restart with --trust-workspace to load project rules
+muse: Agent delegation: auto unavailable: workspace is untrusted.
+Done. The top finding: the Review page's Confirm control was a span excluded from keyboard focus, blocking keyboard-only completion.
+
+Fixed in [app.js](__JL_DEMO_WORKSPACE__/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/rounds/4c822456-a6f0-476e-a7fe-19cea6ed9543/candidate/app.js): in `review()`, replaced `<span class="primary" … role="button" tabindex="-1">` with a native `<button type="button" class="primary" id="confirm-reservation" data-action="confirm">`. Same id/class/action, so the existing click handler and styling work unchanged, and the `disabled` guard now actually applies. Plan in [FIX_PLAN.json](file://__JL_DEMO_WORKSPACE__/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/rounds/4c822456-a6f0-476e-a7fe-19cea6ed9543/candidate/FIX_PLAN.json), notes in [IMPROVEMENT.md](file://__JL_DEMO_WORKSPACE__/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/rounds/4c822456-a6f0-476e-a7fe-19cea6ed9543/candidate/IMPROVEMENT.md).
+
+No maintained test added: the fixture has no test harness (only `app.js`, `index.html`, `styles.css`), so a new framework would be disproportionate. Verified by code inspection only; no live keyboard run was possible here — retest Tab/Enter/Space on Review separately.

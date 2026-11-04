@@ -1,0 +1,8 @@
+muse: local session messaging disabled: session logging is required
+muse: workspace root: __JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/bdca6a99-c20f-4db4-bb98-7dd355f1e9cf/candidate (explicit)
+muse: Agent delegation: auto unavailable: workspace is untrusted.
+Done. Room cards now show the all-in total (Atlas $280, Willow $245) with the fee breakdown before a meeting name is entered, the details page shows the same total, and switching rooms keeps the entered meeting name. Prices, fees, and the quick booking path are unchanged.
+
+Changed: [app.js](__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/bdca6a99-c20f-4db4-bb98-7dd355f1e9cf/candidate/app.js), plus [FIX_PLAN.json](FIX_PLAN.json) and [IMPROVEMENT.md](IMPROVEMENT.md).
+
+No tests or browser retest were run here (shell disabled); verification was by code inspection against the recorded fixture, with retesting left to the separate review step.

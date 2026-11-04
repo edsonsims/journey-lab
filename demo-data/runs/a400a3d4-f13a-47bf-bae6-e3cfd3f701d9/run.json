@@ -1,0 +1,3452 @@
+{
+  "id": "a400a3d4-f13a-47bf-bae6-e3cfd3f701d9",
+  "status": "finished",
+  "createdAt": "2026-11-03T16:23:57.722Z",
+  "startedAt": "2026-11-03T16:23:57.723Z",
+  "completedAt": "2026-11-03T16:26:18.842Z",
+  "events": [
+    {
+      "index": 0,
+      "at": "2026-11-03T16:23:58.181Z",
+      "type": "browser_configuration",
+      "configuration": {
+        "engine": "chromium",
+        "version": "156.0.8078.80",
+        "emulated": true,
+        "screenshotScale": "css",
+        "device": {
+          "browser": "chromium",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "screen": {
+            "width": 1440,
+            "height": 900
+          },
+          "isMobile": false,
+          "hasTouch": false,
+          "deviceScaleFactor": 1,
+          "userAgent": null
+        },
+        "network": {
+          "offline": false,
+          "latencyMs": 0,
+          "downloadMbps": null,
+          "uploadMbps": null
+        }
+      }
+    },
+    {
+      "index": 1,
+      "at": "2026-11-03T16:23:58.189Z",
+      "type": "network",
+      "method": "GET",
+      "url": "http://127.0.0.1:60905/",
+      "status": 200,
+      "resourceType": "document"
+    },
+    {
+      "index": 2,
+      "at": "2026-11-03T16:23:58.199Z",
+      "type": "network",
+      "method": "GET",
+      "url": "http://127.0.0.1:60905/styles.css",
+      "status": 200,
+      "resourceType": "stylesheet"
+    },
+    {
+      "index": 3,
+      "at": "2026-11-03T16:23:58.199Z",
+      "type": "network",
+      "method": "GET",
+      "url": "http://127.0.0.1:60905/app.js",
+      "status": 200,
+      "resourceType": "script"
+    },
+    {
+      "index": 4,
+      "at": "2026-11-03T16:24:00.285Z",
+      "type": "screenshot",
+      "label": "Tela inicial",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-004.png",
+      "videoMs": 1984,
+      "replayMs": 108
+    },
+    {
+      "index": 5,
+      "at": "2026-11-03T16:24:04.631Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 6330,
+      "replayMs": 1981
+    },
+    {
+      "index": 6,
+      "at": "2026-11-03T16:24:04.662Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-006.png",
+      "videoMs": 6361,
+      "replayMs": 2012
+    },
+    {
+      "index": 7,
+      "at": "2026-11-03T16:24:07.629Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 9328,
+      "replayMs": 3869
+    },
+    {
+      "index": 8,
+      "at": "2026-11-03T16:24:07.662Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-008.png",
+      "videoMs": 9360,
+      "replayMs": 3901
+    },
+    {
+      "index": 9,
+      "at": "2026-11-03T16:24:11.193Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 12891,
+      "replayMs": 5763
+    },
+    {
+      "index": 10,
+      "at": "2026-11-03T16:24:11.223Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-010.png",
+      "videoMs": 12922,
+      "replayMs": 5794
+    },
+    {
+      "index": 11,
+      "at": "2026-11-03T16:24:14.633Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 16332,
+      "replayMs": 7652
+    },
+    {
+      "index": 12,
+      "at": "2026-11-03T16:24:14.667Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-012.png",
+      "videoMs": 16366,
+      "replayMs": 7686
+    },
+    {
+      "index": 13,
+      "at": "2026-11-03T16:24:18.878Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 20577,
+      "replayMs": 9545
+    },
+    {
+      "index": 14,
+      "at": "2026-11-03T16:24:18.907Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-014.png",
+      "videoMs": 20606,
+      "replayMs": 9575
+    },
+    {
+      "index": 15,
+      "at": "2026-11-03T16:24:22.858Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 24557,
+      "replayMs": 11433
+    },
+    {
+      "index": 16,
+      "at": "2026-11-03T16:24:22.887Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-016.png",
+      "videoMs": 24586,
+      "replayMs": 11463
+    },
+    {
+      "index": 17,
+      "at": "2026-11-03T16:24:27.654Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Enter"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 29352,
+      "replayMs": 13334
+    },
+    {
+      "index": 18,
+      "at": "2026-11-03T16:24:27.691Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-018.png",
+      "videoMs": 29390,
+      "replayMs": 13372
+    },
+    {
+      "index": 19,
+      "at": "2026-11-03T16:24:34.302Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 36001,
+      "replayMs": 15251
+    },
+    {
+      "index": 20,
+      "at": "2026-11-03T16:24:34.333Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-020.png",
+      "videoMs": 36032,
+      "replayMs": 15283
+    },
+    {
+      "index": 21,
+      "at": "2026-11-03T16:24:37.805Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 39504,
+      "replayMs": 17148
+    },
+    {
+      "index": 22,
+      "at": "2026-11-03T16:24:37.842Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-022.png",
+      "videoMs": 39540,
+      "replayMs": 17184
+    },
+    {
+      "index": 23,
+      "at": "2026-11-03T16:24:41.876Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 43574,
+      "replayMs": 19042
+    },
+    {
+      "index": 24,
+      "at": "2026-11-03T16:24:41.908Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-024.png",
+      "videoMs": 43606,
+      "replayMs": 19074
+    },
+    {
+      "index": 25,
+      "at": "2026-11-03T16:24:43.902Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 45601,
+      "replayMs": 21069
+    },
+    {
+      "index": 26,
+      "at": "2026-11-03T16:24:43.976Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-026.png",
+      "videoMs": 45674,
+      "replayMs": 21142
+    },
+    {
+      "index": 27,
+      "at": "2026-11-03T16:24:46.994Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 48692,
+      "replayMs": 23001
+    },
+    {
+      "index": 28,
+      "at": "2026-11-03T16:24:47.025Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-028.png",
+      "videoMs": 48724,
+      "replayMs": 23032
+    },
+    {
+      "index": 29,
+      "at": "2026-11-03T16:24:52.601Z",
+      "type": "action",
+      "action": {
+        "type": "type",
+        "text": "Quarterly planning"
+      },
+      "modelCoordinates": null,
+      "inputContext": {
+        "label": "Meeting name",
+        "tag": "input",
+        "inputType": "text",
+        "sensitive": false,
+        "visible": true
+      },
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 54300,
+      "replayMs": 25586
+    },
+    {
+      "index": 30,
+      "at": "2026-11-03T16:24:52.623Z",
+      "type": "screenshot",
+      "label": "Após type",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-030.png",
+      "videoMs": 54322,
+      "replayMs": 25608
+    },
+    {
+      "index": 31,
+      "at": "2026-11-03T16:24:55.915Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 57614,
+      "replayMs": 27466
+    },
+    {
+      "index": 32,
+      "at": "2026-11-03T16:24:55.963Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-032.png",
+      "videoMs": 57662,
+      "replayMs": 27514
+    },
+    {
+      "index": 33,
+      "at": "2026-11-03T16:25:00.105Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Enter"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 61804,
+      "replayMs": 29380
+    },
+    {
+      "index": 34,
+      "at": "2026-11-03T16:25:00.127Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-034.png",
+      "videoMs": 61826,
+      "replayMs": 29402
+    },
+    {
+      "index": 35,
+      "at": "2026-11-03T16:25:05.870Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 67568,
+      "replayMs": 31273
+    },
+    {
+      "index": 36,
+      "at": "2026-11-03T16:25:05.892Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-036.png",
+      "videoMs": 67591,
+      "replayMs": 31295
+    },
+    {
+      "index": 37,
+      "at": "2026-11-03T16:25:09.633Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 71332,
+      "replayMs": 33158
+    },
+    {
+      "index": 38,
+      "at": "2026-11-03T16:25:09.656Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-038.png",
+      "videoMs": 71355,
+      "replayMs": 33180
+    },
+    {
+      "index": 39,
+      "at": "2026-11-03T16:25:11.857Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 73555,
+      "replayMs": 35041
+    },
+    {
+      "index": 40,
+      "at": "2026-11-03T16:25:11.883Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-040.png",
+      "videoMs": 73582,
+      "replayMs": 35067
+    },
+    {
+      "index": 41,
+      "at": "2026-11-03T16:25:14.705Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 76404,
+      "replayMs": 36927
+    },
+    {
+      "index": 42,
+      "at": "2026-11-03T16:25:14.726Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-042.png",
+      "videoMs": 76425,
+      "replayMs": 36948
+    },
+    {
+      "index": 43,
+      "at": "2026-11-03T16:25:18.402Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 80101,
+      "replayMs": 38809
+    },
+    {
+      "index": 44,
+      "at": "2026-11-03T16:25:18.424Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-044.png",
+      "videoMs": 80123,
+      "replayMs": 38831
+    },
+    {
+      "index": 45,
+      "at": "2026-11-03T16:25:21.429Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 83128,
+      "replayMs": 40696
+    },
+    {
+      "index": 46,
+      "at": "2026-11-03T16:25:21.459Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-046.png",
+      "videoMs": 83158,
+      "replayMs": 40726
+    },
+    {
+      "index": 47,
+      "at": "2026-11-03T16:25:29.187Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Enter"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 90886,
+      "replayMs": 42590
+    },
+    {
+      "index": 48,
+      "at": "2026-11-03T16:25:29.248Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-048.png",
+      "videoMs": 90947,
+      "replayMs": 42651
+    },
+    {
+      "index": 49,
+      "at": "2026-11-03T16:25:35.336Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 97034,
+      "replayMs": 44516
+    },
+    {
+      "index": 50,
+      "at": "2026-11-03T16:25:35.358Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-050.png",
+      "videoMs": 97056,
+      "replayMs": 44538
+    },
+    {
+      "index": 51,
+      "at": "2026-11-03T16:25:43.220Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Shift+Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 104918,
+      "replayMs": 46403
+    },
+    {
+      "index": 52,
+      "at": "2026-11-03T16:25:43.241Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-052.png",
+      "videoMs": 104940,
+      "replayMs": 46424
+    },
+    {
+      "index": 53,
+      "at": "2026-11-03T16:25:49.986Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Tab"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 111685,
+      "replayMs": 48288
+    },
+    {
+      "index": 54,
+      "at": "2026-11-03T16:25:50.010Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-054.png",
+      "videoMs": 111709,
+      "replayMs": 48312
+    },
+    {
+      "index": 55,
+      "at": "2026-11-03T16:25:53.150Z",
+      "type": "action",
+      "action": {
+        "type": "keypress",
+        "keys": [
+          "Space"
+        ]
+      },
+      "modelCoordinates": null,
+      "url": "http://127.0.0.1:60905/",
+      "videoMs": 114849,
+      "replayMs": 50175
+    },
+    {
+      "index": 56,
+      "at": "2026-11-03T16:25:53.188Z",
+      "type": "screenshot",
+      "label": "Após keypress",
+      "url": "http://127.0.0.1:60905/",
+      "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-056.png",
+      "videoMs": 114886,
+      "replayMs": 50213
+    },
+    {
+      "index": 57,
+      "at": "2026-11-03T16:26:11.820Z",
+      "type": "model_summary",
+      "text": "Possível obstáculo observado\n\nObservação: Using only Tab, Shift+Tab, Enter, Space, and typing into the focused field, I selected Atlas (12 seats, projector, $280 all-in, within the $350 budget), entered 'Quarterly planning', and reached the Review page showing Quarterly planning, Tomorrow 10:00-11:00, 12 people, projector included, and $280 total. On Review, Tab moved through logo, Our spaces, My reservations, Choose another room, and Edit meeting name, then showed no visible focus and cycled back to the logo; Enter and Space at that position did not confirm (Space only scrolled), and Shift+Tab from the logo landed on Edit meeting name rather than Confirm reservation. No visible confirmation was reached.\n\nInterpretação simulada: Gather supports keyboard navigation with clear focus through landing, Atlas room selection, meeting-name entry, and review, but the final 'Confirm reservation' control was not reached by Tab, reverse Tab, Enter, or Space. The persona therefore could not independently complete a reservation that otherwise matched all requirements.\n\nLimites: Pointer activation of 'Confirm reservation' was not tested because the charter required keyboard-only interaction. Whether focus at the no-outline position rested on a hidden page element or outside the page content is not established; what is established is that neither Enter nor Space confirmed from there and reverse Tab landed on 'Edit meeting name'.\n\nCapturas indicadas: #34, #44, #46, #48, #50, #52, #54, #56. A correspondência com a evidência requer revisão humana.",
+      "evidence": [
+        {
+          "index": 34,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-034.png"
+        },
+        {
+          "index": 44,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-044.png"
+        },
+        {
+          "index": 46,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-046.png"
+        },
+        {
+          "index": 48,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-048.png"
+        },
+        {
+          "index": 50,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-050.png"
+        },
+        {
+          "index": 52,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-052.png"
+        },
+        {
+          "index": 54,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-054.png"
+        },
+        {
+          "index": 56,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-056.png"
+        }
+      ],
+      "interpretation": "Relato do modelo; capturas e conclusões exigem revisão humana.",
+      "videoMs": 133519,
+      "replayMs": 51719
+    }
+  ],
+  "finalMessage": "Possível obstáculo observado\n\nObservação: Using only Tab, Shift+Tab, Enter, Space, and typing into the focused field, I selected Atlas (12 seats, projector, $280 all-in, within the $350 budget), entered 'Quarterly planning', and reached the Review page showing Quarterly planning, Tomorrow 10:00-11:00, 12 people, projector included, and $280 total. On Review, Tab moved through logo, Our spaces, My reservations, Choose another room, and Edit meeting name, then showed no visible focus and cycled back to the logo; Enter and Space at that position did not confirm (Space only scrolled), and Shift+Tab from the logo landed on Edit meeting name rather than Confirm reservation. No visible confirmation was reached.\n\nInterpretação simulada: Gather supports keyboard navigation with clear focus through landing, Atlas room selection, meeting-name entry, and review, but the final 'Confirm reservation' control was not reached by Tab, reverse Tab, Enter, or Space. The persona therefore could not independently complete a reservation that otherwise matched all requirements.\n\nLimites: Pointer activation of 'Confirm reservation' was not tested because the charter required keyboard-only interaction. Whether focus at the no-outline position rested on a hidden page element or outside the page content is not established; what is established is that neither Enter nor Space confirmed from there and reverse Tab landed on 'Edit meeting name'.\n\nCapturas indicadas: #34, #44, #46, #48, #50, #52, #54, #56. A correspondência com a evidência requer revisão humana.",
+  "finding": {
+    "evidence_indices": [
+      34,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56
+    ],
+    "findings": [
+      {
+        "title": "Confirm reservation is not reachable in the Review page Tab order",
+        "type": "broken",
+        "impact": "high",
+        "observation": "On the Review page (screenshot 34), 'Confirm reservation' is visible alongside the correct details. Forward Tab reached 'Edit meeting name' (44), the next Tab showed no visible focus anywhere (46, repeated at 54), Enter at that position left the page unchanged (48), the next Tab cycled back to the Gather logo (50), Shift+Tab from the logo landed on 'Edit meeting name' rather than 'Confirm reservation' (52), and Space at the no-focus position only scrolled the page down (56).",
+        "expected": "The required 'Confirm reservation' control should receive visible keyboard focus in Tab order and activate with Enter or Space.",
+        "expectedSource": "Saved charter expected behavior: 'Required booking controls should receive keyboard focus and activate with standard keys' for this keyboard-only persona.",
+        "personaComment": "I got all the way to the final button with the keyboard, but I could not land on Confirm or activate it — that stopped my booking.",
+        "interpretation": "This is a keyboard-specific blocker at the final step: earlier room selection, text entry, and review were keyboard-operable, but the reservation cannot be completed without a pointer because the final confirmation control is outside the observed Tab order.",
+        "uncertainty": "I did not use a pointer to test whether the control works by click, per the keyboard-only charter, so pointer behavior is untested. Focus could theoretically be on a hidden element at the no-outline position, but neither Enter nor Space activated confirmation from there.",
+        "evidence_indices": [
+          34,
+          44,
+          46,
+          48,
+          50,
+          52,
+          54,
+          56
+        ],
+        "evidence": [
+          {
+            "index": 34,
+            "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-034.png"
+          },
+          {
+            "index": 44,
+            "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-044.png"
+          },
+          {
+            "index": 46,
+            "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-046.png"
+          },
+          {
+            "index": 48,
+            "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-048.png"
+          },
+          {
+            "index": 50,
+            "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-050.png"
+          },
+          {
+            "index": 52,
+            "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-052.png"
+          },
+          {
+            "index": 54,
+            "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-054.png"
+          },
+          {
+            "index": 56,
+            "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-056.png"
+          }
+        ]
+      },
+      {
+        "title": "Keyboard flow worked through room choice, name entry, and review",
+        "type": "experience",
+        "impact": "informational",
+        "observation": "The keyboard path worked until the final step: 'Choose Atlas' received visible focus and Enter opened the meeting step (16), the Meeting name field received visible focus and accepted 'Quarterly planning' (28, 30), 'Review booking' received visible focus and Enter opened Review (32), and Review correctly restated Quarterly planning, 12 people, projector included, and $280 total (34).",
+        "expected": "Room selection, meeting-name entry, and review should be keyboard-operable with visible focus.",
+        "expectedSource": "Saved charter expected behavior: visible keyboard focus, sensible focus order, and keyboard-operable room selection and forms.",
+        "personaComment": "Everything up to the review felt doable by keyboard — the focus was clear and Enter worked — which made the final unreachable button especially frustrating.",
+        "interpretation": "The barrier is specific to the final confirmation step rather than the whole flow; fixing that one control's focusability would make the observed path completable by keyboard.",
+        "uncertainty": "Only the Atlas path was tested; Willow and the 'Change' meeting controls were passed by but not operated.",
+        "evidence_indices": [
+          16,
+          28,
+          30,
+          32,
+          34
+        ],
+        "evidence": [
+          {
+            "index": 16,
+            "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-016.png"
+          },
+          {
+            "index": 28,
+            "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-028.png"
+          },
+          {
+            "index": 30,
+            "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-030.png"
+          },
+          {
+            "index": 32,
+            "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-032.png"
+          },
+          {
+            "index": 34,
+            "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-034.png"
+          }
+        ]
+      }
+    ],
+    "interpretation": "Gather supports keyboard navigation with clear focus through landing, Atlas room selection, meeting-name entry, and review, but the final 'Confirm reservation' control was not reached by Tab, reverse Tab, Enter, or Space. The persona therefore could not independently complete a reservation that otherwise matched all requirements.",
+    "learnings": [
+      {
+        "audience": "persona",
+        "confidence": 0.95,
+        "confidenceBasis": "Screenshots 16 and 18 directly show Atlas details and the resulting summary after Enter activation in this run.",
+        "content": "On the landing page, Atlas is listed at $280 all-in for 1 hr 10:00-11:00 with projector, shows '12 seats', and its 'Choose Atlas' button can be Tab-focused and activated with Enter to open the 'Your meeting' step.",
+        "kind": "navigation",
+        "name": "Atlas keyboard selection",
+        "polarity": "affirm",
+        "scope": {
+          "flows": [
+            "room selection",
+            "booking"
+          ],
+          "screenPatterns": [
+            "landing page room cards",
+            "Your meeting step"
+          ]
+        },
+        "sources": [
+          {
+            "eventIndex": 16
+          },
+          {
+            "eventIndex": 18
+          }
+        ],
+        "subject": "Atlas room selection by keyboard",
+        "value": "Tab-focused 'Choose Atlas' + Enter opens meeting details; Atlas is $280 all-in, 12 seats, projector included"
+      },
+      {
+        "audience": "persona",
+        "confidence": 0.9,
+        "confidenceBasis": "Screenshots 28 and 30 show the field focused before typing and containing the exact text after typing.",
+        "content": "On the 'Your meeting' step, Tab order reaches the Meeting name field after 'Choose another room'; typing 'Quarterly planning' there and Tabbing once focuses 'Review booking'.",
+        "kind": "navigation",
+        "name": "Meeting name entry tab order",
+        "polarity": "affirm",
+        "scope": {
+          "flows": [
+            "meeting details",
+            "booking"
+          ],
+          "screenPatterns": [
+            "Your meeting step"
+          ]
+        },
+        "sources": [
+          {
+            "eventIndex": 28
+          },
+          {
+            "eventIndex": 30
+          },
+          {
+            "eventIndex": 32
+          }
+        ],
+        "subject": "Meeting name field keyboard entry",
+        "value": "Meeting name field is Tab-reachable and accepts typed text; next Tab focuses Review booking"
+      },
+      {
+        "audience": "persona",
+        "confidence": 0.85,
+        "confidenceBasis": "One full forward cycle (36-50), a reverse Tab landing on Edit (52), and a repeated Tab-from-Edit plus Space scroll test (54-56) all pointed the same way; pointer behavior was not tested.",
+        "content": "On the Review page, the observed Tab cycle is Gather logo, Our spaces, My reservations, Choose another room, Edit meeting name, then no visible focus before returning to the logo; 'Confirm reservation' was not visibly focused, Shift+Tab from the logo landed on 'Edit meeting name', and Enter/Space at the post-Edit position did not confirm.",
+        "kind": "navigation",
+        "name": "Review page Confirm tab reachability",
+        "polarity": "deny",
+        "scope": {
+          "flows": [
+            "review",
+            "booking confirmation"
+          ],
+          "screenPatterns": [
+            "Review step - Ready when you are"
+          ]
+        },
+        "sources": [
+          {
+            "eventIndex": 44
+          },
+          {
+            "eventIndex": 46
+          },
+          {
+            "eventIndex": 50
+          },
+          {
+            "eventIndex": 52
+          },
+          {
+            "eventIndex": 56
+          }
+        ],
+        "subject": "Confirm reservation Tab reachability on Review page",
+        "value": "Not reached by forward Tab, Shift+Tab, Enter, or Space in the observed cycle"
+      }
+    ],
+    "observation": "Using only Tab, Shift+Tab, Enter, Space, and typing into the focused field, I selected Atlas (12 seats, projector, $280 all-in, within the $350 budget), entered 'Quarterly planning', and reached the Review page showing Quarterly planning, Tomorrow 10:00-11:00, 12 people, projector included, and $280 total. On Review, Tab moved through logo, Our spaces, My reservations, Choose another room, and Edit meeting name, then showed no visible focus and cycled back to the logo; Enter and Space at that position did not confirm (Space only scrolled), and Shift+Tab from the logo landed on Edit meeting name rather than Confirm reservation. No visible confirmation was reached.",
+    "outcome": "obstacle_observed",
+    "uncertainty": "Pointer activation of 'Confirm reservation' was not tested because the charter required keyboard-only interaction. Whether focus at the no-outline position rested on a hidden page element or outside the page content is not established; what is established is that neither Enter nor Space confirmed from there and reverse Tab landed on 'Edit meeting name'.",
+    "evidence": [
+      {
+        "index": 34,
+        "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-034.png"
+      },
+      {
+        "index": 44,
+        "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-044.png"
+      },
+      {
+        "index": 46,
+        "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-046.png"
+      },
+      {
+        "index": 48,
+        "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-048.png"
+      },
+      {
+        "index": 50,
+        "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-050.png"
+      },
+      {
+        "index": 52,
+        "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-052.png"
+      },
+      {
+        "index": 54,
+        "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-054.png"
+      },
+      {
+        "index": 56,
+        "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-056.png"
+      }
+    ]
+  },
+  "error": null,
+  "video": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/journey.webm",
+  "persona": {
+    "name": "Casey · Keyboard access",
+    "description": "A fictional Home v3 persona who needs to complete the booking using only the keyboard.",
+    "label": "Casey · Keyboard access",
+    "role": "Needs keyboard access",
+    "context": "You are arranging the team’s quarterly planning meeting and rely on keyboard navigation. You need to reach and operate each required control without using a mouse or touch.",
+    "mission": "Book a room for 12 people with a projector for the available one-hour meeting slot. Enter the meeting purpose Quarterly planning. Keep the complete cost at or below $350.",
+    "initialKnowledge": "You have not used Gather before. You know the meeting requirements, but have no walkthrough, knowledge of its rooms or prices, or prior reservation.",
+    "knowledge": "You have not used Gather before. You know the meeting requirements, but have no walkthrough, knowledge of its rooms or prices, or prior reservation.",
+    "constraints": "You need seats for all 12 people and a projector. The complete cost, including any fees and equipment, must not exceed $350. Use only the fictional meeting details. Use keyboard navigation and typing only. Do not click coordinates or controls, use touch, select an option through a pointer shortcut, or bypass the visible interface. Type only after establishing keyboard focus.",
+    "skills": "Experienced with Tab navigation, visible focus, Enter and Space activation, arrow keys where supported, and typing into the focused form field.",
+    "decision": "Follow the visible focus through the booking flow and use keyboard activation for controls. If a required control appears unreachable, attempt reasonable keyboard navigation and report the exact observed barrier without assuming a defect in advance.",
+    "resources": "A desktop browser and keyboard, with fictional meeting details. No mouse or touch input, real account, or payment information.",
+    "expectations": "Visible keyboard focus, a sensible focus order, keyboard-operable room selection and forms, and a readable reservation confirmation.",
+    "priorities": "Complete the reservation independently using the keyboard and identify any observed control that prevents that goal.",
+    "successCriteria": "Verify a visible confirmed reservation with the requested meeting purpose, 12 attendees, a projector, and an all-in total within $350. Report any missing or uncertain detail accurately. Reach this outcome through keyboard interaction alone.",
+    "stopCriteria": "Stop after a verified suitable reservation, a supported obstacle after reasonable recovery, an unsafe action, or the session limits. Do not book beyond your budget or claim success without visible evidence.",
+    "continuity": "first-time",
+    "deviceIds": [
+      "device-e826e366b4c48c17912080fe"
+    ],
+    "primaryDeviceId": "device-e826e366b4c48c17912080fe",
+    "networkProfileId": "network-profile-9b304c28cc4c4bd697862841",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "id": "gather-keyboard",
+    "projectId": "gather",
+    "version": 1,
+    "versionId": "6573272e-c56d-48db-866a-e274a6d6cda1",
+    "archived": false,
+    "createdAt": "2026-11-03T04:18:26.268Z",
+    "updatedAt": "2026-11-03T04:18:26.268Z",
+    "versionCreatedAt": "2026-11-03T04:18:26.268Z"
+  },
+  "personaId": "gather-keyboard",
+  "scenarioId": "gather-booking",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "productFingerprint": {
+    "app.js": "2ffe1fe827595fda251bde4fa6f6170fbc4bc3b5235c04e84c6e9818293a8960",
+    "DEMO_FIXTURE.md": "f74e0eff905cdacea64bda38c5207e775c41338f9308022b34c11332903d90c2",
+    "index.html": "2795008217a59d2b6a5a040e0d78d645e7343fdf6f12178686a274d759598c6f",
+    "styles.css": "28a2d0126c0d4ad5f16cc1ea61382ec8f34587357f7e64273285949a5b2bd4ee"
+  },
+  "integrityStatus": "verified",
+  "target": "http://127.0.0.1:60905/",
+  "model": "muse-wonder-1.0",
+  "usage": [
+    {
+      "input_tokens": 8743,
+      "input_tokens_details": {
+        "cached_tokens": 628
+      },
+      "output_tokens": 440,
+      "output_tokens_details": {
+        "reasoning_tokens": 183
+      },
+      "total_tokens": 9183
+    },
+    {
+      "input_tokens": 10986,
+      "input_tokens_details": {
+        "cached_tokens": 628
+      },
+      "output_tokens": 214,
+      "output_tokens_details": {
+        "reasoning_tokens": 14
+      },
+      "total_tokens": 11200
+    },
+    {
+      "input_tokens": 13003,
+      "input_tokens_details": {
+        "cached_tokens": 8692
+      },
+      "output_tokens": 200,
+      "output_tokens_details": {
+        "reasoning_tokens": 7
+      },
+      "total_tokens": 13203
+    },
+    {
+      "input_tokens": 15006,
+      "input_tokens_details": {
+        "cached_tokens": 8692
+      },
+      "output_tokens": 208,
+      "output_tokens_details": {
+        "reasoning_tokens": 12
+      },
+      "total_tokens": 15214
+    },
+    {
+      "input_tokens": 17017,
+      "input_tokens_details": {
+        "cached_tokens": 10868
+      },
+      "output_tokens": 353,
+      "output_tokens_details": {
+        "reasoning_tokens": 95
+      },
+      "total_tokens": 17370
+    },
+    {
+      "input_tokens": 19173,
+      "input_tokens_details": {
+        "cached_tokens": 12916
+      },
+      "output_tokens": 290,
+      "output_tokens_details": {
+        "reasoning_tokens": 30
+      },
+      "total_tokens": 19463
+    },
+    {
+      "input_tokens": 21266,
+      "input_tokens_details": {
+        "cached_tokens": 14964
+      },
+      "output_tokens": 382,
+      "output_tokens_details": {
+        "reasoning_tokens": 92
+      },
+      "total_tokens": 21648
+    },
+    {
+      "input_tokens": 23451,
+      "input_tokens_details": {
+        "cached_tokens": 17012
+      },
+      "output_tokens": 335,
+      "output_tokens_details": {
+        "reasoning_tokens": 98
+      },
+      "total_tokens": 23786
+    },
+    {
+      "input_tokens": 25589,
+      "input_tokens_details": {
+        "cached_tokens": 21236
+      },
+      "output_tokens": 256,
+      "output_tokens_details": {
+        "reasoning_tokens": 58
+      },
+      "total_tokens": 25845
+    },
+    {
+      "input_tokens": 27648,
+      "input_tokens_details": {
+        "cached_tokens": 23412
+      },
+      "output_tokens": 196,
+      "output_tokens_details": {
+        "reasoning_tokens": 5
+      },
+      "total_tokens": 27844
+    },
+    {
+      "input_tokens": 29647,
+      "input_tokens_details": {
+        "cached_tokens": 25588
+      },
+      "output_tokens": 223,
+      "output_tokens_details": {
+        "reasoning_tokens": 5
+      },
+      "total_tokens": 29870
+    },
+    {
+      "input_tokens": 31673,
+      "input_tokens_details": {
+        "cached_tokens": 27636
+      },
+      "output_tokens": 208,
+      "output_tokens_details": {
+        "reasoning_tokens": 13
+      },
+      "total_tokens": 31881
+    },
+    {
+      "input_tokens": 33684,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 224,
+      "output_tokens_details": {
+        "reasoning_tokens": 25
+      },
+      "total_tokens": 33908
+    },
+    {
+      "input_tokens": 35709,
+      "input_tokens_details": {
+        "cached_tokens": 19060
+      },
+      "output_tokens": 211,
+      "output_tokens_details": {
+        "reasoning_tokens": 9
+      },
+      "total_tokens": 35920
+    },
+    {
+      "input_tokens": 37723,
+      "input_tokens_details": {
+        "cached_tokens": 29556
+      },
+      "output_tokens": 236,
+      "output_tokens_details": {
+        "reasoning_tokens": 7
+      },
+      "total_tokens": 37959
+    },
+    {
+      "input_tokens": 39762,
+      "input_tokens_details": {
+        "cached_tokens": 31604
+      },
+      "output_tokens": 375,
+      "output_tokens_details": {
+        "reasoning_tokens": 88
+      },
+      "total_tokens": 40137
+    },
+    {
+      "input_tokens": 41940,
+      "input_tokens_details": {
+        "cached_tokens": 37620
+      },
+      "output_tokens": 231,
+      "output_tokens_details": {
+        "reasoning_tokens": 41
+      },
+      "total_tokens": 42171
+    },
+    {
+      "input_tokens": 43974,
+      "input_tokens_details": {
+        "cached_tokens": 39668
+      },
+      "output_tokens": 191,
+      "output_tokens_details": {
+        "reasoning_tokens": 3
+      },
+      "total_tokens": 44165
+    },
+    {
+      "input_tokens": 45968,
+      "input_tokens_details": {
+        "cached_tokens": 41844
+      },
+      "output_tokens": 192,
+      "output_tokens_details": {
+        "reasoning_tokens": 2
+      },
+      "total_tokens": 46160
+    },
+    {
+      "input_tokens": 47963,
+      "input_tokens_details": {
+        "cached_tokens": 43892
+      },
+      "output_tokens": 221,
+      "output_tokens_details": {
+        "reasoning_tokens": 3
+      },
+      "total_tokens": 48184
+    },
+    {
+      "input_tokens": 49987,
+      "input_tokens_details": {
+        "cached_tokens": 33652
+      },
+      "output_tokens": 199,
+      "output_tokens_details": {
+        "reasoning_tokens": 3
+      },
+      "total_tokens": 50186
+    },
+    {
+      "input_tokens": 51989,
+      "input_tokens_details": {
+        "cached_tokens": 35700
+      },
+      "output_tokens": 570,
+      "output_tokens_details": {
+        "reasoning_tokens": 303
+      },
+      "total_tokens": 52559
+    },
+    {
+      "input_tokens": 54362,
+      "input_tokens_details": {
+        "cached_tokens": 45940
+      },
+      "output_tokens": 477,
+      "output_tokens_details": {
+        "reasoning_tokens": 220
+      },
+      "total_tokens": 54839
+    },
+    {
+      "input_tokens": 56642,
+      "input_tokens_details": {
+        "cached_tokens": 47860
+      },
+      "output_tokens": 697,
+      "output_tokens_details": {
+        "reasoning_tokens": 482
+      },
+      "total_tokens": 57339
+    },
+    {
+      "input_tokens": 59142,
+      "input_tokens_details": {
+        "cached_tokens": 54260
+      },
+      "output_tokens": 707,
+      "output_tokens_details": {
+        "reasoning_tokens": 408
+      },
+      "total_tokens": 59849
+    },
+    {
+      "input_tokens": 61652,
+      "input_tokens_details": {
+        "cached_tokens": 51956
+      },
+      "output_tokens": 230,
+      "output_tokens_details": {
+        "reasoning_tokens": 25
+      },
+      "total_tokens": 61882
+    },
+    {
+      "input_tokens": 63685,
+      "input_tokens_details": {
+        "cached_tokens": 49908
+      },
+      "output_tokens": 2634,
+      "output_tokens_details": {
+        "reasoning_tokens": 889
+      },
+      "total_tokens": 66319
+    }
+  ],
+  "limitations": "Fresh synthetic persona retest; does not measure real-user impact.",
+  "comparisonId": "356dda44-6358-436e-b895-35e71833afcf",
+  "variant": "before",
+  "experience": [
+    {
+      "eventIndex": 4,
+      "actionEventIndex": 5,
+      "at": "2026-11-03T16:24:04.264Z",
+      "videoMs": 5962,
+      "replayMs": 1613,
+      "observation": "Landing page shows Gather header, 'Find your space' button, meeting summary Tomorrow 10:00-11:00 for 12 people with projector required, and Atlas $280 and Willow $245 rooms.",
+      "reaction": "Starting with Tab to follow the visible focus from the top of the page.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 6,
+      "actionEventIndex": 7,
+      "at": "2026-11-03T16:24:07.277Z",
+      "videoMs": 8976,
+      "replayMs": 3517,
+      "observation": "First Tab gave visible focus to the Gather logo in the top-left header, shown by a blue outline.",
+      "reaction": "The logo has focus, so I'll keep Tabbing toward the main booking controls.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 8,
+      "actionEventIndex": 9,
+      "at": "2026-11-03T16:24:10.836Z",
+      "videoMs": 12535,
+      "replayMs": 5407,
+      "observation": "Focus is now on 'Our spaces' in the top navigation, outlined in blue.",
+      "reaction": "Focus moved to 'Our spaces'; continuing forward through the header.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 10,
+      "actionEventIndex": 11,
+      "at": "2026-11-03T16:24:14.280Z",
+      "videoMs": 15979,
+      "replayMs": 7299,
+      "observation": "Focus is on the 'My reservations' button in the top-right, outlined in blue.",
+      "reaction": "Focus is on 'My reservations'; Tabbing on toward the main content.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 12,
+      "actionEventIndex": 13,
+      "at": "2026-11-03T16:24:18.524Z",
+      "videoMs": 20223,
+      "replayMs": 9191,
+      "observation": "Focus is on the blue 'Find your space' button, with a clear light-blue outline around it.",
+      "reaction": "I can clearly see focus on 'Find your space', so I'll continue Tabbing to the meeting and room controls.",
+      "track": "experience",
+      "valence": "positive",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "benefit",
+        "summary": "Clear blue outline on 'Find your space' makes the current keyboard position easy to track",
+        "why": "The visible outline on the blue button in screenshot 12 confirms where focus is before I move toward the room controls, which is essential when navigating without a pointer."
+      }
+    },
+    {
+      "eventIndex": 14,
+      "actionEventIndex": 15,
+      "at": "2026-11-03T16:24:22.504Z",
+      "videoMs": 24203,
+      "replayMs": 11080,
+      "observation": "Focus is on the 'Change' link at the right of the meeting summary bar, which reads Tomorrow 10:00-11:00, 12 people, Projector required.",
+      "reaction": "Focus is on 'Change', but the meeting details already match, so I'll Tab past it to the rooms.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 16,
+      "actionEventIndex": 17,
+      "at": "2026-11-03T16:24:27.287Z",
+      "videoMs": 28986,
+      "replayMs": 12968,
+      "observation": "Page scrolled to the rooms; 'Choose Atlas' is focused. Atlas shows 12 seats, Boardroom, Available tomorrow, and $280 all-in for 1 hr with projector.",
+      "reaction": "Atlas fits — 12 seats, projector, $280 all-in — and its button has focus, so I'll activate it with Enter.",
+      "track": "experience",
+      "valence": "positive",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "benefit",
+        "summary": "Atlas showing 12 seats, projector included, and $280 all-in lets me choose a budget-fitting room without extra steps",
+        "why": "Screenshot 16 shows Atlas at $280, below my $350 limit, with '12 seats' and 'with projector' visible and the 'Choose Atlas' button keyboard-focused."
+      }
+    },
+    {
+      "eventIndex": 18,
+      "actionEventIndex": 19,
+      "at": "2026-11-03T16:24:33.927Z",
+      "videoMs": 35626,
+      "replayMs": 14877,
+      "observation": null,
+      "reaction": "I'm on the meeting details step; I'll Tab to find the meeting name field.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 20,
+      "actionEventIndex": 21,
+      "at": "2026-11-03T16:24:37.446Z",
+      "videoMs": 39144,
+      "replayMs": 16788,
+      "observation": "First Tab on the meeting-details page focused the Gather logo at the top-left.",
+      "reaction": "Focus reset to the logo on this new step, so I'll work forward through the header again.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 22,
+      "actionEventIndex": 23,
+      "at": "2026-11-03T16:24:41.522Z",
+      "videoMs": 43221,
+      "replayMs": 18689,
+      "observation": "Focus is on 'Our spaces' in the header on the meeting-details page.",
+      "reaction": "Focus is on 'Our spaces'; continuing toward the form.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 24,
+      "actionEventIndex": 25,
+      "at": "2026-11-03T16:24:43.545Z",
+      "videoMs": 45243,
+      "replayMs": 20712,
+      "observation": "Focus is on the 'My reservations' button in the top-right header.",
+      "reaction": "Focus is on 'My reservations'; Tabbing on toward the meeting form.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 26,
+      "actionEventIndex": 27,
+      "at": "2026-11-03T16:24:46.640Z",
+      "videoMs": 48339,
+      "replayMs": 22647,
+      "observation": "Focus is on the 'Choose another room' link above the progress steps.",
+      "reaction": "Focus is on 'Choose another room'; one more Tab should reach the name field.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 28,
+      "actionEventIndex": 29,
+      "at": "2026-11-03T16:24:51.553Z",
+      "videoMs": 53252,
+      "replayMs": 24538,
+      "observation": "The Meeting name input is focused with a blue outline and placeholder 'e.g. Quarterly planning'.",
+      "reaction": "The meeting name field has clear focus, so I'll type the meeting purpose now.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 30,
+      "actionEventIndex": 31,
+      "at": "2026-11-03T16:24:55.562Z",
+      "videoMs": 57261,
+      "replayMs": 27113,
+      "observation": "The Meeting name field now contains 'Quarterly planning' and remains focused; 'Review booking' is the next visible action.",
+      "reaction": "'Quarterly planning' is entered; I'll Tab to the review button.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 32,
+      "actionEventIndex": 33,
+      "at": "2026-11-03T16:24:59.744Z",
+      "videoMs": 61443,
+      "replayMs": 29019,
+      "observation": "Focus is on the blue 'Review booking' button, outlined in light blue, next to the entered meeting name.",
+      "reaction": "The 'Review booking' button has focus, so I'll activate it with Enter.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 34,
+      "actionEventIndex": 35,
+      "at": "2026-11-03T16:25:05.504Z",
+      "videoMs": 67203,
+      "replayMs": 30907,
+      "observation": "Review step shows Meeting name 'Quarterly planning', text confirming projector and seating for 12, and Atlas summary Tomorrow 10:00-11:00, 12 people, projector included, $280 total.",
+      "reaction": "The review matches everything — name, 12 seats, projector, $280 — so I'll Tab toward Confirm.",
+      "track": "experience",
+      "valence": "positive",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "benefit",
+        "summary": "Review page restating Quarterly planning, seating for 12, projector, and $280 total lets me verify everything before confirming",
+        "why": "Screenshot 34 shows all required details together — meeting name, 12 people, projector included, and $280 all charges included — so I can confirm without guessing."
+      }
+    },
+    {
+      "eventIndex": 36,
+      "actionEventIndex": 37,
+      "at": "2026-11-03T16:25:09.276Z",
+      "videoMs": 70975,
+      "replayMs": 32800,
+      "observation": "First Tab on the review page focused the Gather logo.",
+      "reaction": "Focus reset to the logo on the review step, so I'll move forward again.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 38,
+      "actionEventIndex": 39,
+      "at": "2026-11-03T16:25:11.501Z",
+      "videoMs": 73200,
+      "replayMs": 34686,
+      "observation": "Focus is on 'Our spaces' in the header on the review page.",
+      "reaction": "Focus is on 'Our spaces'; continuing forward.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 40,
+      "actionEventIndex": 41,
+      "at": "2026-11-03T16:25:14.351Z",
+      "videoMs": 76049,
+      "replayMs": 36573,
+      "observation": "Focus is on the 'My reservations' button in the header.",
+      "reaction": "Focus is on 'My reservations'; Tabbing toward the confirmation controls.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 42,
+      "actionEventIndex": 43,
+      "at": "2026-11-03T16:25:18.047Z",
+      "videoMs": 79745,
+      "replayMs": 38454,
+      "observation": "Focus is on the 'Choose another room' link above the review steps.",
+      "reaction": "Focus is on 'Choose another room'; continuing to the action buttons below.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 44,
+      "actionEventIndex": 45,
+      "at": "2026-11-03T16:25:21.071Z",
+      "videoMs": 82769,
+      "replayMs": 40337,
+      "observation": "Focus is on the 'Edit meeting name' button on the left of the review card.",
+      "reaction": "Focus is on 'Edit meeting name'; one more Tab should reach Confirm.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 46,
+      "actionEventIndex": 47,
+      "at": "2026-11-03T16:25:28.829Z",
+      "videoMs": 90528,
+      "replayMs": 42231,
+      "observation": "After Tab from 'Edit meeting name', no clear focus outline is visible on 'Confirm reservation' or other controls in the review card.",
+      "reaction": "I Tabbed from Edit, so Confirm should be next, though its outline isn't clear — I'll press Enter and check the result.",
+      "track": "experience",
+      "valence": "negative",
+      "friction": 1,
+      "confidence": "medium",
+      "feedback": {
+        "kind": "uncertainty",
+        "summary": "Focus outline is not clearly visible after Tabbing from 'Edit meeting name' toward 'Confirm reservation'",
+        "why": "Screenshot 46 shows neither button with a clear light-blue outline as earlier controls had, so I cannot visually confirm the exact focused control before activating it."
+      }
+    },
+    {
+      "eventIndex": 48,
+      "actionEventIndex": 49,
+      "at": "2026-11-03T16:25:34.976Z",
+      "videoMs": 96674,
+      "replayMs": 44156,
+      "observation": "Review page is unchanged after Enter; 'Confirm reservation' is visible but no focus outline is shown anywhere.",
+      "reaction": "Enter didn't confirm anything, so I'll keep Tabbing to see where focus actually goes next.",
+      "track": "broken",
+      "valence": "negative",
+      "friction": 2,
+      "confidence": "high",
+      "feedback": {
+        "kind": "friction",
+        "summary": "Enter after Tabbing from 'Edit meeting name' did not activate 'Confirm reservation' and no focus outline was visible",
+        "why": "Screenshot 48 is unchanged from the review page after Enter, so my expected next control did not respond and I cannot yet confirm the reservation by keyboard."
+      }
+    },
+    {
+      "eventIndex": 50,
+      "actionEventIndex": 51,
+      "at": "2026-11-03T16:25:42.861Z",
+      "videoMs": 104559,
+      "replayMs": 46044,
+      "observation": "After another Tab, focus returned to the Gather logo, indicating the review-page Tab cycle completed without visibly landing on 'Confirm reservation'.",
+      "reaction": "Focus cycled back to the logo, so I'll try Shift+Tab to reach the last control in reverse.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 52,
+      "actionEventIndex": 53,
+      "at": "2026-11-03T16:25:49.627Z",
+      "videoMs": 111326,
+      "replayMs": 47929,
+      "observation": "After Shift+Tab from the logo, focus is visibly on 'Edit meeting name', not on 'Confirm reservation'.",
+      "reaction": "Reverse Tab went to Edit, not Confirm; I'll Tab forward once more to test the next position with Space.",
+      "track": "broken",
+      "valence": "negative",
+      "friction": 2,
+      "confidence": "high",
+      "feedback": {
+        "kind": "friction",
+        "summary": "Reverse Tab from the first control landed on 'Edit meeting name', skipping 'Confirm reservation'",
+        "why": "Screenshot 52 shows Edit focused after Shift+Tab from the logo, which suggests Confirm is not the last focusable control as its prominent position would imply."
+      }
+    },
+    {
+      "eventIndex": 54,
+      "actionEventIndex": 55,
+      "at": "2026-11-03T16:25:52.793Z",
+      "videoMs": 114491,
+      "replayMs": 49818,
+      "observation": "Tab from 'Edit meeting name' again shows no visible focus outline on 'Confirm reservation' or any other control.",
+      "reaction": "No outline is visible at this position, so I'll try Space as the other standard activation key.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "medium",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    }
+  ],
+  "replay": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/replay.webm",
+  "replayMetadata": {
+    "status": "compacted",
+    "calibration": {
+      "method": "marcador visível e timestamps dos quadros",
+      "frameTime": 1,
+      "uncertaintyMs": 41.812500000000036
+    },
+    "segments": [
+      {
+        "originalStart": 1.8755037080000039,
+        "originalEnd": 2.7369444169999912,
+        "replayStart": 0
+      },
+      {
+        "originalStart": 5.210296207999986,
+        "originalEnd": 7.113949000000022,
+        "replayStart": 0.8614407089999874
+      },
+      {
+        "originalStart": 8.224018042000012,
+        "originalEnd": 10.113688250000006,
+        "replayStart": 2.765093501000024
+      },
+      {
+        "originalStart": 11.78276579199999,
+        "originalEnd": 13.675241500000004,
+        "replayStart": 4.654763709000019
+      },
+      {
+        "originalStart": 15.22695537500002,
+        "originalEnd": 17.119253832999966,
+        "replayStart": 6.547239417000032
+      },
+      {
+        "originalStart": 19.470867582999986,
+        "originalEnd": 21.359267208000006,
+        "replayStart": 8.439537874999978
+      },
+      {
+        "originalStart": 23.451086332999985,
+        "originalEnd": 25.339310457999993,
+        "replayStart": 10.327937499999997
+      },
+      {
+        "originalStart": 28.234254833000016,
+        "originalEnd": 30.142793166999997,
+        "replayStart": 12.216161625000005
+      },
+      {
+        "originalStart": 34.87411008299998,
+        "originalEnd": 36.78546545800002,
+        "replayStart": 14.124699958999987
+      },
+      {
+        "originalStart": 38.392587375000005,
+        "originalEnd": 40.29367975000001,
+        "replayStart": 16.03605533400003
+      },
+      {
+        "originalStart": 42.46913512499997,
+        "originalEnd": 46.427548750000014,
+        "replayStart": 17.937147709000033
+      },
+      {
+        "originalStart": 47.58686050000001,
+        "originalEnd": 49.477119750000014,
+        "replayStart": 21.895561334000075
+      },
+      {
+        "originalStart": 52.50004849999998,
+        "originalEnd": 55.07523695799999,
+        "replayStart": 23.78582058400008
+      },
+      {
+        "originalStart": 56.508863917000006,
+        "originalEnd": 58.415251624999975,
+        "replayStart": 26.361009042000095
+      },
+      {
+        "originalStart": 60.69134387500002,
+        "originalEnd": 62.57920204200002,
+        "replayStart": 28.267396750000064
+      },
+      {
+        "originalStart": 66.45091824999999,
+        "originalEnd": 68.34402654200001,
+        "replayStart": 30.15525491700006
+      },
+      {
+        "originalStart": 70.22263408300002,
+        "originalEnd": 72.10789591700002,
+        "replayStart": 32.04836320900009
+      },
+      {
+        "originalStart": 72.44809108300001,
+        "originalEnd": 74.33553083299996,
+        "replayStart": 33.93362504300009
+      },
+      {
+        "originalStart": 75.29726941700001,
+        "originalEnd": 77.17803416699998,
+        "replayStart": 35.82106479300005
+      },
+      {
+        "originalStart": 78.99335391700001,
+        "originalEnd": 80.87655216700001,
+        "replayStart": 37.70182954300002
+      },
+      {
+        "originalStart": 82.017246292,
+        "originalEnd": 83.91157383299998,
+        "replayStart": 39.58502779300002
+      },
+      {
+        "originalStart": 89.77591375,
+        "originalEnd": 91.70097908299998,
+        "replayStart": 41.479355334000005
+      },
+      {
+        "originalStart": 95.9226165,
+        "originalEnd": 97.80989845799998,
+        "replayStart": 43.40442066699998
+      },
+      {
+        "originalStart": 103.807403292,
+        "originalEnd": 105.69319187500002,
+        "replayStart": 45.29170262499996
+      },
+      {
+        "originalStart": 110.57410612499999,
+        "originalEnd": 112.46223416699999,
+        "replayStart": 47.17749120799998
+      },
+      {
+        "originalStart": 113.73941529199999,
+        "originalEnd": 115.64009370799997,
+        "replayStart": 49.06561924999998
+      },
+      {
+        "originalStart": 132.76587225,
+        "originalEnd": 133.68,
+        "replayStart": 50.96629766599996
+      }
+    ],
+    "originalDuration": 133.68,
+    "removedModelWaits": [
+      {
+        "start": 2.7369444169999912,
+        "end": 5.210296207999986
+      },
+      {
+        "start": 7.113949000000022,
+        "end": 8.224018042000012
+      },
+      {
+        "start": 10.113688250000006,
+        "end": 11.78276579199999
+      },
+      {
+        "start": 13.675241500000004,
+        "end": 15.22695537500002
+      },
+      {
+        "start": 17.119253832999966,
+        "end": 19.470867582999986
+      },
+      {
+        "start": 21.359267208000006,
+        "end": 23.451086332999985
+      },
+      {
+        "start": 25.339310457999993,
+        "end": 28.234254833000016
+      },
+      {
+        "start": 30.142793166999997,
+        "end": 34.87411008299998
+      },
+      {
+        "start": 36.78546545800002,
+        "end": 38.392587375000005
+      },
+      {
+        "start": 40.29367975000001,
+        "end": 42.46913512499997
+      },
+      {
+        "start": 46.427548750000014,
+        "end": 47.58686050000001
+      },
+      {
+        "start": 49.477119750000014,
+        "end": 52.50004849999998
+      },
+      {
+        "start": 55.07523695799999,
+        "end": 56.508863917000006
+      },
+      {
+        "start": 58.415251624999975,
+        "end": 60.69134387500002
+      },
+      {
+        "start": 62.57920204200002,
+        "end": 66.45091824999999
+      },
+      {
+        "start": 68.34402654200001,
+        "end": 70.22263408300002
+      },
+      {
+        "start": 72.10789591700002,
+        "end": 72.44809108300001
+      },
+      {
+        "start": 74.33553083299996,
+        "end": 75.29726941700001
+      },
+      {
+        "start": 77.17803416699998,
+        "end": 78.99335391700001
+      },
+      {
+        "start": 80.87655216700001,
+        "end": 82.017246292
+      },
+      {
+        "start": 83.91157383299998,
+        "end": 89.77591375
+      },
+      {
+        "start": 91.70097908299998,
+        "end": 95.9226165
+      },
+      {
+        "start": 97.80989845799998,
+        "end": 103.807403292
+      },
+      {
+        "start": 105.69319187500002,
+        "end": 110.57410612499999
+      },
+      {
+        "start": 112.46223416699999,
+        "end": 113.73941529199999
+      },
+      {
+        "start": 115.64009370799997,
+        "end": 132.76587225
+      }
+    ],
+    "removedTechnicalPreroll": [
+      {
+        "start": 0,
+        "end": 1.8755037080000039
+      }
+    ],
+    "replayDuration": 51.88042541599995
+  },
+  "projectId": "gather",
+  "name": "Book a room using only the keyboard · Casey · Keyboard access · before",
+  "deviceId": "device-e826e366b4c48c17912080fe",
+  "deviceName": "Laptop — 1440 × 900",
+  "deviceVersion": 1,
+  "deviceVersionId": "e8fb6ba8-d8ca-48ca-8d6c-dbdce19ae4c4",
+  "deviceSnapshot": {
+    "name": "Laptop — 1440 × 900",
+    "description": "Desktop Chromium with mouse and keyboard.",
+    "category": "desktop",
+    "browser": "chromium",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "screen": {
+      "width": 1440,
+      "height": 900
+    },
+    "deviceScaleFactor": 1,
+    "isMobile": false,
+    "hasTouch": false,
+    "userAgent": "",
+    "presetId": "desktop-1440",
+    "legacyViewport": false,
+    "id": "device-e826e366b4c48c17912080fe",
+    "projectId": "gather",
+    "version": 1,
+    "versionId": "e8fb6ba8-d8ca-48ca-8d6c-dbdce19ae4c4",
+    "archived": false,
+    "createdAt": "2026-11-02T11:12:51.749Z",
+    "updatedAt": "2026-11-02T11:12:51.749Z",
+    "versionCreatedAt": "2026-11-02T11:12:51.749Z"
+  },
+  "networkProfileId": "network-profile-9b304c28cc4c4bd697862841",
+  "networkProfileName": "Unthrottled",
+  "networkProfileVersion": 1,
+  "networkProfileVersionId": "c18d8177-0867-404f-bab5-d4a1f587092d",
+  "networkProfileSnapshot": {
+    "name": "Unthrottled",
+    "description": "Uses the host connection without additional throttling.",
+    "offline": false,
+    "latencyMs": 0,
+    "downloadMbps": null,
+    "uploadMbps": null,
+    "presetId": "unthrottled",
+    "id": "network-profile-9b304c28cc4c4bd697862841",
+    "projectId": "gather",
+    "version": 1,
+    "versionId": "c18d8177-0867-404f-bab5-d4a1f587092d",
+    "archived": false,
+    "createdAt": "2026-11-02T11:12:51.757Z",
+    "updatedAt": "2026-11-02T11:12:51.757Z",
+    "versionCreatedAt": "2026-11-02T11:12:51.757Z"
+  },
+  "browserExecution": {
+    "engine": "chromium",
+    "version": "156.0.8078.80",
+    "emulated": true,
+    "screenshotScale": "css",
+    "device": {
+      "browser": "chromium",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "screen": {
+        "width": 1440,
+        "height": 900
+      },
+      "isMobile": false,
+      "hasTouch": false,
+      "deviceScaleFactor": 1,
+      "userAgent": null
+    },
+    "network": {
+      "offline": false,
+      "latencyMs": 0,
+      "downloadMbps": null,
+      "uploadMbps": null
+    }
+  },
+  "charterId": "gather-keyboard-booking",
+  "charterVersion": 3,
+  "charterVersionId": "6265b349-1115-4e72-bc83-404b10c114c2",
+  "charterSnapshot": {
+    "name": "Book a room using only the keyboard",
+    "description": "AI Persona keyboard-access demo; environment contains a deliberately seeded barrier, which is not disclosed in the exploration instructions.",
+    "mission": "Complete the booking from the persona’s point of view using only keyboard navigation and text entry. Verify the final reservation. Observe the product rather than assuming its accessibility.",
+    "scope": "Landing page through room selection, meeting details, review and confirmation. No mouse, touch, coordinate clicks, control clicks or programmatic focus shortcuts.",
+    "successCriteria": "The visible confirmation matches the meeting purpose Quarterly planning, 12 people, projector and the persona’s budget, reached using keyboard interaction alone.",
+    "stopCriteria": "Stop on verified success or a specific observed keyboard barrier. If a required visible control cannot be reached after two complete Tab cycles, check reverse Tab once, then finish with an evidence-backed blocked report; do not repeat unchanged cycles indefinitely. Stop on execution limits without treating the limit or an agent error as a product defect.",
+    "scenarioId": "gather-booking",
+    "startingState": "First visit in a fresh browser session. No prior reservation, product walkthrough, or knowledge of defects.",
+    "goals": "Reserve a suitable room and verify the visible confirmation using keyboard interaction only.",
+    "expectedBehaviorSources": "The persona’s declared keyboard-only access requirement and meeting requirements, the product-visible prices and recorded confirmation. Required booking controls should receive keyboard focus and activate with standard keys. Preserve pricing and pointer booking paths.",
+    "defaultEnvironmentId": "gather-keyboard-demo",
+    "compatibleEnvironmentIds": [
+      "gather-keyboard-demo"
+    ],
+    "personaIds": [
+      "gather-keyboard"
+    ],
+    "screens": [],
+    "flows": [],
+    "allowedActions": "Keyboard keypresses and typing into the currently focused field only. Do not use pointer clicks, scrolling tools, select-option shortcuts, or navigational bypasses. Tab, Shift+Tab, Enter, Space and arrow keys may be used as appropriate.",
+    "memoryPolicy": "none",
+    "memoryIds": [],
+    "maxSteps": 32,
+    "maxTokens": 2000000,
+    "maxDurationMs": 720000,
+    "captureBodies": false,
+    "allowMutations": true,
+    "id": "gather-keyboard-booking",
+    "projectId": "gather",
+    "version": 3,
+    "versionId": "6265b349-1115-4e72-bc83-404b10c114c2",
+    "archived": false,
+    "createdAt": "2026-11-03T16:08:44.183Z",
+    "updatedAt": "2026-11-03T16:19:08.377Z",
+    "versionCreatedAt": "2026-11-03T16:19:08.377Z"
+  },
+  "personaVersion": 1,
+  "personaVersionId": "6573272e-c56d-48db-866a-e274a6d6cda1",
+  "personaSnapshot": {
+    "name": "Casey · Keyboard access",
+    "description": "A fictional Home v3 persona who needs to complete the booking using only the keyboard.",
+    "label": "Casey · Keyboard access",
+    "role": "Needs keyboard access",
+    "context": "You are arranging the team’s quarterly planning meeting and rely on keyboard navigation. You need to reach and operate each required control without using a mouse or touch.",
+    "mission": "Book a room for 12 people with a projector for the available one-hour meeting slot. Enter the meeting purpose Quarterly planning. Keep the complete cost at or below $350.",
+    "initialKnowledge": "You have not used Gather before. You know the meeting requirements, but have no walkthrough, knowledge of its rooms or prices, or prior reservation.",
+    "knowledge": "You have not used Gather before. You know the meeting requirements, but have no walkthrough, knowledge of its rooms or prices, or prior reservation.",
+    "constraints": "You need seats for all 12 people and a projector. The complete cost, including any fees and equipment, must not exceed $350. Use only the fictional meeting details. Use keyboard navigation and typing only. Do not click coordinates or controls, use touch, select an option through a pointer shortcut, or bypass the visible interface. Type only after establishing keyboard focus.",
+    "skills": "Experienced with Tab navigation, visible focus, Enter and Space activation, arrow keys where supported, and typing into the focused form field.",
+    "decision": "Follow the visible focus through the booking flow and use keyboard activation for controls. If a required control appears unreachable, attempt reasonable keyboard navigation and report the exact observed barrier without assuming a defect in advance.",
+    "resources": "A desktop browser and keyboard, with fictional meeting details. No mouse or touch input, real account, or payment information.",
+    "expectations": "Visible keyboard focus, a sensible focus order, keyboard-operable room selection and forms, and a readable reservation confirmation.",
+    "priorities": "Complete the reservation independently using the keyboard and identify any observed control that prevents that goal.",
+    "successCriteria": "Verify a visible confirmed reservation with the requested meeting purpose, 12 attendees, a projector, and an all-in total within $350. Report any missing or uncertain detail accurately. Reach this outcome through keyboard interaction alone.",
+    "stopCriteria": "Stop after a verified suitable reservation, a supported obstacle after reasonable recovery, an unsafe action, or the session limits. Do not book beyond your budget or claim success without visible evidence.",
+    "continuity": "first-time",
+    "deviceIds": [
+      "device-e826e366b4c48c17912080fe"
+    ],
+    "primaryDeviceId": "device-e826e366b4c48c17912080fe",
+    "networkProfileId": "network-profile-9b304c28cc4c4bd697862841",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "id": "gather-keyboard",
+    "projectId": "gather",
+    "version": 1,
+    "versionId": "6573272e-c56d-48db-866a-e274a6d6cda1",
+    "archived": false,
+    "createdAt": "2026-11-03T04:18:26.268Z",
+    "updatedAt": "2026-11-03T04:18:26.268Z",
+    "versionCreatedAt": "2026-11-03T04:18:26.268Z"
+  },
+  "environmentId": "gather-keyboard-demo",
+  "environmentName": "Keyboard demo · seeded barrier",
+  "environmentVersion": 3,
+  "environmentVersionId": "bf4e981c-8484-419a-b6f2-85ca18299403",
+  "environmentSnapshot": {
+    "name": "Keyboard demo · seeded barrier",
+    "description": "Isolated hackathon fixture with a deliberately seeded keyboard barrier at reservation confirmation. Original Development remains untouched.",
+    "lifecycle": "configured",
+    "url": "http://127.0.0.1:60905/",
+    "allowedOrigins": [
+      "http://127.0.0.1:60905"
+    ],
+    "repositoryPath": "__JL_DEMO_WORKSPACE__/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/rounds/4c822456-a6f0-476e-a7fe-19cea6ed9543/baseline",
+    "baseRef": "",
+    "buildCommand": "",
+    "startCommand": "",
+    "testCommand": "node --check app.js",
+    "healthPath": "",
+    "authStatePath": "",
+    "storageStatePath": "",
+    "dataPolicy": "isolated static preview; fresh browser session",
+    "fixtureVersion": "gather-keyboard-seeded-v1",
+    "isolation": "stateless-demo",
+    "allowMutations": true,
+    "captureBodies": false,
+    "maxSteps": 32,
+    "maxDurationMs": 720000,
+    "maxTokens": 2000000,
+    "redactSelectors": [],
+    "retention": "keep-all",
+    "scenarioId": "gather-booking",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "id": "gather-keyboard-demo",
+    "projectId": "gather",
+    "version": 3,
+    "versionId": "bf4e981c-8484-419a-b6f2-85ca18299403",
+    "archived": false,
+    "createdAt": "2026-11-03T16:08:44.179Z",
+    "updatedAt": "2026-11-03T16:19:08.371Z",
+    "versionCreatedAt": "2026-11-03T16:19:08.371Z",
+    "lastCheck": null
+  },
+  "configuredEnvironment": {
+    "id": "gather-keyboard-demo",
+    "name": "Keyboard demo · seeded barrier",
+    "version": 3,
+    "versionId": "bf4e981c-8484-419a-b6f2-85ca18299403"
+  },
+  "environmentKind": "temporary",
+  "executionInstance": {
+    "id": "preview-a400a3d4-f13a-47bf-bae6-e3cfd3f701d9",
+    "kind": "fix-preview",
+    "environmentId": "gather-keyboard-demo",
+    "environmentVersion": 3,
+    "sourceRunId": "210d2e86-9bd6-4376-8cda-e94c8d60a42c",
+    "comparisonId": "356dda44-6358-436e-b895-35e71833afcf",
+    "variant": "before",
+    "url": "http://127.0.0.1:60905/",
+    "repositoryPath": "__JL_DEMO_WORKSPACE__/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/rounds/4c822456-a6f0-476e-a7fe-19cea6ed9543/baseline"
+  },
+  "executionPolicy": {
+    "maxSteps": 32,
+    "maxTokens": 2000000,
+    "maxDurationMs": 720000,
+    "captureBodies": false,
+    "allowMutations": true
+  },
+  "memorySnapshotId": "59c910e7-6ad3-4c99-a783-a30419dea249",
+  "memorySnapshot": {
+    "id": "59c910e7-6ad3-4c99-a783-a30419dea249",
+    "projectId": "gather",
+    "createdAt": "2026-11-03T16:19:08.394Z",
+    "roles": {
+      "operational": [],
+      "evaluator": [],
+      "persona": []
+    },
+    "pendingBuild": {
+      "operational": [],
+      "evaluator": [],
+      "persona": []
+    },
+    "buildResolved": true,
+    "excluded": [],
+    "flowContext": {
+      "inventoryVersion": null,
+      "inventoryVersionId": null,
+      "charterFlows": [],
+      "flows": [],
+      "screens": [],
+      "reason": "flow_inventory_not_defined"
+    },
+    "policy": {
+      "memoryPolicy": "none",
+      "continuity": "first-time",
+      "minConfidence": 0.65
+    },
+    "environment": {
+      "id": "gather-keyboard-demo",
+      "version": 3,
+      "buildId": "source:953a0bbff014f4f76fc18e24dddad2eef2f98dcbf5e7be927d0815e93380d9a8"
+    },
+    "personaId": "gather-keyboard",
+    "sourceSnapshotId": "599c6871-0079-4ec6-809b-510aa6b2f210"
+  },
+  "memoryReferenceUrl": "http://127.0.0.1:60140/",
+  "memoryLearnings": [
+    {
+      "audience": "persona",
+      "confidence": 0.95,
+      "confidenceBasis": "Screenshots 16 and 18 directly show Atlas details and the resulting summary after Enter activation in this run.",
+      "content": "On the landing page, Atlas is listed at $280 all-in for 1 hr 10:00-11:00 with projector, shows '12 seats', and its 'Choose Atlas' button can be Tab-focused and activated with Enter to open the 'Your meeting' step.",
+      "kind": "navigation",
+      "name": "Atlas keyboard selection",
+      "polarity": "affirm",
+      "scope": {
+        "flows": [
+          "room selection",
+          "booking"
+        ],
+        "screenPatterns": [
+          "landing page room cards",
+          "Your meeting step"
+        ]
+      },
+      "sources": [
+        {
+          "eventIndex": 16
+        },
+        {
+          "eventIndex": 18
+        }
+      ],
+      "subject": "Atlas room selection by keyboard",
+      "value": "Tab-focused 'Choose Atlas' + Enter opens meeting details; Atlas is $280 all-in, 12 seats, projector included"
+    },
+    {
+      "audience": "persona",
+      "confidence": 0.9,
+      "confidenceBasis": "Screenshots 28 and 30 show the field focused before typing and containing the exact text after typing.",
+      "content": "On the 'Your meeting' step, Tab order reaches the Meeting name field after 'Choose another room'; typing 'Quarterly planning' there and Tabbing once focuses 'Review booking'.",
+      "kind": "navigation",
+      "name": "Meeting name entry tab order",
+      "polarity": "affirm",
+      "scope": {
+        "flows": [
+          "meeting details",
+          "booking"
+        ],
+        "screenPatterns": [
+          "Your meeting step"
+        ]
+      },
+      "sources": [
+        {
+          "eventIndex": 28
+        },
+        {
+          "eventIndex": 30
+        },
+        {
+          "eventIndex": 32
+        }
+      ],
+      "subject": "Meeting name field keyboard entry",
+      "value": "Meeting name field is Tab-reachable and accepts typed text; next Tab focuses Review booking"
+    },
+    {
+      "audience": "persona",
+      "confidence": 0.85,
+      "confidenceBasis": "One full forward cycle (36-50), a reverse Tab landing on Edit (52), and a repeated Tab-from-Edit plus Space scroll test (54-56) all pointed the same way; pointer behavior was not tested.",
+      "content": "On the Review page, the observed Tab cycle is Gather logo, Our spaces, My reservations, Choose another room, Edit meeting name, then no visible focus before returning to the logo; 'Confirm reservation' was not visibly focused, Shift+Tab from the logo landed on 'Edit meeting name', and Enter/Space at the post-Edit position did not confirm.",
+      "kind": "navigation",
+      "name": "Review page Confirm tab reachability",
+      "polarity": "deny",
+      "scope": {
+        "flows": [
+          "review",
+          "booking confirmation"
+        ],
+        "screenPatterns": [
+          "Review step - Ready when you are"
+        ]
+      },
+      "sources": [
+        {
+          "eventIndex": 44
+        },
+        {
+          "eventIndex": 46
+        },
+        {
+          "eventIndex": 50
+        },
+        {
+          "eventIndex": 52
+        },
+        {
+          "eventIndex": 56
+        }
+      ],
+      "subject": "Confirm reservation Tab reachability on Review page",
+      "value": "Not reached by forward Tab, Shift+Tab, Enter, or Space in the observed cycle"
+    }
+  ],
+  "memoryPublicationSummary": {
+    "published": 0,
+    "failed": 3
+  },
+  "findings": [
+    {
+      "title": "Confirm reservation is not reachable in the Review page Tab order",
+      "type": "broken",
+      "impact": "high",
+      "observation": "On the Review page (screenshot 34), 'Confirm reservation' is visible alongside the correct details. Forward Tab reached 'Edit meeting name' (44), the next Tab showed no visible focus anywhere (46, repeated at 54), Enter at that position left the page unchanged (48), the next Tab cycled back to the Gather logo (50), Shift+Tab from the logo landed on 'Edit meeting name' rather than 'Confirm reservation' (52), and Space at the no-focus position only scrolled the page down (56).",
+      "expected": "The required 'Confirm reservation' control should receive visible keyboard focus in Tab order and activate with Enter or Space.",
+      "expectedSource": "Saved charter expected behavior: 'Required booking controls should receive keyboard focus and activate with standard keys' for this keyboard-only persona.",
+      "personaComment": "I got all the way to the final button with the keyboard, but I could not land on Confirm or activate it — that stopped my booking.",
+      "interpretation": "This is a keyboard-specific blocker at the final step: earlier room selection, text entry, and review were keyboard-operable, but the reservation cannot be completed without a pointer because the final confirmation control is outside the observed Tab order.",
+      "uncertainty": "I did not use a pointer to test whether the control works by click, per the keyboard-only charter, so pointer behavior is untested. Focus could theoretically be on a hidden element at the no-outline position, but neither Enter nor Space activated confirmation from there.",
+      "evidence_indices": [
+        34,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56
+      ],
+      "evidence": [
+        {
+          "index": 34,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-034.png"
+        },
+        {
+          "index": 44,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-044.png"
+        },
+        {
+          "index": 46,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-046.png"
+        },
+        {
+          "index": 48,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-048.png"
+        },
+        {
+          "index": 50,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-050.png"
+        },
+        {
+          "index": 52,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-052.png"
+        },
+        {
+          "index": 54,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-054.png"
+        },
+        {
+          "index": 56,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-056.png"
+        }
+      ]
+    },
+    {
+      "title": "Keyboard flow worked through room choice, name entry, and review",
+      "type": "experience",
+      "impact": "informational",
+      "observation": "The keyboard path worked until the final step: 'Choose Atlas' received visible focus and Enter opened the meeting step (16), the Meeting name field received visible focus and accepted 'Quarterly planning' (28, 30), 'Review booking' received visible focus and Enter opened Review (32), and Review correctly restated Quarterly planning, 12 people, projector included, and $280 total (34).",
+      "expected": "Room selection, meeting-name entry, and review should be keyboard-operable with visible focus.",
+      "expectedSource": "Saved charter expected behavior: visible keyboard focus, sensible focus order, and keyboard-operable room selection and forms.",
+      "personaComment": "Everything up to the review felt doable by keyboard — the focus was clear and Enter worked — which made the final unreachable button especially frustrating.",
+      "interpretation": "The barrier is specific to the final confirmation step rather than the whole flow; fixing that one control's focusability would make the observed path completable by keyboard.",
+      "uncertainty": "Only the Atlas path was tested; Willow and the 'Change' meeting controls were passed by but not operated.",
+      "evidence_indices": [
+        16,
+        28,
+        30,
+        32,
+        34
+      ],
+      "evidence": [
+        {
+          "index": 16,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-016.png"
+        },
+        {
+          "index": 28,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-028.png"
+        },
+        {
+          "index": 30,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-030.png"
+        },
+        {
+          "index": 32,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-032.png"
+        },
+        {
+          "index": 34,
+          "screenshot": "/runs/a400a3d4-f13a-47bf-bae6-e3cfd3f701d9/screen-034.png"
+        }
+      ]
+    }
+  ],
+  "capturePolicy": {
+    "video": true,
+    "screenshots": true,
+    "consoleErrors": true,
+    "networkMetadata": true,
+    "bodies": false,
+    "redacted": true
+  },
+  "sourceIdentity": {
+    "status": "source_recorded",
+    "deploymentMatch": "unverified"
+  },
+  "modelRequests": [
+    {
+      "id": "40725bdd-0654-4716-aecd-4d4fa5b402d8",
+      "providerResponseId": "resp_6aea0aa4d306b2fd78474e12",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:24:00.287Z",
+      "completedAt": "2026-11-03T16:24:04.263Z",
+      "usage": {
+        "input_tokens": 8743,
+        "input_tokens_details": {
+          "cached_tokens": 628
+        },
+        "output_tokens": 440,
+        "output_tokens_details": {
+          "reasoning_tokens": 183
+        },
+        "total_tokens": 9183
+      },
+      "budget": {
+        "inputEstimate": 34173,
+        "textBytes": 30077,
+        "imageCount": 1,
+        "imageAllowance": 4096,
+        "estimateMethod": "full",
+        "actualUsed": 0,
+        "remaining": 2000000,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "ec0036d1-805a-49cb-afac-75a4b59e6f15",
+      "providerResponseId": "resp_6aea0aa7dc68e31d9ef144b5",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:24:04.666Z",
+      "completedAt": "2026-11-03T16:24:07.277Z",
+      "usage": {
+        "input_tokens": 10986,
+        "input_tokens_details": {
+          "cached_tokens": 628
+        },
+        "output_tokens": 214,
+        "output_tokens_details": {
+          "reasoning_tokens": 14
+        },
+        "total_tokens": 11200
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 18799,
+        "priorInputTokens": 8743,
+        "deltaTextBytes": 4616,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 5,
+        "margin": 1344,
+        "actualUsed": 9183,
+        "remaining": 1990817,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "d4b22d18-a11b-49fb-9d71-a5dc97fd08b2",
+      "providerResponseId": "resp_6aea0aaac39a42a8e6814926",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:24:07.667Z",
+      "completedAt": "2026-11-03T16:24:10.836Z",
+      "usage": {
+        "input_tokens": 13003,
+        "input_tokens_details": {
+          "cached_tokens": 8692
+        },
+        "output_tokens": 200,
+        "output_tokens_details": {
+          "reasoning_tokens": 7
+        },
+        "total_tokens": 13203
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 19350,
+        "priorInputTokens": 10986,
+        "deltaTextBytes": 2913,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 1355,
+        "actualUsed": 20383,
+        "remaining": 1979617,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "8b5e6262-3e93-46cb-9cd0-31ecfacc8283",
+      "providerResponseId": "resp_6aea0aae0fc593c7a7ae42ae",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:24:11.230Z",
+      "completedAt": "2026-11-03T16:24:14.280Z",
+      "usage": {
+        "input_tokens": 15006,
+        "input_tokens_details": {
+          "cached_tokens": 8692
+        },
+        "output_tokens": 208,
+        "output_tokens_details": {
+          "reasoning_tokens": 12
+        },
+        "total_tokens": 15214
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 21536,
+        "priorInputTokens": 13003,
+        "deltaTextBytes": 2880,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 1557,
+        "actualUsed": 33586,
+        "remaining": 1966414,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "19db9d9d-0400-44fd-996e-7fb6e8a94f59",
+      "providerResponseId": "resp_6aea0ab208bf3263e5f94719",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:24:14.676Z",
+      "completedAt": "2026-11-03T16:24:18.524Z",
+      "usage": {
+        "input_tokens": 17017,
+        "input_tokens_details": {
+          "cached_tokens": 10868
+        },
+        "output_tokens": 353,
+        "output_tokens_details": {
+          "reasoning_tokens": 95
+        },
+        "total_tokens": 17370
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 23745,
+        "priorInputTokens": 15006,
+        "deltaTextBytes": 2886,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 1757,
+        "actualUsed": 48800,
+        "remaining": 1951200,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "e6893b10-f7d2-46a0-94cc-0e57a1b8f7dc",
+      "providerResponseId": "resp_6aea0ab63c9f36c768ea4677",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:24:18.917Z",
+      "completedAt": "2026-11-03T16:24:22.504Z",
+      "usage": {
+        "input_tokens": 19173,
+        "input_tokens_details": {
+          "cached_tokens": 12916
+        },
+        "output_tokens": 290,
+        "output_tokens_details": {
+          "reasoning_tokens": 30
+        },
+        "total_tokens": 19463
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 26271,
+        "priorInputTokens": 17017,
+        "deltaTextBytes": 3200,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 1958,
+        "actualUsed": 66170,
+        "remaining": 1933830,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "94d2867a-852b-44cd-bf27-d79ef98f9e94",
+      "providerResponseId": "resp_6aea0abb61b2db57c9c34cba",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:24:22.898Z",
+      "completedAt": "2026-11-03T16:24:27.287Z",
+      "usage": {
+        "input_tokens": 21266,
+        "input_tokens_details": {
+          "cached_tokens": 14964
+        },
+        "output_tokens": 382,
+        "output_tokens_details": {
+          "reasoning_tokens": 92
+        },
+        "total_tokens": 21648
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 28742,
+        "priorInputTokens": 19173,
+        "deltaTextBytes": 3235,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 5,
+        "margin": 2238,
+        "actualUsed": 85633,
+        "remaining": 1914367,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "79c5d3b8-2201-4121-8f14-1867e02ac18c",
+      "providerResponseId": "resp_6aea0ac183603572ba8a47e8",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:24:27.703Z",
+      "completedAt": "2026-11-03T16:24:33.927Z",
+      "usage": {
+        "input_tokens": 23451,
+        "input_tokens_details": {
+          "cached_tokens": 17012
+        },
+        "output_tokens": 335,
+        "output_tokens_details": {
+          "reasoning_tokens": 98
+        },
+        "total_tokens": 23786
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 31013,
+        "priorInputTokens": 21266,
+        "deltaTextBytes": 3268,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 2383,
+        "actualUsed": 107281,
+        "remaining": 1892719,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "4833cbf1-1536-481f-a50a-945533fe9214",
+      "providerResponseId": "resp_6aea0ac5e3db4deb8e314695",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:24:34.347Z",
+      "completedAt": "2026-11-03T16:24:37.446Z",
+      "usage": {
+        "input_tokens": 25589,
+        "input_tokens_details": {
+          "cached_tokens": 21236
+        },
+        "output_tokens": 256,
+        "output_tokens_details": {
+          "reasoning_tokens": 58
+        },
+        "total_tokens": 25845
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 33210,
+        "priorInputTokens": 23451,
+        "deltaTextBytes": 3061,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 2602,
+        "actualUsed": 131067,
+        "remaining": 1868933,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "dd626957-e30c-496a-b055-da041ee64c97",
+      "providerResponseId": "resp_6aea0ac981b3d2dd4ba9498e",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:24:37.855Z",
+      "completedAt": "2026-11-03T16:24:41.522Z",
+      "usage": {
+        "input_tokens": 27648,
+        "input_tokens_details": {
+          "cached_tokens": 23412
+        },
+        "output_tokens": 196,
+        "output_tokens_details": {
+          "reasoning_tokens": 5
+        },
+        "total_tokens": 27844
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 35410,
+        "priorInputTokens": 25589,
+        "deltaTextBytes": 2910,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 2815,
+        "actualUsed": 156912,
+        "remaining": 1843088,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "ac13f0e9-f34d-4760-b62d-070acaed4d02",
+      "providerResponseId": "resp_6aea0acbc254ce5df6594ec8",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:24:41.924Z",
+      "completedAt": "2026-11-03T16:24:43.545Z",
+      "usage": {
+        "input_tokens": 29647,
+        "input_tokens_details": {
+          "cached_tokens": 25588
+        },
+        "output_tokens": 223,
+        "output_tokens_details": {
+          "reasoning_tokens": 5
+        },
+        "total_tokens": 29870
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 37629,
+        "priorInputTokens": 27648,
+        "deltaTextBytes": 2864,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 3021,
+        "actualUsed": 184756,
+        "remaining": 1815244,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "c8c651a1-bbfc-47f3-b595-e44ebb483da2",
+      "providerResponseId": "resp_6aea0aced81a7db8b1994005",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:24:43.991Z",
+      "completedAt": "2026-11-03T16:24:46.640Z",
+      "usage": {
+        "input_tokens": 31673,
+        "input_tokens_details": {
+          "cached_tokens": 27636
+        },
+        "output_tokens": 208,
+        "output_tokens_details": {
+          "reasoning_tokens": 13
+        },
+        "total_tokens": 31881
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 40123,
+        "priorInputTokens": 29647,
+        "deltaTextBytes": 3095,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 5,
+        "margin": 3285,
+        "actualUsed": 214626,
+        "remaining": 1785374,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "92b17474-24b8-468a-8ac2-25c7ef7315f3",
+      "providerResponseId": "resp_6aea0ad36498e6fd902f450b",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:24:47.042Z",
+      "completedAt": "2026-11-03T16:24:51.553Z",
+      "usage": {
+        "input_tokens": 33684,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 224,
+        "output_tokens_details": {
+          "reasoning_tokens": 25
+        },
+        "total_tokens": 33908
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 42081,
+        "priorInputTokens": 31673,
+        "deltaTextBytes": 2888,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 3424,
+        "actualUsed": 246507,
+        "remaining": 1753493,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "5f7426e6-9bc0-4cb7-893c-50d316318587",
+      "providerResponseId": "resp_6aea0ad7b9cf7d96c2164b4f",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:24:52.641Z",
+      "completedAt": "2026-11-03T16:24:55.562Z",
+      "usage": {
+        "input_tokens": 35709,
+        "input_tokens_details": {
+          "cached_tokens": 19060
+        },
+        "output_tokens": 211,
+        "output_tokens_details": {
+          "reasoning_tokens": 9
+        },
+        "total_tokens": 35920
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 44334,
+        "priorInputTokens": 33684,
+        "deltaTextBytes": 2929,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 3625,
+        "actualUsed": 280415,
+        "remaining": 1719585,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "534fbb07-b777-4e0c-9875-e9cd9c55fb5f",
+      "providerResponseId": "resp_6aea0adb2fadfcd480bb466b",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:24:55.984Z",
+      "completedAt": "2026-11-03T16:24:59.744Z",
+      "usage": {
+        "input_tokens": 37723,
+        "input_tokens_details": {
+          "cached_tokens": 29556
+        },
+        "output_tokens": 236,
+        "output_tokens_details": {
+          "reasoning_tokens": 7
+        },
+        "total_tokens": 37959
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 46561,
+        "priorInputTokens": 35709,
+        "deltaTextBytes": 2929,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 3827,
+        "actualUsed": 316335,
+        "remaining": 1683665,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "c18a868e-e744-4af1-b9d0-9b55f576ddb4",
+      "providerResponseId": "resp_6aea0ae1a8988c0880964c43",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:25:00.147Z",
+      "completedAt": "2026-11-03T16:25:05.504Z",
+      "usage": {
+        "input_tokens": 39762,
+        "input_tokens_details": {
+          "cached_tokens": 31604
+        },
+        "output_tokens": 375,
+        "output_tokens_details": {
+          "reasoning_tokens": 88
+        },
+        "total_tokens": 40137
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 49059,
+        "priorInputTokens": 37723,
+        "deltaTextBytes": 3147,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 5,
+        "margin": 4093,
+        "actualUsed": 354294,
+        "remaining": 1645706,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "e319c323-faf3-48bc-a7a1-f705384f70cd",
+      "providerResponseId": "resp_6aea0ae544e107c759b544ae",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:25:05.912Z",
+      "completedAt": "2026-11-03T16:25:09.276Z",
+      "usage": {
+        "input_tokens": 41940,
+        "input_tokens_details": {
+          "cached_tokens": 37620
+        },
+        "output_tokens": 231,
+        "output_tokens_details": {
+          "reasoning_tokens": 41
+        },
+        "total_tokens": 42171
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 51408,
+        "priorInputTokens": 39762,
+        "deltaTextBytes": 3317,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 4233,
+        "actualUsed": 394431,
+        "remaining": 1605569,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "2d749bcd-d7e6-4adb-b8e9-6f4dee976ca9",
+      "providerResponseId": "resp_6aea0ae7245aca07c9b44c04",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:25:09.677Z",
+      "completedAt": "2026-11-03T16:25:11.501Z",
+      "usage": {
+        "input_tokens": 43974,
+        "input_tokens_details": {
+          "cached_tokens": 39668
+        },
+        "output_tokens": 191,
+        "output_tokens_details": {
+          "reasoning_tokens": 3
+        },
+        "total_tokens": 44165
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 53354,
+        "priorInputTokens": 41940,
+        "deltaTextBytes": 2868,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 4450,
+        "actualUsed": 436602,
+        "remaining": 1563398,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "9ce7fb04-0a38-4634-8b0e-6b897cef369f",
+      "providerResponseId": "resp_6aea0aeac22ab77573c64b4a",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:25:11.907Z",
+      "completedAt": "2026-11-03T16:25:14.350Z",
+      "usage": {
+        "input_tokens": 45968,
+        "input_tokens_details": {
+          "cached_tokens": 41844
+        },
+        "output_tokens": 192,
+        "output_tokens_details": {
+          "reasoning_tokens": 2
+        },
+        "total_tokens": 46160
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 55571,
+        "priorInputTokens": 43974,
+        "deltaTextBytes": 2847,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 4654,
+        "actualUsed": 480767,
+        "remaining": 1519233,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "80b4676f-daee-40ea-8a21-4892635018b8",
+      "providerResponseId": "resp_6aea0aed18be1be5434f46ab",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:25:14.749Z",
+      "completedAt": "2026-11-03T16:25:18.046Z",
+      "usage": {
+        "input_tokens": 47963,
+        "input_tokens_details": {
+          "cached_tokens": 43892
+        },
+        "output_tokens": 221,
+        "output_tokens_details": {
+          "reasoning_tokens": 3
+        },
+        "total_tokens": 48184
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 57788,
+        "priorInputTokens": 45968,
+        "deltaTextBytes": 2871,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 4853,
+        "actualUsed": 526927,
+        "remaining": 1473073,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "c8ecce88-8efc-463d-9fce-92254f188708",
+      "providerResponseId": "resp_6aea0af0cc0ad8ab92ab4274",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:25:18.448Z",
+      "completedAt": "2026-11-03T16:25:21.070Z",
+      "usage": {
+        "input_tokens": 49987,
+        "input_tokens_details": {
+          "cached_tokens": 33652
+        },
+        "output_tokens": 199,
+        "output_tokens_details": {
+          "reasoning_tokens": 3
+        },
+        "total_tokens": 50186
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 60269,
+        "priorInputTokens": 47963,
+        "deltaTextBytes": 3093,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 5,
+        "margin": 5117,
+        "actualUsed": 575111,
+        "remaining": 1424889,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "676d5141-3b8e-4d7d-9f6b-bd9048a3cc76",
+      "providerResponseId": "resp_6aea0af852281c20e49e412e",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:25:21.484Z",
+      "completedAt": "2026-11-03T16:25:28.829Z",
+      "usage": {
+        "input_tokens": 51989,
+        "input_tokens_details": {
+          "cached_tokens": 35700
+        },
+        "output_tokens": 570,
+        "output_tokens_details": {
+          "reasoning_tokens": 303
+        },
+        "total_tokens": 52559
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 62223,
+        "priorInputTokens": 49987,
+        "deltaTextBytes": 2885,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 5255,
+        "actualUsed": 625297,
+        "remaining": 1374703,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "d2ac1f55-d943-46c8-8707-4666bf9c6607",
+      "providerResponseId": "resp_6aea0afef831afc8e4d6450d",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:25:29.277Z",
+      "completedAt": "2026-11-03T16:25:34.976Z",
+      "usage": {
+        "input_tokens": 54362,
+        "input_tokens_details": {
+          "cached_tokens": 45940
+        },
+        "output_tokens": 477,
+        "output_tokens_details": {
+          "reasoning_tokens": 220
+        },
+        "total_tokens": 54839
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 68913,
+        "priorInputTokens": 51989,
+        "deltaTextBytes": 7373,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 5455,
+        "actualUsed": 677856,
+        "remaining": 1322144,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "3e1072bc-4a01-44f3-9a90-0b7996d9d655",
+      "providerResponseId": "resp_6aea0b064b31e7936adf47fa",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:25:35.385Z",
+      "completedAt": "2026-11-03T16:25:42.860Z",
+      "usage": {
+        "input_tokens": 56642,
+        "input_tokens_details": {
+          "cached_tokens": 47860
+        },
+        "output_tokens": 697,
+        "output_tokens_details": {
+          "reasoning_tokens": 482
+        },
+        "total_tokens": 57339
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 68731,
+        "priorInputTokens": 54362,
+        "deltaTextBytes": 4580,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 5693,
+        "actualUsed": 732695,
+        "remaining": 1267305,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "1ec858ac-c23d-4a47-a1ea-e49d210a2d46",
+      "providerResponseId": "resp_6aea0b0deece12c6160f4664",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:25:43.268Z",
+      "completedAt": "2026-11-03T16:25:49.627Z",
+      "usage": {
+        "input_tokens": 59142,
+        "input_tokens_details": {
+          "cached_tokens": 54260
+        },
+        "output_tokens": 707,
+        "output_tokens_details": {
+          "reasoning_tokens": 408
+        },
+        "total_tokens": 59849
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 73744,
+        "priorInputTokens": 56642,
+        "deltaTextBytes": 7085,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 5921,
+        "actualUsed": 790034,
+        "remaining": 1209966,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "e1df2bc6-3cf9-4be2-a828-cb25daff566d",
+      "providerResponseId": "resp_6aea0b107b26151a3a8e4255",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:25:50.039Z",
+      "completedAt": "2026-11-03T16:25:52.793Z",
+      "usage": {
+        "input_tokens": 61652,
+        "input_tokens_details": {
+          "cached_tokens": 51956
+        },
+        "output_tokens": 230,
+        "output_tokens_details": {
+          "reasoning_tokens": 25
+        },
+        "total_tokens": 61882
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 77048,
+        "priorInputTokens": 59142,
+        "deltaTextBytes": 7575,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 5,
+        "margin": 6235,
+        "actualUsed": 849883,
+        "remaining": 1150117,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "2bc8e3e7-0099-44b6-9bff-c611caa0c83a",
+      "providerResponseId": "resp_6aea0b232cf0342d64654572",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:25:53.218Z",
+      "completedAt": "2026-11-03T16:26:11.819Z",
+      "usage": {
+        "input_tokens": 63685,
+        "input_tokens_details": {
+          "cached_tokens": 49908
+        },
+        "output_tokens": 2634,
+        "output_tokens_details": {
+          "reasoning_tokens": 889
+        },
+        "total_tokens": 66319
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 75124,
+        "priorInputTokens": 61652,
+        "deltaTextBytes": 2954,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 6422,
+        "actualUsed": 911765,
+        "remaining": 1088235,
+        "tokenLimit": 2000000,
+        "maxOutput": 4096
+      }
+    }
+  ]
+}

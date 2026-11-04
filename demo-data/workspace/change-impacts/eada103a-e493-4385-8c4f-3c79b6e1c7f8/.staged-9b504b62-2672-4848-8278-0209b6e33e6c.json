@@ -1,0 +1,80 @@
+{
+  "id": "eada103a-e493-4385-8c4f-3c79b6e1c7f8",
+  "projectId": "gather",
+  "title": "Quick booking. Six perspectives.",
+  "intent": "Reduce the steps between finding a room and confirming a reservation. Evaluate the effect on both the executive assistant and budget-constrained coordinator.",
+  "kind": "local_proposal",
+  "provider": "not_connected",
+  "origin": {
+    "kind": "local_change",
+    "state": "proposed",
+    "provider": null,
+    "repository": null,
+    "number": null,
+    "url": null,
+    "createdAt": null,
+    "mergedAt": null,
+    "provenance": "local_record",
+    "baseRef": null,
+    "headRef": null,
+    "baseSha": null,
+    "headSha": null,
+    "mergeSha": null
+  },
+  "changeSummary": "Quick booking skips planning, shows room-only prices, and clears the meeting name when returning to room selection.",
+  "changes": [
+    "Choose a room directly from the home page without the separate meeting-requirements step.",
+    "Room cards show hourly room rates; projector and service charges appear in the review total.",
+    "Returning from meeting details or review to the room list clears the entered meeting name."
+  ],
+  "version": 1,
+  "createdAt": "2026-11-04T15:30:00.765Z",
+  "updatedAt": "2026-11-04T15:30:00.765Z",
+  "baseline": {
+    "label": "Current",
+    "environmentId": "gather-base",
+    "environmentVersion": 3,
+    "sourceHash": "source:dac27ffdf2ded3a1c5b0b80497036f817207cdfdca3fa6692855a23f59d1be5d"
+  },
+  "proposal": {
+    "label": "Quick booking",
+    "environmentId": "gather-proposal",
+    "environmentVersion": 1,
+    "sourceHash": "source:9dc63be142cef0dd9a1a649220bf65fc5ee3e73bb53577b0eb68168a6933420d"
+  },
+  "personas": [
+    {
+      "personaId": "gather-coordinator",
+      "baselineRunId": "6fdc38ca-f3d8-4e80-8c28-052cfdbb189b",
+      "proposalRunId": "c3b29b13-a6b2-4561-8bb1-2cd20706a231"
+    },
+    {
+      "personaId": "gather-assistant",
+      "baselineRunId": "b77e3088-4b4e-4ff5-8c5c-f54aefdc0e25",
+      "proposalRunId": "65956068-99ba-4207-8397-a13b9c36d42e"
+    },
+    {
+      "personaId": "gather-first-time",
+      "baselineRunId": "92b5f057-26d6-4f6f-b9e2-8acb78b5e50c",
+      "proposalRunId": "8e326afc-9c08-4a29-afd2-aefc6973ac17"
+    },
+    {
+      "personaId": "gather-slow-mobile",
+      "baselineRunId": "8ed4e2b3-c4ad-437b-8946-55b28a852d42",
+      "proposalRunId": "c08d574a-f1da-4659-a5da-7b91312660ed"
+    },
+    {
+      "personaId": "gather-keyboard",
+      "baselineRunId": "b77bb9cb-89de-49cc-8504-5a80fe3cc3ef",
+      "proposalRunId": "cbfa585c-3a1d-47af-af03-ea9d20a912ec"
+    },
+    {
+      "personaId": "gather-second-language",
+      "baselineRunId": "a1b064cb-d454-4409-b850-7029d2812fba",
+      "proposalRunId": "73440d3e-3cb7-40d6-989a-e74d6d20ed42"
+    }
+  ],
+  "fixId": null,
+  "roundId": null,
+  "comparisonId": null
+}

@@ -1,0 +1,1202 @@
+{
+  "id": "3a991669-d607-4f6f-bb7e-44ca57c65262",
+  "status": "finished",
+  "createdAt": "2026-11-03T16:16:45.770Z",
+  "startedAt": "2026-11-03T16:16:45.772Z",
+  "completedAt": "2026-11-03T16:17:27.815Z",
+  "events": [
+    {
+      "index": 0,
+      "at": "2026-11-03T16:16:46.175Z",
+      "type": "network",
+      "method": "GET",
+      "url": "http://127.0.0.1:60401/",
+      "status": 200,
+      "resourceType": "document"
+    },
+    {
+      "index": 1,
+      "at": "2026-11-03T16:16:46.183Z",
+      "type": "network",
+      "method": "GET",
+      "url": "http://127.0.0.1:60401/styles.css",
+      "status": 200,
+      "resourceType": "stylesheet"
+    },
+    {
+      "index": 2,
+      "at": "2026-11-03T16:16:46.184Z",
+      "type": "network",
+      "method": "GET",
+      "url": "http://127.0.0.1:60401/app.js",
+      "status": 200,
+      "resourceType": "script"
+    },
+    {
+      "index": 3,
+      "at": "2026-11-03T16:16:48.300Z",
+      "type": "screenshot",
+      "label": "Tela inicial",
+      "url": "http://127.0.0.1:60401/",
+      "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-003.png",
+      "videoMs": 2094,
+      "replayMs": 81
+    },
+    {
+      "index": 4,
+      "at": "2026-11-03T16:16:55.827Z",
+      "type": "action",
+      "action": {
+        "type": "click_control",
+        "label": "Choose Willow"
+      },
+      "modelCoordinates": null,
+      "click": {
+        "method": "named_control",
+        "inputMethod": "mouse",
+        "requestedLabel": "Choose Willow",
+        "x": 1200.6875,
+        "y": 976.515625,
+        "target": {
+          "label": "Choose Willow",
+          "tag": "button",
+          "bounds": {
+            "x": 1131.375,
+            "y": 957.939208984375,
+            "width": 138.625,
+            "height": 36
+          }
+        }
+      },
+      "url": "http://127.0.0.1:60401/",
+      "videoMs": 9620,
+      "replayMs": 2316
+    },
+    {
+      "index": 5,
+      "at": "2026-11-03T16:16:55.855Z",
+      "type": "screenshot",
+      "label": "Após click_control",
+      "url": "http://127.0.0.1:60401/",
+      "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-005.png",
+      "videoMs": 9648,
+      "replayMs": 2344
+    },
+    {
+      "index": 6,
+      "at": "2026-11-03T16:17:00.670Z",
+      "type": "action",
+      "action": {
+        "type": "click_control",
+        "label": "e.g. Quarterly planning"
+      },
+      "modelCoordinates": null,
+      "click": {
+        "method": "named_control",
+        "inputMethod": "mouse",
+        "requestedLabel": "e.g. Quarterly planning",
+        "x": 498.75,
+        "y": 460.28125,
+        "target": {
+          "label": "Meeting name",
+          "tag": "input",
+          "bounds": {
+            "x": 177,
+            "y": 436.78125,
+            "width": 643.5,
+            "height": 47
+          }
+        }
+      },
+      "url": "http://127.0.0.1:60401/",
+      "videoMs": 14464,
+      "replayMs": 4596
+    },
+    {
+      "index": 7,
+      "at": "2026-11-03T16:17:00.705Z",
+      "type": "screenshot",
+      "label": "Após click_control",
+      "url": "http://127.0.0.1:60401/",
+      "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-007.png",
+      "videoMs": 14498,
+      "replayMs": 4630
+    },
+    {
+      "index": 8,
+      "at": "2026-11-03T16:17:03.632Z",
+      "type": "action",
+      "action": {
+        "type": "type",
+        "text": "Quarterly planning"
+      },
+      "modelCoordinates": null,
+      "inputContext": {
+        "label": "Meeting name",
+        "tag": "input",
+        "inputType": "text",
+        "sensitive": false,
+        "visible": true
+      },
+      "url": "http://127.0.0.1:60401/",
+      "videoMs": 17425,
+      "replayMs": 7172
+    },
+    {
+      "index": 9,
+      "at": "2026-11-03T16:17:03.676Z",
+      "type": "screenshot",
+      "label": "Após type",
+      "url": "http://127.0.0.1:60401/",
+      "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-009.png",
+      "videoMs": 17469,
+      "replayMs": 7216
+    },
+    {
+      "index": 10,
+      "at": "2026-11-03T16:17:05.803Z",
+      "type": "action",
+      "action": {
+        "type": "click_control",
+        "label": "Review booking"
+      },
+      "modelCoordinates": null,
+      "click": {
+        "method": "named_control",
+        "inputMethod": "mouse",
+        "requestedLabel": "Review booking",
+        "x": 738.3515625,
+        "y": 555.78125,
+        "target": {
+          "label": "Review booking",
+          "tag": "button",
+          "bounds": {
+            "x": 656.203125,
+            "y": 533.93408203125,
+            "width": 164.296875,
+            "height": 43
+          }
+        }
+      },
+      "url": "http://127.0.0.1:60401/",
+      "videoMs": 19596,
+      "replayMs": 9343
+    },
+    {
+      "index": 11,
+      "at": "2026-11-03T16:17:05.839Z",
+      "type": "screenshot",
+      "label": "Após click_control",
+      "url": "http://127.0.0.1:60401/",
+      "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-011.png",
+      "videoMs": 19632,
+      "replayMs": 9379
+    },
+    {
+      "index": 12,
+      "at": "2026-11-03T16:17:10.501Z",
+      "type": "action",
+      "action": {
+        "type": "click_control",
+        "label": "Confirm reservation"
+      },
+      "modelCoordinates": null,
+      "click": {
+        "method": "named_control",
+        "inputMethod": "mouse",
+        "requestedLabel": "Confirm reservation",
+        "x": 725.7890625,
+        "y": 547.21875,
+        "target": {
+          "label": "Confirm reservation",
+          "tag": "button",
+          "bounds": {
+            "x": 631.078125,
+            "y": 525.71875,
+            "width": 189.421875,
+            "height": 43
+          }
+        }
+      },
+      "url": "http://127.0.0.1:60401/",
+      "videoMs": 24295,
+      "replayMs": 11263
+    },
+    {
+      "index": 13,
+      "at": "2026-11-03T16:17:10.532Z",
+      "type": "screenshot",
+      "label": "Após click_control",
+      "url": "http://127.0.0.1:60401/",
+      "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-013.png",
+      "videoMs": 24326,
+      "replayMs": 11294
+    },
+    {
+      "index": 14,
+      "at": "2026-11-03T16:17:24.169Z",
+      "type": "model_summary",
+      "text": "Objetivo observado\n\nObservação: A confirmed Willow reservation is visible: Meeting 'Quarterly planning', Tomorrow 10:00–11:00, 12 people, Projector Included, Reservation total $245 All charges included · CAD, with status Confirmed.\n\nInterpretação simulada: Willow satisfied every stated constraint: it seats the 12 attendees, includes the projector, uses the available one-hour slot, carries the requested Quarterly planning purpose, and its confirmed all-in total of $245 CAD is within the $250 limit. Atlas was unsuitable only because its $280 total exceeded that limit.\n\nLimites: This was a demo reservation saved only in this browser session with no payment taken, as stated on screen. Verification is limited to the visible confirmation for the Tomorrow 10:00–11:00 slot; no external calendar or payment record was checked.\n\nCapturas indicadas: #3, #5, #11, #13. A correspondência com a evidência requer revisão humana.",
+      "evidence": [
+        {
+          "index": 3,
+          "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-003.png"
+        },
+        {
+          "index": 5,
+          "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-005.png"
+        },
+        {
+          "index": 11,
+          "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-011.png"
+        },
+        {
+          "index": 13,
+          "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-013.png"
+        }
+      ],
+      "interpretation": "Relato do modelo; capturas e conclusões exigem revisão humana.",
+      "videoMs": 37963
+    }
+  ],
+  "finalMessage": "Objetivo observado\n\nObservação: A confirmed Willow reservation is visible: Meeting 'Quarterly planning', Tomorrow 10:00–11:00, 12 people, Projector Included, Reservation total $245 All charges included · CAD, with status Confirmed.\n\nInterpretação simulada: Willow satisfied every stated constraint: it seats the 12 attendees, includes the projector, uses the available one-hour slot, carries the requested Quarterly planning purpose, and its confirmed all-in total of $245 CAD is within the $250 limit. Atlas was unsuitable only because its $280 total exceeded that limit.\n\nLimites: This was a demo reservation saved only in this browser session with no payment taken, as stated on screen. Verification is limited to the visible confirmation for the Tomorrow 10:00–11:00 slot; no external calendar or payment record was checked.\n\nCapturas indicadas: #3, #5, #11, #13. A correspondência com a evidência requer revisão humana.",
+  "finding": {
+    "evidence_indices": [
+      3,
+      5,
+      11,
+      13
+    ],
+    "findings": [
+      {
+        "title": "All-in pricing made the budget-compliant room identifiable",
+        "type": "experience",
+        "impact": "informational",
+        "observation": "The listing showed Atlas at $280 all-in for 12 seats with projector, and Willow at $245 all-in for 12 seats with projector. Willow's breakdown was $235 room rate, $0 projector, and $10 service fee for Tomorrow 10:00–11:00.",
+        "expected": "A room for 12 people with a projector for the one-hour slot must have an all-in total at or below $250.",
+        "expectedSource": "Persona's explicit meeting requirements and budget in the saved charter; prices shown on the room listing.",
+        "personaComment": "Seeing both complete totals side by side made it clear Willow was the only one I could afford.",
+        "interpretation": "Clear all-in pricing helped Maya avoid Atlas, which would have exceeded her strict budget, and select a compliant alternative without hidden-cost uncertainty.",
+        "uncertainty": "Prices were observed only for the displayed Tomorrow 10:00–11:00 slot in this demo session.",
+        "evidence_indices": [
+          3
+        ],
+        "evidence": [
+          {
+            "index": 3,
+            "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-003.png"
+          }
+        ]
+      },
+      {
+        "title": "Confirmed Willow reservation matches all stated requirements",
+        "type": "experience",
+        "impact": "informational",
+        "observation": "The review showed Meeting name 'Quarterly planning', seating for 12, projector included, Willow Tomorrow 10:00–11:00, and $245 total. The confirmation then stated 'Quarterly planning is booked at Willow', Confirmed, 12 people, Projector Included, and Reservation total $245, All charges included · CAD.",
+        "expected": "The review and confirmation should preserve the entered meeting purpose and show the chosen room, 12 people, projector, time, and all-in total.",
+        "expectedSource": "Persona's explicit requirements and the product-visible review promise 'Review the details, then make it a meeting.'",
+        "personaComment": "The final confirmation matches exactly what I needed, so I do not have to guess whether it saved correctly.",
+        "interpretation": "Preserving and restating the details at review and confirmation reduced the risk of confirming the wrong meeting or an over-budget total.",
+        "uncertainty": "The footer states this is a demo venue and reservations are saved only in this browser session; no real payment was taken.",
+        "evidence_indices": [
+          11,
+          13
+        ],
+        "evidence": [
+          {
+            "index": 11,
+            "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-011.png"
+          },
+          {
+            "index": 13,
+            "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-013.png"
+          }
+        ]
+      }
+    ],
+    "interpretation": "Willow satisfied every stated constraint: it seats the 12 attendees, includes the projector, uses the available one-hour slot, carries the requested Quarterly planning purpose, and its confirmed all-in total of $245 CAD is within the $250 limit. Atlas was unsuitable only because its $280 total exceeded that limit.",
+    "learnings": [
+      {
+        "audience": "evaluator",
+        "confidence": 0.98,
+        "confidenceBasis": "The room listing, details summary, review, and confirmation all consistently show Willow at $245 with the same breakdown across screenshots 3, 5, 11, and 13.",
+        "content": "Willow was shown for Tomorrow 10:00–11:00 with 12 seats/people and projector included, priced at $235 room + $0 projector + $10 service fee = $245 all-in CAD.",
+        "kind": "expected_behavior",
+        "name": "Willow one-hour price and fit",
+        "polarity": "affirm",
+        "scope": {
+          "flows": [
+            "Book a room"
+          ],
+          "screenPatterns": [
+            "Gather room listing",
+            "Willow booking details and review",
+            "Reservation confirmation"
+          ]
+        },
+        "sources": [
+          {
+            "eventIndex": 3
+          },
+          {
+            "eventIndex": 5
+          },
+          {
+            "eventIndex": 13
+          }
+        ],
+        "subject": "Willow room capacity, projector, and all-in total",
+        "value": "12 people, projector included, $245 all-in CAD for 1 hour"
+      },
+      {
+        "audience": "persona",
+        "confidence": 0.97,
+        "confidenceBasis": "The sequence was directly observed: Choose Willow led to the meeting-name form, Review booking led to the review, and Confirm reservation led to the confirmation in screenshots 3, 5, 11, and 13.",
+        "content": "In this Gather flow, choosing a room leads to a Meeting name field, then Review booking, then Confirm reservation, after which a Confirmed reservation summary is shown.",
+        "kind": "navigation",
+        "name": "Gather booking flow sequence",
+        "polarity": "affirm",
+        "scope": {
+          "flows": [
+            "Book a room"
+          ],
+          "screenPatterns": [
+            "Room listing",
+            "Your meeting form",
+            "Review page",
+            "Confirmation page"
+          ]
+        },
+        "sources": [
+          {
+            "eventIndex": 3
+          },
+          {
+            "eventIndex": 5
+          },
+          {
+            "eventIndex": 11
+          },
+          {
+            "eventIndex": 13
+          }
+        ],
+        "subject": "Gather room booking navigation",
+        "value": "Choose room -> enter meeting name -> Review booking -> Confirm reservation -> Confirmed summary"
+      }
+    ],
+    "observation": "A confirmed Willow reservation is visible: Meeting 'Quarterly planning', Tomorrow 10:00–11:00, 12 people, Projector Included, Reservation total $245 All charges included · CAD, with status Confirmed.",
+    "outcome": "goal_reached",
+    "uncertainty": "This was a demo reservation saved only in this browser session with no payment taken, as stated on screen. Verification is limited to the visible confirmation for the Tomorrow 10:00–11:00 slot; no external calendar or payment record was checked.",
+    "evidence": [
+      {
+        "index": 3,
+        "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-003.png"
+      },
+      {
+        "index": 5,
+        "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-005.png"
+      },
+      {
+        "index": 11,
+        "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-011.png"
+      },
+      {
+        "index": 13,
+        "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-013.png"
+      }
+    ]
+  },
+  "error": null,
+  "video": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/journey.webm",
+  "persona": {
+    "name": "Maya · Office coordinator",
+    "description": "",
+    "label": "Maya · Office coordinator",
+    "role": "client",
+    "context": "You organize the team’s quarterly planning meeting. The approved room budget is strict and you are accountable for the complete amount, including equipment and fees.",
+    "mission": "Book a room for 12 people with a projector for the available one-hour meeting slot. Enter the meeting purpose Quarterly planning. Keep the complete cost at or below $250.",
+    "initialKnowledge": "You have not used Gather before. You know your meeting requirements and can use ordinary room-booking websites.",
+    "knowledge": "You have not used Gather before. You know your meeting requirements and can use ordinary room-booking websites.",
+    "constraints": "Total spending must not exceed $250. You cannot increase the budget. You need seats for all 12 people and a projector.",
+    "skills": "Comfortable with ordinary web forms, room descriptions and checking a booking summary.",
+    "decision": "Choose a suitable room based on the full cost and requirements you can establish from the interface.",
+    "resources": "Desktop browser and fictional meeting details; no real payment information.",
+    "expectations": "You expect to understand what you are paying and keep the details you have already entered when changing a choice.",
+    "priorities": "Budget compliance and suitability first, then avoiding unnecessary repeated work.",
+    "successCriteria": "A visible confirmed reservation for 12 attendees with a projector, the requested meeting purpose and an all-in total within your own budget. Verify the actual confirmation details.",
+    "stopCriteria": "Stop after a verified suitable reservation, a supported obstacle after reasonable recovery, or inconclusive navigation. Do not book beyond your budget.",
+    "continuity": "first-time",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "id": "gather-coordinator",
+    "projectId": "gather",
+    "version": 1,
+    "versionId": "04160d2b-3c24-4f25-b9d4-ba0762001a2e",
+    "archived": false,
+    "createdAt": "2026-11-01T23:04:19.317Z",
+    "updatedAt": "2026-11-01T23:04:19.317Z",
+    "versionCreatedAt": "2026-11-01T23:04:19.317Z"
+  },
+  "personaId": "gather-coordinator",
+  "scenarioId": "gather-booking",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "productFingerprint": {
+    "app.js": "f4c3c15da31d22a633709dae384239d631e7fb303f5eda9e5d219fc115d2e93b",
+    "FIX_PLAN.json": "7fb94fdb4045a648d1c1051816d359e190df130d505d1499cc47bdeedfc8788a",
+    "IMPROVEMENT.md": "77943b3eccfcbcaa89469def9581abd5efb3da9f710f2b63c3cdbc860588b1ba",
+    "index.html": "2795008217a59d2b6a5a040e0d78d645e7343fdf6f12178686a274d759598c6f",
+    "styles.css": "28a2d0126c0d4ad5f16cc1ea61382ec8f34587357f7e64273285949a5b2bd4ee"
+  },
+  "integrityStatus": "verified",
+  "target": "http://127.0.0.1:60401/",
+  "model": "muse-wonder-1.0",
+  "usage": [
+    {
+      "input_tokens": 8613,
+      "input_tokens_details": {
+        "cached_tokens": 6644
+      },
+      "output_tokens": 783,
+      "output_tokens_details": {
+        "reasoning_tokens": 435
+      },
+      "total_tokens": 9396
+    },
+    {
+      "input_tokens": 11526,
+      "input_tokens_details": {
+        "cached_tokens": 8564
+      },
+      "output_tokens": 431,
+      "output_tokens_details": {
+        "reasoning_tokens": 179
+      },
+      "total_tokens": 11957
+    },
+    {
+      "input_tokens": 14083,
+      "input_tokens_details": {
+        "cached_tokens": 8564
+      },
+      "output_tokens": 212,
+      "output_tokens_details": {
+        "reasoning_tokens": 7
+      },
+      "total_tokens": 14295
+    },
+    {
+      "input_tokens": 16336,
+      "input_tokens_details": {
+        "cached_tokens": 14068
+      },
+      "output_tokens": 218,
+      "output_tokens_details": {
+        "reasoning_tokens": 8
+      },
+      "total_tokens": 16554
+    },
+    {
+      "input_tokens": 18685,
+      "input_tokens_details": {
+        "cached_tokens": 11508
+      },
+      "output_tokens": 459,
+      "output_tokens_details": {
+        "reasoning_tokens": 140
+      },
+      "total_tokens": 19144
+    },
+    {
+      "input_tokens": 21273,
+      "input_tokens_details": {
+        "cached_tokens": 16244
+      },
+      "output_tokens": 1935,
+      "output_tokens_details": {
+        "reasoning_tokens": 697
+      },
+      "total_tokens": 23208
+    }
+  ],
+  "limitations": "Fresh synthetic persona retest; does not measure real-user impact.",
+  "comparisonId": "76d88226-7948-4912-84e3-89b82961b438",
+  "variant": "after",
+  "experience": [
+    {
+      "eventIndex": 3,
+      "actionEventIndex": 4,
+      "at": "2026-11-03T16:16:55.117Z",
+      "videoMs": 8910,
+      "replayMs": 1606,
+      "observation": "Landing shows Tomorrow 10:00–11:00, 12 people, projector required. Atlas is $280 all-in for 12 seats; Willow is $245 all-in for 12 seats, both 1 hr with projector.",
+      "reaction": "Willow looks like the one that keeps me under budget with room for all 12, so I'll go with it.",
+      "track": "experience",
+      "valence": "positive",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "benefit",
+        "summary": "All-in totals with itemised fees let me identify Willow at $245 as within my $250 budget",
+        "why": "Atlas shows $280 total, over budget, while Willow shows $235 room + $0 projector + $10 fee = $245, 12 seats and projector for Tomorrow 10:00-11:00, so I can compare complete costs before choosing."
+      }
+    },
+    {
+      "eventIndex": 5,
+      "actionEventIndex": 6,
+      "at": "2026-11-03T16:16:59.944Z",
+      "videoMs": 13737,
+      "replayMs": 3869,
+      "observation": "Details form for Willow shows Meeting name field with placeholder 'e.g. Quarterly planning', and summary: Tomorrow 10:00–11:00, 12 people, projector included, total $245.",
+      "reaction": "I'll click into the meeting name field to enter my purpose.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 7,
+      "actionEventIndex": 8,
+      "at": "2026-11-03T16:17:02.615Z",
+      "videoMs": 16408,
+      "replayMs": 6155,
+      "observation": "Meeting name field is focused with placeholder 'e.g. Quarterly planning'; Willow summary still shows 12 people, projector included, $245 total.",
+      "reaction": "The field is focused, so I'll type the meeting purpose now.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 9,
+      "actionEventIndex": 10,
+      "at": "2026-11-03T16:17:05.292Z",
+      "videoMs": 19086,
+      "replayMs": 8833,
+      "observation": "Meeting name now shows 'Quarterly planning'. Willow summary remains Tomorrow 10:00–11:00, 12 people, projector included, total $245.",
+      "reaction": "I've entered Quarterly planning, so I'll review the booking before confirming.",
+      "track": "experience",
+      "valence": "neutral",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "routine",
+        "summary": "",
+        "why": ""
+      }
+    },
+    {
+      "eventIndex": 11,
+      "actionEventIndex": 12,
+      "at": "2026-11-03T16:17:10.142Z",
+      "videoMs": 23936,
+      "replayMs": 10904,
+      "observation": "Review shows Meeting name 'Quarterly planning', includes projector and seating for 12, Willow Tomorrow 10:00–11:00, total $245 all charges included, with Confirm reservation button.",
+      "reaction": "Everything on this review matches what I need and stays under budget, so I'll confirm.",
+      "track": "experience",
+      "valence": "positive",
+      "friction": 0,
+      "confidence": "high",
+      "feedback": {
+        "kind": "benefit",
+        "summary": "Review page restates name, capacity, projector and $245 all-in total before confirming",
+        "why": "It shows Quarterly planning, seating for 12, projector included, Tomorrow 10:00–11:00 and $235+$0+$10=$245, letting me verify budget and requirements with no payment taken before committing."
+      }
+    }
+  ],
+  "replay": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/replay.webm",
+  "replayMetadata": {
+    "status": "compacted",
+    "calibration": {
+      "method": "marcador visível e timestamps dos quadros",
+      "frameTime": 1.12,
+      "uncertaintyMs": 51.88416650006551
+    },
+    "segments": [
+      {
+        "originalStart": 2.0127215415001847,
+        "originalEnd": 2.8566152500002646,
+        "replayStart": 0
+      },
+      {
+        "originalStart": 8.148541042000055,
+        "originalEnd": 10.411618499999866,
+        "replayStart": 0.8438937085000799
+      },
+      {
+        "originalStart": 12.975066666999831,
+        "originalEnd": 15.261177000000142,
+        "replayStart": 3.1069711664998914
+      },
+      {
+        "originalStart": 15.646265250000171,
+        "originalEnd": 20.395295958000233,
+        "replayStart": 5.393081499500202
+      },
+      {
+        "originalStart": 23.173778624999805,
+        "originalEnd": 25.08888754100027,
+        "replayStart": 10.142112207500263
+      },
+      {
+        "originalStart": 37.1984556669998,
+        "originalEnd": 37.96,
+        "replayStart": 12.057221123500726
+      }
+    ],
+    "originalDuration": 37.96,
+    "removedModelWaits": [
+      {
+        "start": 2.8566152500002646,
+        "end": 8.148541042000055
+      },
+      {
+        "start": 10.411618499999866,
+        "end": 12.975066666999831
+      },
+      {
+        "start": 15.261177000000142,
+        "end": 15.646265250000171
+      },
+      {
+        "start": 20.395295958000233,
+        "end": 23.173778624999805
+      },
+      {
+        "start": 25.08888754100027,
+        "end": 37.1984556669998
+      }
+    ],
+    "removedTechnicalPreroll": [
+      {
+        "start": 0,
+        "end": 2.0127215415001847
+      }
+    ],
+    "replayDuration": 12.818765456500927
+  },
+  "projectId": "gather",
+  "name": "Book a room that fits · Maya · Office coordinator · after",
+  "charterId": "gather-book-room",
+  "charterVersion": 1,
+  "charterVersionId": "6d112186-9db5-4d94-b57c-d73d976c91e1",
+  "charterSnapshot": {
+    "name": "Book a room that fits",
+    "description": "",
+    "mission": "Explore Gather from the selected persona’s point of view and reserve a room satisfying their meeting requirements and spending limit. Verify the final reservation details. Report uncertainty, lost work and meaningful experience moments as they occur.",
+    "scope": "Commercial landing page through room selection, details, review and confirmed reservation, including reasonable recovery when a choice does not fit.",
+    "successCriteria": "The visible saved reservation matches the persona’s purpose, capacity, projector requirement and all-in budget. Describe any remaining incompleteness precisely.",
+    "stopCriteria": "A verified reservation, an observed obstacle after reasonable recovery, unsafe action or the session limits.",
+    "scenarioId": "gather-booking",
+    "startingState": "First visit in a new independent browser session, with no prior reservation or product knowledge.",
+    "goals": "Complete one suitable test reservation and verify its details. Do not confuse a successful action with accomplishing the persona’s goal.",
+    "expectedBehaviorSources": "The persona’s explicit meeting requirements, product-visible prices and requirements, and actual recorded confirmation. Preserve factual prices, room capacities and existing successful booking paths when evaluating changes.",
+    "defaultEnvironmentId": "gather-base",
+    "compatibleEnvironmentIds": [
+      "gather-base",
+      "gather-proposal"
+    ],
+    "personaIds": [
+      "gather-coordinator",
+      "gather-assistant"
+    ],
+    "screens": [],
+    "flows": [],
+    "allowedActions": "Use dedicated test data within the environment policy.",
+    "memoryPolicy": "none",
+    "memoryIds": [],
+    "maxSteps": 16,
+    "maxTokens": 350000,
+    "maxDurationMs": 360000,
+    "captureBodies": false,
+    "allowMutations": true,
+    "id": "gather-book-room",
+    "projectId": "gather",
+    "version": 1,
+    "versionId": "6d112186-9db5-4d94-b57c-d73d976c91e1",
+    "archived": false,
+    "createdAt": "2026-11-01T23:04:19.332Z",
+    "updatedAt": "2026-11-01T23:04:19.332Z",
+    "versionCreatedAt": "2026-11-01T23:04:19.332Z"
+  },
+  "personaVersion": 1,
+  "personaVersionId": "04160d2b-3c24-4f25-b9d4-ba0762001a2e",
+  "personaSnapshot": {
+    "name": "Maya · Office coordinator",
+    "description": "",
+    "label": "Maya · Office coordinator",
+    "role": "client",
+    "context": "You organize the team’s quarterly planning meeting. The approved room budget is strict and you are accountable for the complete amount, including equipment and fees.",
+    "mission": "Book a room for 12 people with a projector for the available one-hour meeting slot. Enter the meeting purpose Quarterly planning. Keep the complete cost at or below $250.",
+    "initialKnowledge": "You have not used Gather before. You know your meeting requirements and can use ordinary room-booking websites.",
+    "knowledge": "You have not used Gather before. You know your meeting requirements and can use ordinary room-booking websites.",
+    "constraints": "Total spending must not exceed $250. You cannot increase the budget. You need seats for all 12 people and a projector.",
+    "skills": "Comfortable with ordinary web forms, room descriptions and checking a booking summary.",
+    "decision": "Choose a suitable room based on the full cost and requirements you can establish from the interface.",
+    "resources": "Desktop browser and fictional meeting details; no real payment information.",
+    "expectations": "You expect to understand what you are paying and keep the details you have already entered when changing a choice.",
+    "priorities": "Budget compliance and suitability first, then avoiding unnecessary repeated work.",
+    "successCriteria": "A visible confirmed reservation for 12 attendees with a projector, the requested meeting purpose and an all-in total within your own budget. Verify the actual confirmation details.",
+    "stopCriteria": "Stop after a verified suitable reservation, a supported obstacle after reasonable recovery, or inconclusive navigation. Do not book beyond your budget.",
+    "continuity": "first-time",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "id": "gather-coordinator",
+    "projectId": "gather",
+    "version": 1,
+    "versionId": "04160d2b-3c24-4f25-b9d4-ba0762001a2e",
+    "archived": false,
+    "createdAt": "2026-11-01T23:04:19.317Z",
+    "updatedAt": "2026-11-01T23:04:19.317Z",
+    "versionCreatedAt": "2026-11-01T23:04:19.317Z"
+  },
+  "environmentId": "gather-base",
+  "environmentName": "Current booking",
+  "environmentVersion": 1,
+  "environmentVersionId": "8d99d52b-ecc2-424f-a14c-bda8c63c2b86",
+  "environmentSnapshot": {
+    "name": "Current booking",
+    "description": "",
+    "url": "http://127.0.0.1:60401/",
+    "allowedOrigins": [
+      "http://127.0.0.1:60401"
+    ],
+    "repositoryPath": "__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/db8c9735-6c04-41c0-8cc0-23901af7983b/candidate",
+    "baseRef": "",
+    "buildCommand": "",
+    "startCommand": "",
+    "testCommand": "node --check app.js",
+    "healthPath": "",
+    "authStatePath": "",
+    "storageStatePath": "",
+    "dataPolicy": "isolated static preview; fresh browser session",
+    "fixtureVersion": "gather-rooms-v1",
+    "isolation": "stateless-demo",
+    "allowMutations": true,
+    "captureBodies": false,
+    "maxSteps": 16,
+    "maxDurationMs": 360000,
+    "maxTokens": 350000,
+    "redactSelectors": [],
+    "retention": "keep-all",
+    "scenarioId": "gather-booking",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "id": "gather-base",
+    "projectId": "gather",
+    "version": 1,
+    "versionId": "8d99d52b-ecc2-424f-a14c-bda8c63c2b86",
+    "archived": false,
+    "createdAt": "2026-11-01T23:04:19.331Z",
+    "updatedAt": "2026-11-01T23:04:19.331Z",
+    "versionCreatedAt": "2026-11-01T23:04:19.331Z",
+    "lastCheck": null
+  },
+  "configuredEnvironment": {
+    "id": "gather-base",
+    "name": "Current booking",
+    "version": 1,
+    "versionId": "8d99d52b-ecc2-424f-a14c-bda8c63c2b86"
+  },
+  "environmentKind": "temporary",
+  "executionInstance": {
+    "id": "preview-3a991669-d607-4f6f-bb7e-44ca57c65262",
+    "kind": "fix-preview",
+    "environmentId": "gather-base",
+    "environmentVersion": 1,
+    "sourceRunId": "49a51ebc-1ed6-4bfc-9fe2-e495e5786cfc",
+    "comparisonId": "76d88226-7948-4912-84e3-89b82961b438",
+    "variant": "after",
+    "url": "http://127.0.0.1:60401/",
+    "repositoryPath": "__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/db8c9735-6c04-41c0-8cc0-23901af7983b/candidate"
+  },
+  "executionPolicy": {
+    "maxSteps": 16,
+    "maxTokens": 350000,
+    "maxDurationMs": 360000,
+    "captureBodies": false,
+    "allowMutations": true
+  },
+  "memorySnapshotId": "efcd147d-6efe-4183-9e9d-ecbcdb95aa5b",
+  "memorySnapshot": {
+    "id": "efcd147d-6efe-4183-9e9d-ecbcdb95aa5b",
+    "projectId": "gather",
+    "createdAt": "2026-11-01T23:07:00.761Z",
+    "roles": {
+      "operational": [],
+      "evaluator": [],
+      "persona": []
+    },
+    "pendingBuild": {
+      "operational": [],
+      "evaluator": [],
+      "persona": []
+    },
+    "buildResolved": true,
+    "excluded": [],
+    "flowContext": {
+      "inventoryVersion": null,
+      "inventoryVersionId": null,
+      "charterFlows": [],
+      "flows": [],
+      "screens": [],
+      "reason": "flow_inventory_not_defined"
+    },
+    "policy": {
+      "memoryPolicy": "none",
+      "continuity": "first-time",
+      "minConfidence": 0.65
+    },
+    "environment": {
+      "id": "gather-proposal",
+      "version": 1,
+      "buildId": "source:816de64ef3deb77c89a586aeb8a977e007c5e15c6f8404be06dd323307a010c9"
+    },
+    "personaId": "gather-coordinator",
+    "sourceSnapshotId": "26a568ed-beb4-4ee6-a593-ae130497ef99"
+  },
+  "memoryReferenceUrl": "http://127.0.0.1:4390/",
+  "memoryLearnings": [
+    {
+      "audience": "evaluator",
+      "confidence": 0.98,
+      "confidenceBasis": "The room listing, details summary, review, and confirmation all consistently show Willow at $245 with the same breakdown across screenshots 3, 5, 11, and 13.",
+      "content": "Willow was shown for Tomorrow 10:00–11:00 with 12 seats/people and projector included, priced at $235 room + $0 projector + $10 service fee = $245 all-in CAD.",
+      "kind": "expected_behavior",
+      "name": "Willow one-hour price and fit",
+      "polarity": "affirm",
+      "scope": {
+        "flows": [
+          "Book a room"
+        ],
+        "screenPatterns": [
+          "Gather room listing",
+          "Willow booking details and review",
+          "Reservation confirmation"
+        ]
+      },
+      "sources": [
+        {
+          "eventIndex": 3
+        },
+        {
+          "eventIndex": 5
+        },
+        {
+          "eventIndex": 13
+        }
+      ],
+      "subject": "Willow room capacity, projector, and all-in total",
+      "value": "12 people, projector included, $245 all-in CAD for 1 hour"
+    },
+    {
+      "audience": "persona",
+      "confidence": 0.97,
+      "confidenceBasis": "The sequence was directly observed: Choose Willow led to the meeting-name form, Review booking led to the review, and Confirm reservation led to the confirmation in screenshots 3, 5, 11, and 13.",
+      "content": "In this Gather flow, choosing a room leads to a Meeting name field, then Review booking, then Confirm reservation, after which a Confirmed reservation summary is shown.",
+      "kind": "navigation",
+      "name": "Gather booking flow sequence",
+      "polarity": "affirm",
+      "scope": {
+        "flows": [
+          "Book a room"
+        ],
+        "screenPatterns": [
+          "Room listing",
+          "Your meeting form",
+          "Review page",
+          "Confirmation page"
+        ]
+      },
+      "sources": [
+        {
+          "eventIndex": 3
+        },
+        {
+          "eventIndex": 5
+        },
+        {
+          "eventIndex": 11
+        },
+        {
+          "eventIndex": 13
+        }
+      ],
+      "subject": "Gather room booking navigation",
+      "value": "Choose room -> enter meeting name -> Review booking -> Confirm reservation -> Confirmed summary"
+    }
+  ],
+  "memoryPublicationSummary": {
+    "published": 0,
+    "failed": 2
+  },
+  "findings": [
+    {
+      "title": "All-in pricing made the budget-compliant room identifiable",
+      "type": "experience",
+      "impact": "informational",
+      "observation": "The listing showed Atlas at $280 all-in for 12 seats with projector, and Willow at $245 all-in for 12 seats with projector. Willow's breakdown was $235 room rate, $0 projector, and $10 service fee for Tomorrow 10:00–11:00.",
+      "expected": "A room for 12 people with a projector for the one-hour slot must have an all-in total at or below $250.",
+      "expectedSource": "Persona's explicit meeting requirements and budget in the saved charter; prices shown on the room listing.",
+      "personaComment": "Seeing both complete totals side by side made it clear Willow was the only one I could afford.",
+      "interpretation": "Clear all-in pricing helped Maya avoid Atlas, which would have exceeded her strict budget, and select a compliant alternative without hidden-cost uncertainty.",
+      "uncertainty": "Prices were observed only for the displayed Tomorrow 10:00–11:00 slot in this demo session.",
+      "evidence_indices": [
+        3
+      ],
+      "evidence": [
+        {
+          "index": 3,
+          "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-003.png"
+        }
+      ]
+    },
+    {
+      "title": "Confirmed Willow reservation matches all stated requirements",
+      "type": "experience",
+      "impact": "informational",
+      "observation": "The review showed Meeting name 'Quarterly planning', seating for 12, projector included, Willow Tomorrow 10:00–11:00, and $245 total. The confirmation then stated 'Quarterly planning is booked at Willow', Confirmed, 12 people, Projector Included, and Reservation total $245, All charges included · CAD.",
+      "expected": "The review and confirmation should preserve the entered meeting purpose and show the chosen room, 12 people, projector, time, and all-in total.",
+      "expectedSource": "Persona's explicit requirements and the product-visible review promise 'Review the details, then make it a meeting.'",
+      "personaComment": "The final confirmation matches exactly what I needed, so I do not have to guess whether it saved correctly.",
+      "interpretation": "Preserving and restating the details at review and confirmation reduced the risk of confirming the wrong meeting or an over-budget total.",
+      "uncertainty": "The footer states this is a demo venue and reservations are saved only in this browser session; no real payment was taken.",
+      "evidence_indices": [
+        11,
+        13
+      ],
+      "evidence": [
+        {
+          "index": 11,
+          "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-011.png"
+        },
+        {
+          "index": 13,
+          "screenshot": "/runs/3a991669-d607-4f6f-bb7e-44ca57c65262/screen-013.png"
+        }
+      ]
+    }
+  ],
+  "capturePolicy": {
+    "video": true,
+    "screenshots": true,
+    "consoleErrors": true,
+    "networkMetadata": true,
+    "bodies": false,
+    "redacted": true
+  },
+  "sourceIdentity": {
+    "status": "source_recorded",
+    "deploymentMatch": "unverified"
+  },
+  "modelRequests": [
+    {
+      "id": "8f8b0a9e-5c80-4068-94ff-243ac209fd4c",
+      "providerResponseId": "resp_6aea08f615231a52f80247bb",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:16:48.302Z",
+      "completedAt": "2026-11-03T16:16:55.117Z",
+      "usage": {
+        "input_tokens": 8613,
+        "input_tokens_details": {
+          "cached_tokens": 6644
+        },
+        "output_tokens": 783,
+        "output_tokens_details": {
+          "reasoning_tokens": 435
+        },
+        "total_tokens": 9396
+      },
+      "budget": {
+        "inputEstimate": 32414,
+        "textBytes": 28318,
+        "imageCount": 1,
+        "imageAllowance": 4096,
+        "estimateMethod": "full",
+        "actualUsed": 0,
+        "remaining": 350000,
+        "tokenLimit": 350000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "bbf9e638-ae3e-4372-96ce-ecd70d12986b",
+      "providerResponseId": "resp_6aea08fb6bb0e72791b34c19",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:16:55.858Z",
+      "completedAt": "2026-11-03T16:16:59.943Z",
+      "usage": {
+        "input_tokens": 11526,
+        "input_tokens_details": {
+          "cached_tokens": 8564
+        },
+        "output_tokens": 431,
+        "output_tokens_details": {
+          "reasoning_tokens": 179
+        },
+        "total_tokens": 11957
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 22061,
+        "priorInputTokens": 8613,
+        "deltaTextBytes": 8008,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 5,
+        "margin": 1344,
+        "actualUsed": 9396,
+        "remaining": 340604,
+        "tokenLimit": 350000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "b034d302-fce7-402b-8a11-fe9053a1c817",
+      "providerResponseId": "resp_6aea08fe86a5586824a443bf",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:17:00.709Z",
+      "completedAt": "2026-11-03T16:17:02.615Z",
+      "usage": {
+        "input_tokens": 14083,
+        "input_tokens_details": {
+          "cached_tokens": 8564
+        },
+        "output_tokens": 212,
+        "output_tokens_details": {
+          "reasoning_tokens": 7
+        },
+        "total_tokens": 14295
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 22042,
+        "priorInputTokens": 11526,
+        "deltaTextBytes": 4947,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 5,
+        "margin": 1473,
+        "actualUsed": 21353,
+        "remaining": 328647,
+        "tokenLimit": 350000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "f0d95895-7d65-4c63-94fa-f5fd1e9ecb39",
+      "providerResponseId": "resp_6aea0901e8219f805a8d48c9",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:17:03.683Z",
+      "completedAt": "2026-11-03T16:17:05.292Z",
+      "usage": {
+        "input_tokens": 16336,
+        "input_tokens_details": {
+          "cached_tokens": 14068
+        },
+        "output_tokens": 218,
+        "output_tokens_details": {
+          "reasoning_tokens": 8
+        },
+        "total_tokens": 16554
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 22801,
+        "priorInputTokens": 14083,
+        "deltaTextBytes": 2957,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 1665,
+        "actualUsed": 35648,
+        "remaining": 314352,
+        "tokenLimit": 350000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "c5f20c16-875a-4b13-b3c9-60c820773589",
+      "providerResponseId": "resp_6aea090594fbf3c40bba4311",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:17:05.845Z",
+      "completedAt": "2026-11-03T16:17:10.142Z",
+      "usage": {
+        "input_tokens": 18685,
+        "input_tokens_details": {
+          "cached_tokens": 11508
+        },
+        "output_tokens": 459,
+        "output_tokens_details": {
+          "reasoning_tokens": 140
+        },
+        "total_tokens": 19144
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 25655,
+        "priorInputTokens": 16336,
+        "deltaTextBytes": 3333,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 4,
+        "margin": 1890,
+        "actualUsed": 52202,
+        "remaining": 297798,
+        "tokenLimit": 350000,
+        "maxOutput": 4096
+      }
+    },
+    {
+      "id": "f1538a69-af02-4265-89a0-fa7989fd875e",
+      "providerResponseId": "resp_6aea091390e561d1da4a4b88",
+      "model": "muse-wonder-1.0",
+      "startedAt": "2026-11-03T16:17:10.539Z",
+      "completedAt": "2026-11-03T16:17:24.167Z",
+      "usage": {
+        "input_tokens": 21273,
+        "input_tokens_details": {
+          "cached_tokens": 16244
+        },
+        "output_tokens": 1935,
+        "output_tokens_details": {
+          "reasoning_tokens": 697
+        },
+        "total_tokens": 23208
+      },
+      "budget": {
+        "estimateMethod": "receipt_prefix",
+        "inputEstimate": 28904,
+        "priorInputTokens": 18685,
+        "deltaTextBytes": 3934,
+        "deltaImageCount": 1,
+        "deltaImageAllowance": 4096,
+        "appendedItemCount": 5,
+        "margin": 2189,
+        "actualUsed": 71346,
+        "remaining": 278654,
+        "tokenLimit": 350000,
+        "maxOutput": 4096
+      }
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+diff --git a__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/bdca6a99-c20f-4db4-bb98-7dd355f1e9cf/candidate/FIX_PLAN.json b__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/bdca6a99-c20f-4db4-bb98-7dd355f1e9cf/candidate/FIX_PLAN.json
+new file mode 100644
+index 0000000..23b5383
+--- /dev/null
++++ b__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/bdca6a99-c20f-4db4-bb98-7dd355f1e9cf/candidate/FIX_PLAN.json
+@@ -0,0 +1 @@
++{"expected":"Room cards show the all-in total for the current meeting setup (room + projector + service) before a meeting name is entered, so Willow ($245) ranks below Atlas ($280); entered meeting name is kept when switching rooms. Prices, capacity, projector state and saved reservations are unchanged; the quick home-cards to details to review to confirmation path stays without a mandatory planning step.","criteria":[{"description":"On home and room-list cards, the prominent price for each room equals its review total for the current setup (Atlas $280, Willow $245 for 12 people with projector) with a visible all-charges-included label and breakdown, not the hourly room rate alone.","id":"criterion-1","source":"finding-49a51ebc-1ed6-4bfc-9fe2-e495e5786cfc-0 (observation: Atlas $220/h vs Willow $235/h but $280 vs $245 totals; expected: judge suitability from full cost)"},{"description":"Entering a meeting name, going back to choose another room, and selecting the other room keeps the entered name (no retyping), and review still confirms with correct room and total.","id":"criterion-2","source":"finding expected repair acceptance (preserve entered meeting details when switching rooms) and persona expectation to keep entered details"},{"description":"Room prices, fees, totals, capacity filtering, projector selection and the confirm-to-reservation flow are unchanged: Atlas totals $280, Willow $245, quick path intact, no mandatory planning step, no charges removed.","id":"criterion-3","source":"charter gather-book-room v1 success criteria (preserve factual prices, capacities, existing successful booking paths) and finding expected preserve clause"}],"limitations":["Only the observed one-hour, 12-person, projector-required configuration with the two visible rooms was verified from screenshots and code reading; other dates, durations and group sizes were not checked.","No browser retest or automated tests were run in this session (shell execution disabled); correctness rests on code inspection against the recorded $220+$35+$25=$280 and $235+$0+$10=$245 fixture."],"preserve":["Current quick path from home room cards through meeting details and review to confirmation with no mandatory planning step","Room prices, capacity, selected projector, fee breakdown and valid saved reservations (Atlas $280 total, Willow $245 total)","Existing visual style, layout and accessibility landmarks (no new controls or navigation)"],"problem":"Comparing rooms by the listed hourly rate ($220 Atlas vs $235 Willow) reverses the true budget ranking ($280 vs $245 all-in); the total only appears at review, and going back to try the other room discards the entered meeting name.","title":"Show all-in totals on room cards and keep meeting name"}
+\ No newline at end of file
+diff --git a__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/bdca6a99-c20f-4db4-bb98-7dd355f1e9cf/candidate/IMPROVEMENT.md b__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/bdca6a99-c20f-4db4-bb98-7dd355f1e9cf/candidate/IMPROVEMENT.md
+new file mode 100644
+index 0000000..d15bf72
+--- /dev/null
++++ b__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/bdca6a99-c20f-4db4-bb98-7dd355f1e9cf/candidate/IMPROVEMENT.md
+@@ -0,0 +1,42 @@
++# Improvement: all-in totals on room cards, meeting name preserved
++
++## Changed behavior
++- Room cards on home and the room list now lead with the all-in total for the
++  current meeting setup instead of the hourly room rate alone.
++  - Atlas shows **$280 total for your meeting** with
++    "$220 room + $35 projector + $25 service · nothing added later."
++  - Willow shows **$245 total for your meeting** with
++    "$235 room + $0 projector + $10 service · nothing added later."
++  - The correct budget ranking (Willow below Atlas) is visible before the
++    visitor enters a meeting name.
++- The meeting-details page now shows the same price breakdown beside the name
++  field, so the total is visible while naming the meeting, not only at review.
++- Going back with "Choose another room" no longer clears the entered meeting
++  name. The name stays in the field when switching between Atlas and Willow,
++  and review still requires a non-empty name.
++
++## Rationale (source-linked)
++- Recorded finding `finding-49a51ebc-1ed6-4bfc-9fe2-e495e5786cfc-0`:
++  Atlas listed at $220/hour vs Willow at $235/hour, but review totals were
++  $280 ($220 + $35 + $25) vs $245 ($235 + $0 + $10). Comparing by hourly rate
++  alone reverses the true ranking.
++- Persona `gather-coordinator` (Maya): must keep the complete cost at or below
++  $250 and expects "to understand what you are paying and keep the details you
++  have already entered when changing a choice."
++- Charter `gather-book-room` v1: preserve factual prices, capacities, and the
++  existing successful booking path; the fix changes presentation only.
++
++## Changed files
++- [app.js](./app.js): `card()` always renders `total(room)` with the
++  "total for your meeting" label and the fee-breakdown line; `details()`
++  always passes `withPrice=true` to `summary()`; removed the two
++  purpose-clearing guards in `go()` and `render()`.
++- [FIX_PLAN.json](./FIX_PLAN.json): acceptance contract for this fix.
++
++## Checks performed
++- Read [app.js](./app.js) and [index.html](./index.html) and re-read the edited
++  regions to confirm the edits match the recorded $280/$245 fixture math.
++- No tests were run and no browser retest was performed in this session (shell
++  execution is disabled for this task). Browser retesting and review happen
++  separately after this handoff, so treat the behavior above as
++  code-inspection verified only.
+diff --git a__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/bdca6a99-c20f-4db4-bb98-7dd355f1e9cf/baseline/app.js b__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/bdca6a99-c20f-4db4-bb98-7dd355f1e9cf/candidate/app.js
+index cd7af93..dffe0f0 100644
+--- a__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/bdca6a99-c20f-4db4-bb98-7dd355f1e9cf/baseline/app.js
++++ b__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/bdca6a99-c20f-4db4-bb98-7dd355f1e9cf/candidate/app.js
+@@ -28,8 +28,8 @@
+   }
+   function strip(change=true){return '<div class="requirements-strip"><span class="requirements-title">Your meeting</span><div class="requirements-items"><span><b>'+escape(state.date)+'</b> · '+escape(state.slot)+'</span><span><b>'+state.people+'</b> people</span><span>'+ (state.projector?'Projector required':'No projector')+'</span></div>'+(change?'<button class="change-link" data-action="requirements">Change</button>':'')+'</div>';}
+   function card(room){
+-    const shown=QUICK_BOOKING?room.base:total(room);
+-    return '<article class="room" data-room="'+room.id+'"><div class="room-scene">'+scene(room)+'<span class="room-badge '+(room.id==='atlas'?'featured':'')+'">'+(room.id==='atlas'?'Our pick for your team':'A different kind of focus')+'</span><span class="scene-label">'+room.mood+'</span></div><div class="room-body"><div class="room-title"><div><h3>'+room.name+'</h3><p>'+room.subtitle+'</p></div><div class="room-price"><strong>'+money(shown)+'</strong><small>'+(QUICK_BOOKING?'room rate / hour':'total for your meeting')+'</small></div></div><div class="room-features"><span>'+room.capacity+' seats</span><span>'+room.type+'</span><span>Fast Wi-Fi</span>'+(QUICK_BOOKING?'':'<span>'+(state.projector?'Projector':'Display-ready')+'</span>')+'</div><div class="room-foot"><span class="availability">Available '+escape(state.date.toLowerCase())+'</span><button class="primary" data-room-select="'+room.id+'">Choose '+room.name+' <span class="arrow" aria-hidden="true">↗</span></button></div>'+(!QUICK_BOOKING?'<p class="total-detail">'+money(room.base)+' room + '+money(state.projector?room.projector:0)+' projector + '+money(room.service)+' service · nothing added later.</p>':'')+'</div></article>';
++    const shown=total(room);
++    return '<article class="room" data-room="'+room.id+'"><div class="room-scene">'+scene(room)+'<span class="room-badge '+(room.id==='atlas'?'featured':'')+'">'+(room.id==='atlas'?'Our pick for your team':'A different kind of focus')+'</span><span class="scene-label">'+room.mood+'</span></div><div class="room-body"><div class="room-title"><div><h3>'+room.name+'</h3><p>'+room.subtitle+'</p></div><div class="room-price"><strong>'+money(shown)+'</strong><small>total for your meeting</small></div></div><div class="room-features"><span>'+room.capacity+' seats</span><span>'+room.type+'</span><span>Fast Wi-Fi</span>'+(QUICK_BOOKING?'':'<span>'+(state.projector?'Projector':'Display-ready')+'</span>')+'</div><div class="room-foot"><span class="availability">Available '+escape(state.date.toLowerCase())+'</span><button class="primary" data-room-select="'+room.id+'">Choose '+room.name+' <span class="arrow" aria-hidden="true">↗</span></button></div><p class="total-detail">'+money(room.base)+' room + '+money(state.projector?room.projector:0)+' projector + '+money(room.service)+' service · nothing added later.</p></div></article>';
+   }
+   function rooms(){return ROOMS.filter(room=>room.capacity>=state.people).map(card).join('');}
+   function home(){
+@@ -48,7 +48,7 @@
+   function price(room){return '<div class="price-lines"><div><span>Room · 1 hour</span><strong>'+money(room.base)+'</strong></div><div><span>Projector</span><strong>'+money(state.projector?room.projector:0)+'</strong></div><div><span>Service charge</span><strong>'+money(room.service)+'</strong></div></div><div class="price-total"><span>Total</span><strong data-booking-total="'+total(room)+'">'+money(total(room))+'</strong></div><div class="price-caption">All charges included · CAD</div>';}
+   function details(){
+     const room=roomById(state.room);if(!room)return roomList();
+-    return '<div class="page-head"><button class="text-button back" data-action="rooms">← Choose another room</button>'+progress('Your meeting')+'<div class="eyebrow">Make it yours</div><h1>What brings you together?</h1><p>Give your meeting a name. We’ll make some room for it.</p></div><div class="checkout-layout"><form class="panel" id="details-form"><h2>Your meeting</h2><p class="panel-intro">'+escape(state.people)+' people, one '+room.name+' room, and a fresh perspective.</p><div class="field"><label for="meeting-purpose">Meeting name</label><input id="meeting-purpose" name="purpose" type="text" placeholder="e.g. Quarterly planning" value="'+escape(state.purpose)+'" maxlength="120" required autocomplete="off"><small>This name appears on your reservation.</small></div><div class="form-actions"><span class="form-note">No payment details needed for this demo reservation.</span><button class="primary" type="submit">Review booking <span class="arrow" aria-hidden="true">→</span></button></div></form>'+summary(room,!QUICK_BOOKING)+'</div>';
++    return '<div class="page-head"><button class="text-button back" data-action="rooms">← Choose another room</button>'+progress('Your meeting')+'<div class="eyebrow">Make it yours</div><h1>What brings you together?</h1><p>Give your meeting a name. We’ll make some room for it.</p></div><div class="checkout-layout"><form class="panel" id="details-form"><h2>Your meeting</h2><p class="panel-intro">'+escape(state.people)+' people, one '+room.name+' room, and a fresh perspective.</p><div class="field"><label for="meeting-purpose">Meeting name</label><input id="meeting-purpose" name="purpose" type="text" placeholder="e.g. Quarterly planning" value="'+escape(state.purpose)+'" maxlength="120" required autocomplete="off"><small>This name appears on your reservation.</small></div><div class="form-actions"><span class="form-note">No payment details needed for this demo reservation.</span><button class="primary" type="submit">Review booking <span class="arrow" aria-hidden="true">→</span></button></div></form>'+summary(room,true)+'</div>';
+   }
+   function review(){
+     const room=roomById(state.room);if(!room||!state.purpose.trim())return details();
+@@ -65,7 +65,6 @@
+   }
+   let currentView='home';
+   function go(view){
+-    if(QUICK_BOOKING&&view==='rooms'&&['review','details'].includes(currentView))state.purpose='';
+     location.hash=view;
+     if(currentView===view)render();
+   }
+@@ -73,7 +72,6 @@
+     let view=location.hash.slice(1)||'home';
+     if(view==='spaces'){document.getElementById('spaces')?.scrollIntoView({behavior:'smooth',block:'start'});return;}
+     if(!['home','requirements','rooms','details','review','confirmed','bookings'].includes(view))view='home';
+-    if(QUICK_BOOKING&&view==='rooms'&&['review','details'].includes(currentView))state.purpose='';
+     currentView=view;
+     const content=({home,requirements,rooms:roomList,details,review,confirmed,bookings:bookingList}[view])();
+     app.innerHTML=header()+'<main id="main" data-view="'+view+'">'+content+'</main>'+footer();

@@ -1,0 +1,38 @@
+{
+  "id": "3c976cd2-5a9a-4c58-aef7-a40e4948f5e3",
+  "projectId": "gather",
+  "title": "Quick booking. Different consequences.",
+  "intent": "Reduce the steps between finding a room and confirming a reservation. Evaluate the effect on both the executive assistant and budget-constrained coordinator.",
+  "kind": "local_proposal",
+  "provider": "not_connected",
+  "version": 4,
+  "createdAt": "2026-11-01T23:04:50.456Z",
+  "updatedAt": "2026-11-01T23:13:56.317Z",
+  "baseline": {
+    "label": "Current",
+    "environmentId": "gather-base",
+    "environmentVersion": 1,
+    "sourceHash": "source:88ee8fccc38c1b57dcd1d2aba53f19780fc2aeaba9fffe6a506b98bce810dc20"
+  },
+  "proposal": {
+    "label": "Quick booking",
+    "environmentId": "gather-proposal",
+    "environmentVersion": 1,
+    "sourceHash": "source:816de64ef3deb77c89a586aeb8a977e007c5e15c6f8404be06dd323307a010c9"
+  },
+  "personas": [
+    {
+      "personaId": "gather-assistant",
+      "baselineRunId": "b696825c-47e9-4920-ae53-74b5f02263e7",
+      "proposalRunId": "be5e68ff-faae-495a-9269-8fb198b1a19d"
+    },
+    {
+      "personaId": "gather-coordinator",
+      "baselineRunId": "2b4b7bf4-a865-4431-8ffe-56ed252a6abe",
+      "proposalRunId": "49a51ebc-1ed6-4bfc-9fe2-e495e5786cfc"
+    }
+  ],
+  "fixId": "4c801e88-44d9-4dfe-8148-2ffb9b9d78f1",
+  "roundId": "bdca6a99-c20f-4db4-bb98-7dd355f1e9cf",
+  "comparisonId": "77ab7209-2bc4-4c20-b6b4-a1284380d9ae"
+}

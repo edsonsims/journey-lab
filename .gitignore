@@ -69,3 +69,8 @@ __pycache__/
 coverage/
 test-results/
 playwright-report/
+
+# Working copy of the recorded demo data (created by npm run demo).
+journey-engine/.demo/
+# Recorded demo data is shipped on purpose.
+!demo-data/**

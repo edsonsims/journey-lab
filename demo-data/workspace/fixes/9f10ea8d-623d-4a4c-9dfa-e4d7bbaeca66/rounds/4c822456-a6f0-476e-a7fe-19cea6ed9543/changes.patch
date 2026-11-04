@@ -1,0 +1,45 @@
+diff --git a__JL_DEMO_WORKSPACE__/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/rounds/4c822456-a6f0-476e-a7fe-19cea6ed9543/candidate/FIX_PLAN.json b__JL_DEMO_WORKSPACE__/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/rounds/4c822456-a6f0-476e-a7fe-19cea6ed9543/candidate/FIX_PLAN.json
+new file mode 100644
+index 0000000..c6be673
+--- /dev/null
++++ b__JL_DEMO_WORKSPACE__/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/rounds/4c822456-a6f0-476e-a7fe-19cea6ed9543/candidate/FIX_PLAN.json
+@@ -0,0 +1 @@
++{"expected":"'Confirm reservation' receives visible keyboard focus in Tab order after 'Edit meeting name' (and in Shift+Tab reverse order) and activates with Enter and Space to produce the confirmed reservation, like other primary booking controls.","limitations":["No browser execution available in this session; Tab order and Enter/Space activation verified by code inspection only, not by live keyboard run.","Whether a pointer click on the span worked was not tested; fix assumes the click handler path is preserved."],"preserve":["Pricing, room filtering, projector/service fee totals, and pointer booking paths","Visible layout and styling of the review page and primary button","Existing successful keyboard paths: room selection, meeting-name entry, and earlier steps"],"problem":"On the Review page, 'Confirm reservation' is a span with tabindex=\"-1\" and role=\"button\" (app.js review()), so Tab/Shift+Tab never land on it and Enter/Space cannot activate it; keyboard-only users cannot complete the booking at the final step.","title":"Make Confirm reservation a keyboard-focusable native button","criteria":[{"description":"'Confirm reservation' on the Review page is a natively focusable control in the sequential Tab order (no tabindex=\"-1\", no non-focusable span).","id":"criterion-1","source":"finding-210d2e86-9bd6-4376-8cda-e94c8d60a42c-0 observation (Tab skipped Confirm, Shift+Tab returned to Edit meeting name) and charter expectation that required booking controls receive keyboard focus"},{"description":"'Confirm reservation' shows visible focus and activates with Enter and Space to confirm the reservation.","id":"criterion-2","source":"finding expectation: control should activate with standard keys like 'Choose Atlas' and 'Review booking'; charter success criterion of keyboard-only completion"}]}
+\ No newline at end of file
+diff --git a__JL_DEMO_WORKSPACE__/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/rounds/4c822456-a6f0-476e-a7fe-19cea6ed9543/candidate/IMPROVEMENT.md b__JL_DEMO_WORKSPACE__/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/rounds/4c822456-a6f0-476e-a7fe-19cea6ed9543/candidate/IMPROVEMENT.md
+new file mode 100644
+index 0000000..87b4402
+--- /dev/null
++++ b__JL_DEMO_WORKSPACE__/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/rounds/4c822456-a6f0-476e-a7fe-19cea6ed9543/candidate/IMPROVEMENT.md
+@@ -0,0 +1,18 @@
++# Improvement — Confirm reservation is keyboard-reachable
++
++## Changed behavior
++- On the Review page, **Confirm reservation** is now a native `<button type="button">` in the sequential Tab order. It receives visible focus after **Edit meeting name** (and in reverse with Shift+Tab) and activates with **Enter** and **Space**, completing the booking to the confirmation view.
++- Before, it was a `<span class="primary" … role="button" tabindex="-1">`: `tabindex="-1"` removed it from the Tab order, and a span never fires `click` on Enter/Space, matching the observed finding (Tab cycled past it, Enter left the page unchanged, Space scrolled).
++
++## Rationale (source-linked)
++- `finding-210d2e86-9bd6-4376-8cda-e94c8d60a42c-0`: Tab moved from Edit meeting name to an unfocused step and wrapped to the logo; Shift+Tab returned to Edit meeting name; Enter/Space did not confirm.
++- Charter `gather-keyboard-booking` v3 + persona `gather-keyboard`: required booking controls should receive keyboard focus and activate with standard keys; keyboard-only completion is the success criterion.
++- `DEMO_FIXTURE.md` confirms the span was the deliberately seeded defect.
++
++## Changed files
++- [app.js](app.js): `review()` — replaced the Confirm reservation `span` (`role="button" tabindex="-1"`) with `<button type="button" class="primary" id="confirm-reservation" data-action="confirm">`. Same id, class, and `data-action="confirm"`, so the existing `bind()` click handler and `confirmReservation()` flow (including the `button.disabled` guard, previously a no-op on a span) work unchanged. No styling changes needed: `styles.css` already styles `.primary` and `button:focus-visible`.
++
++## Checks performed
++- Read `app.js`, `index.html`, `styles.css`, and `DEMO_FIXTURE.md`; located the single `tabindex` occurrence (line 56) and confirmed no other `role="button"` spans remain.
++- Verified by inspection that the new button keeps the same `data-action` click path and gains native Tab focus, focus-visible outline, and Enter/Space activation.
++- No tests were run (shell execution is disabled in this session; browser retesting happens separately).
+diff --git a__JL_DEMO_WORKSPACE__/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/rounds/4c822456-a6f0-476e-a7fe-19cea6ed9543/baseline/app.js b__JL_DEMO_WORKSPACE__/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/rounds/4c822456-a6f0-476e-a7fe-19cea6ed9543/candidate/app.js
+index a968a56..c22b52f 100644
+--- a__JL_DEMO_WORKSPACE__/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/rounds/4c822456-a6f0-476e-a7fe-19cea6ed9543/baseline/app.js
++++ b__JL_DEMO_WORKSPACE__/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/rounds/4c822456-a6f0-476e-a7fe-19cea6ed9543/candidate/app.js
+@@ -53,7 +53,7 @@
+   }
+   function review(){
+     const room=roomById(state.room);if(!room||!state.purpose.trim())return details();
+-    return '<div class="page-head"><button class="text-button back" data-action="rooms">← Choose another room</button>'+progress('Review')+'<div class="eyebrow">One last look</div><h1>Ready when you are.</h1><p>Review the details, then make it a meeting.</p></div><div class="checkout-layout"><section class="panel"><h2>Your meeting is almost on the calendar.</h2><div class="review-purpose"><small>Meeting name</small><strong>'+escape(state.purpose)+'</strong></div><p class="review-info">Your reservation includes '+(state.projector?'a projector, ':'')+'Wi-Fi, water, and seating for '+state.people+'. Your room is ready for you at '+escape(state.slot.split('–')[0])+'.</p><div class="form-actions"><button class="secondary" data-action="details">Edit meeting name</button><span class="primary" id="confirm-reservation" data-action="confirm" role="button" tabindex="-1">Confirm reservation <span class="arrow" aria-hidden="true">↗</span></span></div><p class="policy-note">Cancel your test reservation by closing this browser session. No payment is taken.</p></section>'+summary(room,true)+'</div>';
++    return '<div class="page-head"><button class="text-button back" data-action="rooms">← Choose another room</button>'+progress('Review')+'<div class="eyebrow">One last look</div><h1>Ready when you are.</h1><p>Review the details, then make it a meeting.</p></div><div class="checkout-layout"><section class="panel"><h2>Your meeting is almost on the calendar.</h2><div class="review-purpose"><small>Meeting name</small><strong>'+escape(state.purpose)+'</strong></div><p class="review-info">Your reservation includes '+(state.projector?'a projector, ':'')+'Wi-Fi, water, and seating for '+state.people+'. Your room is ready for you at '+escape(state.slot.split('–')[0])+'.</p><div class="form-actions"><button class="secondary" data-action="details">Edit meeting name</button><button type="button" class="primary" id="confirm-reservation" data-action="confirm">Confirm reservation <span class="arrow" aria-hidden="true">↗</span></button></div><p class="policy-note">Cancel your test reservation by closing this browser session. No payment is taken.</p></section>'+summary(room,true)+'</div>';
+   }
+   function confirmed(){
+     const reservation=state.lastReservation||reservations().at(-1);if(!reservation)return bookingList();

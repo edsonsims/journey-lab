@@ -4,6 +4,36 @@
 
 Built for the Meta Global AI Developer Hackathon.
 
+## Try it in 2 minutes (no API key needed)
+
+The repository ships with the recorded Gather demo: 6 personas, 39 journeys, 84 findings, 2 fixes and 2 change-impact assessments, including everything shown in the demo video.
+
+Requirements: Node.js 23.6+ and npm.
+
+```sh
+npm --prefix journey-engine ci
+npm --prefix journey-workspace ci
+npm --prefix journey-workspace run build
+npm --prefix journey-engine run demo       # open http://127.0.0.1:4319
+```
+
+`run demo` copies `demo-data/` to `journey-engine/.demo/` (ignored by Git) and starts Journey Lab together with the Gather app. To restore the original data later, run `npm --prefix journey-engine run demo -- --reset`.
+
+What to open:
+
+| What | Where |
+| --- | --- |
+| Maya's journey: recording, findings timeline, emotional arc | Gather → Journeys → *Book a room that fits · Maya · before* |
+| Finding detail: what happened and what was expected | Journeys → Findings, or click a marker on the timeline |
+| Fix from design to code, before/after retest (Maya 10 → 5 actions, Alex 6 → 6) | Journeys → Fixes → *Compact aligned room-card pricing…* (Round 4) |
+| Casey's keyboard barrier and its native-button repair | Journeys → Fixes → *Make Confirm reservation a keyboard-focusable native button* |
+| How one change felt to all six personas | Insights → Change impact → *Quick booking. Six perspectives.* |
+| All reactions grouped by page and persona | Insights → Experience |
+| Personas and missions | Library |
+| A guided walkthrough of the example | Gather → Settings → Guided example |
+
+Everything here is review mode: you can browse, filter and review everything. Starting new journeys, fixes or retests needs a Meta model key (see Quick start below).
+
 ## What it does
 
 1. **Create a persona.** Type it, or speak the brief. Motivation, context, expectations and constraints shape how the persona makes choices.
@@ -63,9 +93,10 @@ JOURNEY_LOCAL_MODEL_URL=http://127.0.0.1:1234/v1 JOURNEY_LOCAL_MODEL=muse-glimme
 | `gather/` | Example app (base, proposal and keyboard-demo fixture) and its QA tests |
 | `little-steps/`, `journey-ui/` | Earlier scenario and legacy UI |
 | `scripts/` | Demo, acceptance and film tooling |
+| `demo-data/` | Recorded Gather demo: journeys, findings, fixes, change impact (loaded by `npm run demo`) |
 | `docs/` | Features, development, release notes and design docs |
 
-Run records, recordings, databases, fix workspaces and generated media stay local and are excluded from Git. A fresh clone starts without recorded journeys.
+Run records, recordings, databases, fix workspaces and generated media stay local and are excluded from Git. The recorded Gather demo in `demo-data/` is the exception (see Try it in 2 minutes); `npm start` still starts with an empty workspace.
 
 ## Tests
 

@@ -1,0 +1,7 @@
+muse: local session messaging disabled: session logging is required
+muse: workspace root: __JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/37aa9e4c-5050-436c-ae5d-ea54d2318d7a/candidate (explicit)
+muse: warning: rules file at __JL_REPO__/AGENTS.md exists, but the workspace is untrusted, so it is skipped for this session; restart with --trust-workspace to load project rules
+muse: Agent delegation: auto unavailable: workspace is untrusted.
+Done: room cards now lead with a softly highlighted, consistently aligned all-in total pill (Atlas $280, Willow $245 from existing `total()` logic), a dynamic `1 hr · {slot}` context line, a conditional includes note (no projector-included claim when deselected), and an airy three-row room/projector/service breakdown.
+
+Changed [app.js](__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/37aa9e4c-5050-436c-ae5d-ea54d2318d7a/candidate/app.js), [styles.css](__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/37aa9e4c-5050-436c-ae5d-ea54d2318d7a/candidate/styles.css), [FIX_PLAN.json](__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/37aa9e4c-5050-436c-ae5d-ea54d2318d7a/candidate/FIX_PLAN.json), and [IMPROVEMENT.md](__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/37aa9e4c-5050-436c-ae5d-ea54d2318d7a/candidate/IMPROVEMENT.md). Pricing math, booking controls, name persistence, accessibility, and responsive layout preserved. Verified by code inspection only; no tests or browser retest ran here.

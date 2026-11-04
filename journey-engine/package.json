@@ -8,7 +8,8 @@
     "start:secure": "node start-secure.mjs",
     "check": "node --check server.mjs && node --test",
     "model:local": "node start-local-model.mjs",
-    "start:with-local": "node start-with-local.mjs"
+    "start:with-local": "node start-with-local.mjs",
+    "demo": "node demo.mjs"
   },
   "dependencies": {
     "playwright": "^1.56.1"

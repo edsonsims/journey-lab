@@ -1,0 +1,7 @@
+muse: local session messaging disabled: session logging is required
+muse: workspace root: __JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/db8c9735-6c04-41c0-8cc0-23901af7983b/candidate (explicit)
+muse: warning: rules file at __JL_REPO__/AGENTS.md exists, but the workspace is untrusted, so it is skipped for this session; restart with --trust-workspace to load project rules
+muse: Agent delegation: auto unavailable: workspace is untrusted.
+Done. Room cards keep compact, aligned price panels led by the computed all-in total (Atlas $280, Willow $245 with projector; $245/$245 without), with readable fee lines, conditional includes wording, and distinct semantic Choose Atlas / Choose Willow buttons through the unchanged one-name-field flow. No concept artifacts added (no AI banner, names, badges, extra fields, or footer).
+
+Changed: [app.js](__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/db8c9735-6c04-41c0-8cc0-23901af7983b/candidate/app.js) (`type="button"` on Choose buttons), [FIX_PLAN.json](__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/db8c9735-6c04-41c0-8cc0-23901af7983b/candidate/FIX_PLAN.json), [IMPROVEMENT.md](__JL_DEMO_WORKSPACE__/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/rounds/db8c9735-6c04-41c0-8cc0-23901af7983b/candidate/IMPROVEMENT.md). Verification was code inspection only; no tests or browser retest ran here.
