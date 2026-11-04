@@ -1,0 +1,10 @@
+import {spawn} from 'node:child_process';
+import {access,stat} from 'node:fs/promises';
+import {resolve,dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const here=dirname(fileURLToPath(import.meta.url));
+const model=process.env.JOURNEY_GLIMMER_PATH||resolve(here,'../.tools/models/Muse-Glimmer-30B-KQuant-17GB-Q4_K_M.gguf');
+await access(model);if(!process.env.JOURNEY_GLIMMER_PATH&&(await stat(model)).size!==16_756_683_904)throw Error('The Glimmer checkpoint is incomplete. Finish downloading it before starting.');
+const child=spawn(process.env.JOURNEY_LLAMA_SERVER||'llama-server',['-m',model,'-a','muse-glimmer','-ngl','99','-c','8192','-np','1','--host','127.0.0.1','--port','1234','--cors-origins','localhost','--no-mmproj','--chat-template-kwargs','{"reasoning_strength":"low"}'],{stdio:'inherit'});
+for(const signal of ['SIGINT','SIGTERM'])process.on(signal,()=>child.kill(signal));
+child.on('exit',code=>{process.exitCode=code||0;});child.on('error',()=>{console.error('Could not start llama-server. Install llama.cpp and verify the binary path.');process.exitCode=1;});

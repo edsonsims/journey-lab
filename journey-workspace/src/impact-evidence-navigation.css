@@ -1,0 +1,57 @@
+.impact-evidence-section{min-width:0}
+.impact-evidence-kind{font-size:10px;color:var(--muted)}
+.impact-video-workspace{grid-template-columns:minmax(0,1fr) 250px;align-items:start;gap:12px;margin-top:12px}
+.impact-video-workspace>.impact-perspective-rail>.ip-overview{height:auto;max-height:clamp(350px,calc(100dvh - 280px),720px);min-height:0}
+.impact-selected-comparison{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden;min-width:0}
+.impact-selected-comparison>.impact-playback{border:0;border-radius:0;margin:0}
+.impact-selected-tools:empty{display:none}.impact-selected-tools>.journey-match-workspace:empty{display:none}
+.impact-selected-tools .impact-comparison-footer{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:8px 16px;padding:7px 12px;border-top:1px solid var(--line);background:#faf9fd;min-width:0}
+.impact-selected-tools .match-review-panel,.impact-selected-tools .drag-match-editor{grid-column:1/-1;min-width:0}
+@media(max-width:1100px){.impact-video-workspace{grid-template-columns:minmax(0,1fr) 220px;gap:10px}.impact-selected-comparison .comparison-side .device-badge>span,.impact-selected-comparison .comparison-side .device-badge>small{display:none}}
+@media(max-width:560px){.impact-video-workspace{grid-template-columns:minmax(0,1fr)}.impact-video-workspace>.impact-perspective-rail>.ip-overview{min-height:0;max-height:260px}.impact-selected-tools .impact-comparison-footer{grid-template-columns:minmax(0,1fr)}}
+.impact-moment-availability{margin:0;padding:7px 10px;font-size:11px;color:#805c2e;background:#fff3df;border-bottom:1px solid #efdfc8}.impact-moment-unavailable .video-stage{opacity:.35;filter:grayscale(1)}
+.impact-scenario-side{padding:12px 14px;background:#fff;font-size:12px;line-height:1.6}.impact-scenario-side>p{margin:8px 0 12px}.impact-scenario-observation{padding:12px;border:1px solid var(--line);border-radius:8px;background:#f5f3f8}.impact-scenario-observation.iel-tone-positive,.impact-scenario-observation.iel-tone-excellent{background:#edf7ee}.impact-scenario-observation.iel-tone-negative{background:#fff2de}.impact-scenario-observation.iel-tone-very-negative{background:#fae7ed}.impact-scenario-observation>strong{font-size:10px}.impact-scenario-observation blockquote{margin:7px 0;font-size:13px;color:var(--ink)}.impact-scenario-observation p{margin:5px 0 0;color:var(--muted);font-size:11px}.impact-playback>.journey-match-workspace:empty{display:none}
+
+@media(min-width:561px) and (max-width:800px){.impact-perspective-workspace.impact-video-workspace{grid-template-columns:minmax(0,1fr) 190px;gap:8px}.impact-video-workspace>.impact-perspective-rail>.ip-overview{max-height:clamp(350px,calc(100dvh - 280px),720px)}.impact-video-workspace .ip-compact{padding:7px}}
+
+/* Keep the overview in the window, leaving full-size playback one click away. */
+.impact-video-workspace{margin-top:8px;margin-bottom:8px}
+.impact-workbench .impact-selected-comparison .video-stage{height:auto;min-height:0;max-height:clamp(110px,calc(100dvh - 600px),260px);aspect-ratio:36/25}
+.impact-selected-comparison .video-stage video{object-fit:contain}
+.impact-workbench .impact-selected-comparison .comparison-toolbar{min-height:30px;padding:2px 9px}
+.impact-workbench .impact-selected-comparison .comparison-side{min-height:30px;padding:2px 7px}
+.impact-workbench .impact-selected-comparison .transport{height:27px;min-height:27px;padding:1px 6px}
+.impact-selected-comparison .replay-caption{padding:4px 8px;font-size:10px;line-height:1.4}
+.impact-selected-comparison .replay-caption:not([open])>summary>span{-webkit-line-clamp:1}
+.impact-selected-tools .impact-comparison-footer{padding:2px 10px;gap:4px 12px}
+.impact-selected-tools .impact-comparison-details>summary,.impact-selected-tools .match-external-controls .text-button{min-height:25px;font-size:10px}
+@media(min-width:561px){
+ .impact-detail .impact-heading{margin:3px 0 5px}.impact-detail .impact-heading h1{font-size:25px;line-height:1.15}
+ .impact-detail .impact-change-inline{padding-top:5px;padding-bottom:5px}
+ .impact-detail .impact-comparison-bar{margin-bottom:4px;gap:6px 12px}
+ .impact-detail .impact-stage-tabs button{min-height:28px;padding-top:5px;padding-bottom:5px}
+ .impact-detail .impact-provenance{margin-top:0}
+}
+@media(min-width:561px) and (max-width:800px){
+ .impact-selected-tools .impact-comparison-footer{grid-template-columns:minmax(0,1fr)}
+ .impact-selected-comparison .comparison-side .device-badge{display:none}
+ .impact-selected-comparison .comparison-side>a{font-size:8px}
+}
+@media(max-width:560px){.impact-workbench .impact-selected-comparison .video-stage{height:180px}}
+.impact-selected-comparison .video-stage,.impact-selected-comparison .video-stage video{background:#f3f2f6}
+@media(min-width:761px){
+ .workspace-shell>.main>.page-content:has(>.impact-detail){padding-top:12px;padding-bottom:12px}
+ .impact-detail .impact-change-context{margin-bottom:6px}
+ .impact-detail .impact-provenance{padding:7px 0}
+}
+
+@media(min-width:561px) and (max-width:760px){
+ .workspace-shell>.main>.page-content:has(>.impact-detail){padding-top:57px;padding-bottom:6px}
+ .impact-detail .impact-change-context{margin-bottom:6px}
+ .impact-detail .impact-provenance{padding:7px 0}
+}
+/* Current reactions appear once, with the matching arc moment below. */
+.impact-selected-comparison .replay-caption{display:none}
+.impact-workbench .impact-selected-comparison .impact-recordings.is-expanded .video-stage{height:auto;max-height:clamp(240px,48dvh,500px);aspect-ratio:36/25}
+.impact-expand-videos{white-space:nowrap}
+.impact-recordings.is-expanded .impact-expand-videos{color:#5338e8;background:#eee8fc;border-radius:4px;padding-inline:5px}

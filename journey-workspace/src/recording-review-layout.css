@@ -1,0 +1,145 @@
+/* Keep the recording, frame timeline, and emotional arc in the same review area. */
+.main .page-content:has(.run-review-workspace,.finding-review-workspace){max-width:none;padding:16px 18px 28px}
+.page-content:has(.run-review-workspace,.finding-review-workspace)>.detail-nav{margin-bottom:10px}
+.main .page-content:has(.run-review-workspace,.finding-review-workspace)>:is(.run-heading,.finding-heading){margin-bottom:14px}
+.page-content:has(.finding-review-workspace)>.finding-heading h1{margin-top:8px}
+.main .run-review-workspace{grid-template-columns:minmax(0,1fr);gap:16px}
+.run-review-workspace>.run-main,.finding-review-workspace>.finding-review{container:recording-review / inline-size}
+.main .replay-with-analysis{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,1fr);grid-template-areas:"recording analysis" "moment moment";grid-template-rows:minmax(min-content,clamp(410px,min(calc(100dvh - 310px),calc(52cqw / var(--recording-aspect,1.6) + 80px)),480px)) auto;align-items:stretch;gap:12px;border:0;background:transparent;overflow:visible}
+.replay-recording{grid-area:recording;display:flex;flex-direction:column;contain:size;min-width:0;min-height:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface)}
+.replay-recording>.evidence-media{flex:1;height:auto;min-height:0}
+.replay-recording>.evidence-media>.evidence-media-viewport{flex:1}
+/* The shared moment card owns the reaction text; fullscreen retains its own captions. */
+.replay-with-analysis:not(:fullscreen)>.replay-recording :is(.evidence-compact-caption,.evidence-subtitle,.replay-caption,.persona-voice){display:none}
+.main .replay-recording .video-stage{width:100%;height:100%;min-height:0;aspect-ratio:auto;max-height:none}
+.replay-recording .replay-toolbar{flex-shrink:0;height:40px;justify-content:flex-start;gap:6px;padding:5px 8px}
+.replay-recording .replay-toolbar .recording-label{display:none}
+.replay-recording .replay-annotation-tools{margin-left:auto;gap:4px}
+.replay-recording .evidence-caption-toggle{min-height:30px;padding:5px 7px}
+.replay-recording .evidence-caption-toggle>span{display:none}
+.replay-recording .transport{flex-shrink:0;height:38px;gap:6px;padding:5px 7px}
+.replay-recording .transport>.icon-button{flex-shrink:0}
+.replay-recording .transport>input{min-width:36px}
+.replay-recording .timecode{font-size:10px}
+.replay-recording .replay-caption{padding:8px 10px;border-top:1px solid var(--line);background:#f4f0ff}
+.replay-recording .replay-caption>summary{display:flex;align-items:center;gap:7px;list-style:none;cursor:pointer;font-size:11px;line-height:1.6;color:var(--muted)}
+.replay-recording .replay-caption>summary::-webkit-details-marker{display:none}
+.replay-recording .replay-caption>summary>span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.replay-recording .replay-caption[open]>summary>span{white-space:normal}
+.replay-recording .replay-caption time{flex-shrink:0}
+.replay-analysis{grid-area:analysis;display:flex;flex-direction:column;gap:12px;min-width:0;min-height:0}
+.main .replay-analysis>.timeline{border:1px solid var(--line);border-radius:12px;padding:10px}
+.replay-analysis>.timeline{flex-shrink:0}
+.main .replay-analysis .timeline-header{gap:8px;align-items:center;margin-bottom:6px}
+.replay-analysis .timeline-header .eyebrow{font-size:12px;font-weight:650;letter-spacing:-.02em;text-transform:none;color:var(--ink)}
+.replay-analysis .timeline-header .text-button{font-size:10px;white-space:nowrap;min-height:24px}
+.main .replay-analysis .timeline-legend{gap:4px 8px;margin-bottom:4px;font-size:9px}
+.replay-analysis .timeline-legend>span:first-child{display:none}
+.replay-analysis .tone-legend-item{gap:3px}
+.replay-analysis .tone-legend-item i{width:12px;height:12px;font-size:9px}
+.main .replay-analysis .tracks-scroller{padding:2px 7px 4px 0;overflow-y:hidden}
+.replay-analysis .tracks{min-width:0}
+.main .replay-analysis .track,.main .replay-analysis .ruler{grid-template-columns:79px minmax(0,1fr)}
+.main .replay-analysis .ruler{font-size:9px;height:20px}
+.replay-analysis .ruler>div>span:nth-child(2),.replay-analysis .ruler>div>span:nth-child(4),.replay-analysis .ruler>div>span:nth-child(5){display:none}
+.main .replay-analysis .track{margin:1px 0}
+.main .replay-analysis .track-name{height:26px;font-size:10px;gap:4px;padding-right:7px}
+.replay-analysis .track-name>svg{width:10px}
+.replay-analysis .track-dot{width:5px;height:5px}
+.main .replay-analysis .emotion-arc{--emotion-axis-width:67px;display:flex;flex:1;flex-direction:column;min-height:min-content;padding:10px 10px 0}
+.replay-analysis .emotion-arc-heading h2{font-size:13px}
+.replay-analysis .emotion-arc-heading p,.replay-analysis .emotion-origin,.replay-analysis .emotion-extremes{display:none}
+.main .replay-analysis .emotion-graph{flex:1;min-height:96px;height:auto;margin-top:10px;margin-right:8px}
+.replay-analysis .emotion-arc-heading,.replay-analysis .emotion-x-axis,.replay-analysis .emotion-unrated-row,.replay-analysis .emotion-chart-caption{flex-shrink:0}
+.replay-analysis .emotion-y-axis{font-size:9px}
+.replay-analysis .emotion-x-axis{height:21px;margin-top:6px;padding-right:8px}
+.replay-analysis .emotion-x-axis time{font-size:9px}
+.replay-analysis .emotion-x-axis .intermediate-tick{display:none}
+.replay-analysis .emotion-unrated-row{margin-right:8px}
+.replay-analysis .emotion-chart-caption{font-size:9px;margin-bottom:8px;gap:4px 8px}
+.emotion-moment.tone-excellent{--moment-fill:#bdeff1;--moment-ink:#074f56}
+.emotion-moment.tone-positive{--moment-fill:#c9f3da;--moment-ink:#075333}
+.emotion-moment.tone-neutral{--moment-fill:#e1e4f0;--moment-ink:#373e56}
+.emotion-moment.tone-negative{--moment-fill:#ffd7ad;--moment-ink:#76330b}
+.emotion-moment.tone-very-negative{--moment-fill:#ffc5d5;--moment-ink:#821333}
+.emotion-moment.tone-unrated{--moment-fill:#edf0f4;--moment-ink:#455166}
+.main .replay-with-analysis>.emotion-moment{grid-area:moment;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4px 20px;margin:0;min-height:0;padding:10px 14px 12px;background:var(--moment-fill);border:1px solid color-mix(in srgb,var(--tone) 30%,transparent);border-left:4px solid var(--tone);border-radius:10px}
+.replay-with-analysis>.emotion-moment:not(:has(>.emotion-moment-context)){grid-template-columns:minmax(0,1fr)}
+.replay-with-analysis .emotion-moment-heading{grid-column:1;margin-bottom:0;gap:6px}
+.replay-with-analysis .emotion-moment-heading>span{font-size:11px;background:var(--tone);color:#fff;padding:4px 8px;border-radius:6px}
+.replay-with-analysis .emotion-moment-heading>span i{background:currentColor}
+.replay-with-analysis .emotion-moment-heading>button{font-size:11px;color:var(--moment-ink);background:#ffffff80}
+.replay-with-analysis .emotion-moment-heading>button:hover{background:#ffffffc9}
+.replay-with-analysis .emotion-moment-heading>button>span{display:none}
+.emotion-moment-source{font-size:11px;color:var(--muted);margin-right:auto}
+.replay-with-analysis .emotion-moment-source{color:var(--moment-ink)}
+.emotion-moment-title{font-size:14px;font-weight:650;line-height:1.4;margin:0 0 6px}
+.replay-with-analysis .emotion-moment-title{color:var(--moment-ink)}
+.replay-with-analysis .emotion-moment-persona{grid-column:1;min-width:0}
+.replay-with-analysis .emotion-moment p{display:block;font-size:13px;line-height:1.5;color:var(--moment-ink);-webkit-line-clamp:unset;overflow:visible}
+.replay-with-analysis .emotion-moment-reaction{font-weight:500}
+.emotion-moment-label{display:block;font-size:12px;font-weight:700;color:var(--muted);margin-bottom:5px}
+.replay-with-analysis .emotion-moment-label{font-size:11px;color:var(--moment-ink);margin-bottom:3px}
+.replay-with-analysis .emotion-moment-context{grid-column:2;grid-row:1 / span 2;min-width:0;padding-left:20px;border-left:1px solid color-mix(in srgb,var(--tone) 25%,transparent)}
+.emotion-moment-observation{margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}
+.emotion-moment-observation>span{display:block;font-size:11px;font-weight:700;color:var(--muted);margin-bottom:5px}
+.replay-with-analysis .emotion-moment-observation{margin-top:8px;padding-top:8px;border-color:color-mix(in srgb,var(--tone) 25%,transparent)}
+.replay-with-analysis .emotion-moment-observation:first-child{margin-top:0;padding-top:0;border-top:0}
+.replay-with-analysis .emotion-moment-observation>span{color:var(--moment-ink);margin-bottom:3px}
+.run-review-workspace .journey-sequence-heading{margin-top:0}
+.main .run-review-workspace>.run-inspector{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:14px;min-width:0}
+.run-review-workspace .run-perspective{border:1px solid var(--line);border-radius:12px;background:var(--surface);overflow:hidden}
+.run-perspective>summary{display:flex;align-items:center;gap:8px;padding:13px 14px;font-size:12px;font-weight:600;list-style:none;cursor:pointer;color:var(--muted)}
+.run-perspective>summary::-webkit-details-marker{display:none}
+.run-perspective>summary>svg:last-child{margin-left:auto}
+.run-perspective[open]>summary>svg:last-child{transform:rotate(90deg)}
+.run-perspective>summary:focus-visible{outline:2px solid var(--blue);outline-offset:-3px}
+.main .run-perspective>.inspector-card{border:0;border-radius:0;margin:0;padding-top:0}
+.main .run-review-workspace .selected-moment{display:block;margin:0}
+
+/* Exploration opens beneath the evidence, leaving the full width for the recording. */
+.recording-tools-below>.media-assistant{margin:14px 0 0;border-radius:12px;box-shadow:none}
+.recording-tools-below .media-assistant-heading{padding:16px 18px;gap:12px}
+.recording-tools-below .media-assistant-heading strong{font-size:17px}
+.recording-tools-below .media-brand-mark{flex-basis:36px;height:36px;border-radius:10px}
+.recording-tools-below .media-brand-mark svg{width:21px;height:21px}
+.recording-tools-below .media-eyebrow{display:none}
+.recording-tools-below .media-heading-copy{font-size:11px}
+.recording-tools-below>.media-assistant:not([open])>.media-assistant-heading{border-bottom:0}
+.main .finding-detail-grid{grid-template-columns:minmax(0,1fr) minmax(220px,250px);grid-template-areas:"review review" "main actions";gap:16px}
+.finding-review-workspace>.finding-review{grid-area:review;min-width:0}
+.main .finding-detail-grid>.finding-actions{display:block}
+.finding-actions>.fix-callout{margin:0}
+
+/* Fullscreen still gives the recording all available room. */
+.main .replay-with-analysis:fullscreen{display:flex;align-items:stretch;padding:12px;background:#151a24}
+.replay-with-analysis:fullscreen>.replay-analysis,.replay-with-analysis:fullscreen>.emotion-moment{display:none}
+.replay-with-analysis:fullscreen>.replay-recording{display:flex;flex:1;flex-direction:column;min-height:0;width:100%}
+.replay-with-analysis:fullscreen .replay-recording>.evidence-media{flex:1;min-height:0}
+.replay-with-analysis:fullscreen .replay-recording>.evidence-media>.evidence-media-viewport{flex:1}
+.main .replay-with-analysis:fullscreen .video-stage{height:100%;max-height:none;min-height:0;aspect-ratio:auto}
+
+@media(max-width:1000px){
+ .main .finding-detail-grid{grid-template-columns:minmax(0,1fr);grid-template-areas:"review" "main" "actions"}
+}
+@container recording-review (max-width:740px){
+ .main .replay-with-analysis{grid-template-columns:minmax(0,1fr);grid-template-rows:auto;grid-template-areas:"recording" "moment" "analysis"}
+ .replay-recording{contain:none}
+ .replay-analysis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
+ .main .replay-recording .video-stage{height:auto;aspect-ratio:var(--recording-aspect,1.6);max-height:50dvh}
+ .main .replay-analysis .emotion-graph{height:126px}
+}
+@container recording-review (max-width:500px){
+ .replay-analysis{grid-template-columns:minmax(0,1fr)}
+ .main .replay-analysis .emotion-graph{height:168px}
+ .main .replay-with-analysis>.emotion-moment{grid-template-columns:minmax(0,1fr);gap:6px}
+ .replay-with-analysis .emotion-moment-context{grid-column:1;grid-row:auto;padding:10px 0 0;border-left:0;border-top:1px solid color-mix(in srgb,var(--tone) 25%,transparent);margin-top:4px}
+}
+@media(max-width:620px){
+ .main .page-content:has(.run-review-workspace,.finding-review-workspace){padding:61px 12px 24px}
+ .main .run-review-workspace>.run-inspector{grid-template-columns:minmax(0,1fr)}
+ .recording-tools-below .media-assistant-heading{padding:14px}
+ .replay-analysis .timeline-header .text-button{min-height:36px;font-size:11px}
+ .main .replay-analysis .track-name{font-size:11px}
+ .main .replay-analysis .timeline-legend{font-size:10px}
+}

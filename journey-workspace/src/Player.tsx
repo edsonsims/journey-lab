@@ -1,0 +1,59 @@
+import {useCallback,useEffect,useMemo,useRef,useState} from 'react';
+import {Row,list,clock,hasReplay,sourceVideo,sourceTime,originalToReplay,replayToOriginal,safeMedia,person,ongoing} from './lib';
+import type {CSSProperties,ReactNode} from 'react';
+import {Icon} from './icons';
+import {Timeline} from './Timeline';
+import {AnnotationToggle,EvidenceMedia} from './EvidenceMedia';
+import {annotationAt,annotationClock,annotationForFrame,buildEvidenceAnnotations} from './evidence-annotations';
+import {ScreenshotSlideshow} from './ScreenshotSlideshow';
+
+export function Player({run,findings=[],seek,compact=false,compactCaption=false,compactControls=false,onTime,onSelect,onMode,onUserSeek,onPlaybackStart,initialMode='condensed',videoRef,lockOriginal=false,reviewArc,reviewMoment}:{run:Row,findings?:Row[],seek?:{ms:number,nonce?:number},compact?:boolean,compactCaption?:boolean,compactControls?:boolean,onTime?:(ms:number)=>void,onSelect?:(entry:Row)=>void,onMode?:(mode:string)=>void,onUserSeek?:()=>void,onPlaybackStart?:()=>void,initialMode?:string,videoRef?:(video:HTMLVideoElement|null)=>void,lockOriginal?:boolean,reviewArc?:ReactNode,reviewMoment?:ReactNode}){
+ const ref=useRef<HTMLVideoElement>(null),player=useRef<HTMLElement>(null),pending=useRef<number|null>(null),resume=useRef(false);
+ const [annotationsEnabled,setAnnotationsEnabled]=useState(true);
+ const [slideshowIndex,setSlideshowIndex]=useState<number|null>(null);
+ const [mode,setMode]=useState(!lockOriginal&&hasReplay(run)&&initialMode!=='original'?'condensed':'original');
+ const connectVideo=useCallback((video:HTMLVideoElement|null)=>{ref.current=video;videoRef?.(video);},[videoRef]);
+ const [rate,setRate]=useState(1);
+ const [aspect,setAspect]=useState(1.6);
+ const [time,setTime]=useState(0),[length,setLength]=useState(0),[playing,setPlaying]=useState(false),[error,setError]=useState(''),[notice,setNotice]=useState('');
+ const video=safeMedia(sourceVideo(run,mode));
+ const original=Math.round(mode==='condensed'?(replayToOriginal(run,time)??time):time);
+ const notes=list(run.experience),events=list(run.events),shots=events.filter(e=>e.screenshot),latest=shots.at(-1);
+ const annotations=useMemo(()=>buildEvidenceAnnotations(run),[run]);
+ const annotation=video&&!error?annotationAt(annotations,annotationClock(run,mode,time)):latest?annotationForFrame(annotations,latest):null;
+ const comment=[...notes].filter(n=>typeof n.videoMs==='number'&&n.videoMs<=original+100).at(-1);
+ const duration=length||(mode==='condensed'?run.replayMetadata?.replayDuration:run.replayMetadata?.originalDuration)*1000||0;
+ const markers=useMemo<Row[]>(()=>[
+  ...notes.map((n,i)=>({...n,id:`experience-${i}`,emotionId:`emotion-${i}`,markerKind:'experience',track:n.track||'experience',title:n.reaction||n.observation,originalMs:sourceTime(run,n)})),
+  ...findings.map(f=>({...f,markerKind:'finding',track:f.type==='defect'||f.type==='broken'?'broken':f.type==='business'?'business':f.type==='experience'?'experience':'product',title:f.title||f.observation,originalMs:sourceTime(run,f)}))
+ ],[run,findings]);
+ function jump(ms:number,entry?:Row){if(reviewArc)ref.current?.pause();let target=mode==='condensed'?originalToReplay(run,ms):ms;if(target===null){pending.current=ms;setTime(ms);setMode('original');onMode?.('original');setNotice('This moment was removed from the condensed cut. Showing the original.');}else if(ref.current){ref.current.currentTime=Math.max(0,Math.min(target/1000,ref.current.duration||target/1000));setTime(target);}else pending.current=target;if(entry)onSelect?.(entry);}
+ useEffect(()=>{if(seek&&Number.isFinite(seek.ms)){pending.current=mode==='condensed'?originalToReplay(run,seek.ms):seek.ms;jump(seek.ms);}},[run.id,seek?.ms,seek?.nonce]);
+ useEffect(()=>{setError('');setLength(0);},[video]);
+ useEffect(()=>{const desired=!lockOriginal&&hasReplay(run)&&initialMode==='condensed'?'condensed':'original';if(desired!==mode)toggleMode(desired);},[initialMode,run.id,lockOriginal]);
+ useEffect(()=>{onTime?.(original);},[original]);
+ function toggleMode(next:string,userIntent=false){if(next===mode||lockOriginal&&next==='condensed')return;const at=mode==='condensed'?replayToOriginal(run,time):time;const target=next==='condensed'&&at!=null?originalToReplay(run,at):at;if(target===null&&next==='condensed'){setNotice('This moment is only available in the original recording.');return;}if(userIntent)onUserSeek?.();resume.current=!!ref.current&&!ref.current.paused;pending.current=target??0;setTime(target??0);setMode(next);onMode?.(next);setNotice('');}
+ function loaded(){const el=ref.current;if(!el)return;setLength(el.duration*1000);if(el.videoWidth&&el.videoHeight)setAspect(el.videoWidth/el.videoHeight);if(el.playbackRate!==rate)el.playbackRate=rate;if(pending.current!==null){el.currentTime=Math.min(pending.current/1000,Number.isFinite(el.duration)?el.duration:pending.current/1000);pending.current=null;}setTime(el.currentTime*1000);if(resume.current){void el.play().catch(()=>{});resume.current=false;}}
+ function play(){const el=ref.current;if(el){if(el.paused)void el.play().catch(()=>setError('Playback could not start. Try the original recording.'));else el.pause();}}
+ function openScreenshots(){ref.current?.pause();const frame=shots.find(shot=>annotation?.eventIndex!=null&&shot.index===annotation.eventIndex)||shots.filter(shot=>typeof shot.videoMs==='number'&&shot.videoMs<=original).at(-1);setSlideshowIndex(Math.max(0,frame?shots.indexOf(frame):0));}
+ const recordingControls=<><div className="segmented" aria-label="Recording version">{['condensed','original'].map(m=><button key={m} className={mode===m?'selected':''} aria-pressed={mode===m} disabled={m==='condensed'&&(!hasReplay(run)||lockOriginal)} title={m==='condensed'&&lockOriginal?'Unlink playback to use the condensed cut.':undefined} onClick={()=>toggleMode(m,true)}>{m==='condensed'?<Icon name="spark" size={13}/>:<Icon name="film" size={13}/>} {m==='condensed'?'Condensed':'Original'}</button>)}</div><div className="replay-annotation-tools"><AnnotationToggle enabled={annotationsEnabled} onChange={setAnnotationsEnabled}/>{shots.length>0&&<button type="button" className="evidence-caption-toggle evidence-screenshots-button" onClick={openScreenshots} aria-label={`View ${shots.length} captured screenshots`} aria-haspopup="dialog"><Icon name="coverage" size={15}/><span>Screenshots</span><small>{shots.length}</small></button>}</div><span className="recording-label"><span className={ongoing(run.status)?'live-dot':'record-dot'}/>{ongoing(run.status)?'In progress':'Recorded browser'}</span></>;
+ const recording=<>
+  {!compactControls&&<div className="replay-toolbar">{recordingControls}</div>}
+  <EvidenceMedia annotation={annotation} enabled={annotationsEnabled} compactCaption={compactCaption}>
+  <div className="video-stage" tabIndex={0} aria-label="Video workspace. Space to play, left and right arrows to seek." onKeyDown={e=>{if((e.target as HTMLElement).closest('button,summary,a,video'))return;if(e.code==='Space'){e.preventDefault();play();}if(e.code==='ArrowRight'||e.code==='ArrowLeft'){e.preventDefault();if(ref.current){onUserSeek?.();ref.current.currentTime=Math.max(0,ref.current.currentTime+(e.code==='ArrowRight'?5:-5));}}}}>
+   {video&&!error?<video ref={connectVideo} data-recording-mode={mode} key={`${run.id}-${mode}`} src={video} poster={safeMedia(run.thumbnail||shots[0]?.screenshot)} preload="metadata" playsInline onLoadedMetadata={loaded} onTimeUpdate={()=>setTime((ref.current?.currentTime||0)*1000)} onRateChange={()=>setRate(ref.current?.playbackRate||1)} onPlay={()=>{setPlaying(true);onPlaybackStart?.();}} onPause={()=>setPlaying(false)} onEnded={()=>setPlaying(false)} onError={()=>setError('This recording is unavailable. The captured events are still below.')} onClick={play} aria-label={`${mode} browser recording`}/>:latest?<img src={safeMedia(latest.screenshot)} alt="Latest captured browser screen"/>:<div className="video-empty"><Icon name={ongoing(run.status)?'activity':'film'} size={38}/><strong>{ongoing(run.status)?'A fresh perspective is on its way.':'No recording available'}</strong><span>{ongoing(run.status)?'The latest browser frame will appear here.':'The captured events and findings remain accessible.'}</span></div>}
+   {video&&!playing&&!error&&<button className="big-play" aria-label="Play recording" onClick={play}><Icon name="play" size={25}/></button>}
+   {!video&&latest&&<span className="frame-label">Last captured frame</span>}
+   {error&&<div className="media-error" role="status">{error}</div>}
+  </div>
+  </EvidenceMedia>
+  <div className="transport"><button className="icon-button" disabled={!video||!!error} onClick={play} aria-label={playing?'Pause recording':'Play recording'}><Icon name={playing?'pause':'play'} size={17}/></button><span className="timecode">{clock(time)} <i>/</i> {clock(duration)}</span><input type="range" aria-label="Seek recording" min={0} max={Math.max(1,duration)} value={Math.min(time,duration||1)} onChange={e=>{if(ref.current){onUserSeek?.();ref.current.currentTime=Number(e.target.value)/1000;}setTime(Number(e.target.value));}}/><select aria-label="Playback speed" value={rate} onChange={e=>{if(ref.current)ref.current.playbackRate=Number(e.target.value);}}><option value="0.5">0.5×</option><option value="1">1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select>{video&&<><button type="button" className="icon-button" aria-label="Fullscreen recording with captions" onClick={()=>{const action=document.fullscreenElement?document.exitFullscreen():player.current?.requestFullscreen();void action?.catch(()=>setNotice('Fullscreen is unavailable in this browser.'));}}><Icon name="expand" size={16}/></button><a className="icon-button" href={video} target="_blank" rel="noreferrer" aria-label="Open original media file"><Icon name="external" size={15}/></a></>}{compactControls&&<details className="recording-options"><summary aria-label="Recording options"><Icon name="settings" size={15}/></summary><div className="replay-toolbar">{recordingControls}</div></details>}</div>
+  {notice&&<div className="inline-note" role="status">{notice}</div>}
+  {annotationsEnabled&&annotation?null:compactCaption?<details className="replay-caption"><summary title="Expand persona comment">{comment&&<time>{clock(comment.videoMs)}</time>}<span>{comment?.reaction||comment?.observation||(notes.length?'Play the recording to follow the persona’s comments.':'No public persona comments were captured for this journey.')}</span><Icon name="down" size={12}/></summary></details>:<div className="persona-voice"><div className="voice-mark">“</div><div><div className="voice-label">{person(run)}{comment&&<time>{clock(comment.videoMs)}</time>}</div><p>{comment?.reaction||comment?.observation||(notes.length?'Play the recording to follow the persona’s comments.':'No public persona comments were captured for this journey.')}</p></div></div>}
+ </>;
+ const timeline=<Timeline run={run} markers={markers} mode={mode} duration={duration} time={time} compact={!!reviewArc} onJump={jump} onSeek={ms=>{onUserSeek?.();if(ref.current)ref.current.currentTime=ms/1000;setTime(ms);}}/>;
+ return <section ref={player} className={`replay ${compact?'replay-compact':''} ${reviewArc?'replay-with-analysis':''}`} aria-label={`Recording of ${person(run)}`} style={{'--recording-aspect':aspect} as CSSProperties}>
+  {reviewArc?<><div className="replay-recording">{recording}</div><div className="replay-analysis">{!compact&&timeline}{reviewArc}</div>{reviewMoment}</>:<>{recording}{!compact&&timeline}</>}
+  {slideshowIndex!==null&&<ScreenshotSlideshow run={run} frames={shots} initialIndex={slideshowIndex} onClose={()=>setSlideshowIndex(null)} onSeek={ms=>{onUserSeek?.();jump(ms);player.current?.scrollIntoView({block:'center',behavior:'instant'});}}/>}
+ </section>;
+}

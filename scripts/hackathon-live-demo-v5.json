@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "status": "approved_script_in_production",
+  "title": "Journey Lab — Edson introduction, Maya and Alex, then Casey",
+  "created": "2026-11-03",
+  "language": "en",
+  "durationSeconds": 175,
+  "spokenWordCount": 478,
+  "timingStatus": "Provisional 175-second picture plan. Final cuts will follow measured natural-speed Edson narration; no new narration has yet been generated.",
+  "format": "Live navigation of the actual app, reviewing retained model runs and completed candidate results.",
+  "voice": {
+    "provider": "ElevenLabs",
+    "modelId": "eleven_v4",
+    "requestedVoiceName": "edson",
+    "voiceId": null,
+    "voiceStatus": "Existing Edson voice and Eleven v4 verified in the signed-in ElevenLabs web app on 2026-11-03.",
+    "direction": "Edson presenting his own work to another developer: conversational, interested, normal speaking pace. No announcer cadence, no speaking-slowly instruction, no forced fillers. Preserve his voice and accent.",
+    "targetActiveSpeechWordsPerMinute": null,
+    "targetNarrationFinishSeconds": 174,
+    "textPolicy": "Use speech fields only. Keep screen directions, citations, filenames, timestamps and model metadata out of TTS. Use punctuation and paragraph breaks. No SSML break tags, forced accent, sound effects or dramatic long pauses.",
+    "renderStatus": "Regenerating native-speed Edson V5 after explicit Maya negative-reactions clarification; prior native-take-01/02 and their ASR reports remain retained.",
+    "audioTag": "[conversational]",
+    "playbackRate": 1.0,
+    "allowTimeStretch": false,
+    "timingPolicy": "Measure the natural source and preserve tempo, pitch and playback rate exactly 1.0. Adjust picture pacing and short inter-scene gaps; do not slow or stretch narration to fill a runtime."
+  },
+  "evidence": {
+    "projectId": "gather",
+    "fixId": "4c801e88-44d9-4dfe-8148-2ffb9b9d78f1",
+    "roundNumber": 4,
+    "roundId": "db8c9735-6c04-41c0-8cc0-23901af7983b",
+    "candidateHash": "faaf100295c10e2fa4fc500f0e1adfb1c13eebfbf7498d2b797ce1e4fe122a41",
+    "designProposalId": "72c3a612-68f7-4223-8d2c-d5057f69e598",
+    "candidateStatus": "awaiting_review",
+    "maya": {
+      "beforeRunId": "7057d0f5-1593-4d58-9061-8a380bce78ad",
+      "afterRunId": "3a991669-d607-4f6f-bb7e-44ca57c65262",
+      "beforeActions": 10,
+      "afterActions": 5,
+      "beforeOutcome": "goal_reached",
+      "afterOutcome": "goal_reached",
+      "beforeReviewMs": 21009,
+      "afterReviewMs": 23936,
+      "lostNameMs": 30355
+    },
+    "alex": {
+      "beforeRunId": "f5425197-514c-4e06-8123-4daad2255a49",
+      "afterRunId": "ebb7eff9-868f-4542-9d40-fe35c3457881",
+      "beforeActions": 6,
+      "afterActions": 6,
+      "beforeOutcome": "goal_reached",
+      "afterOutcome": "goal_reached"
+    },
+    "actionDefinition": "Number of recorded events whose type is action. Within each persona pair, both runs reach the same final action type/label.",
+    "scopes": [
+      "Observed synthetic sessions only.",
+      "Do not reuse 12-to-6 or 11-to-6 counts from earlier rounds.",
+      "Round 4 configured test passed; baseline/build commands were not configured. Do not claim build verification or re-label earlier 16-check receipts as Round 4.",
+      "Human approval, PR delivery and deployment are not part of this demo.",
+      "Glimmer is optional local analysis of supplied text, not the browser-driving model."
+    ],
+    "localAnalysisReceipt": "outputs/media-assist-full-flow/local-ui-result.json",
+    "casey": {
+      "fixture": "gather/keyboard-demo/DEMO_FIXTURE.md",
+      "fixtureDisclosure": "Deliberately seeded keyboard-access barrier in an isolated demo fixture.",
+      "fixId": "9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66",
+      "roundNumber": 1,
+      "roundId": "4c822456-a6f0-476e-a7fe-19cea6ed9543",
+      "candidateHash": "051a710412c13ba0d7b2b9cd45927ed95c8162f38ad45c9b95da36eac2c7dca7",
+      "findingId": "finding-2f774fac-b421-4d77-afb2-a3779d19369c-0",
+      "beforeRunId": "2f774fac-b421-4d77-afb2-a3779d19369c",
+      "afterRunId": "7b8ddda7-499a-4cb3-b2db-021abe080d96",
+      "beforeOutcome": "obstacle_observed",
+      "afterOutcome": "goal_reached",
+      "beforeNegativeMs": 91746,
+      "beforeLoopedFocusMs": 99306,
+      "afterPositiveFocusMs": 87113,
+      "afterConfirmationFrame": 48,
+      "afterConfirmationMs": 87492,
+      "actionPolicy": "Both selected journeys use only keypress and type actions.",
+      "source": "outputs/keyboard-category-rerun/result.json",
+      "scope": "Specific confirmed keyboard path; not an accessibility-compliance audit or a measured human emotional response."
+    }
+  },
+  "sources": {
+    "participantGuide": "https://cerebralvalley.ai/e/meta-ai-developer-hackathon/details",
+    "elevenModels": "https://elevenlabs.io/docs/overview/models",
+    "elevenPrompting": "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices",
+    "app": [
+      "journey-workspace/src/WorkspaceHomeV3.tsx",
+      "journey-workspace/src/HomeProcessSteps.tsx",
+      "journey-workspace/src/FixDetail.tsx",
+      "journey-workspace/src/FixDesignEvidence.tsx",
+      "docs/MEDIA_ASSIST.md"
+    ],
+    "candidate": "journey-engine/workspace-data/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/fix.json",
+    "caseyCandidate": "journey-engine/workspace-data/fixes/9f10ea8d-623d-4a4c-9dfa-e4d7bbaeca66/fix.json"
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "duration": 34,
+      "title": "Edson, Journey Lab, Gather and six perspectives",
+      "speech": "Hi, I'm Edson, and this is Journey Lab. I built it to help you understand your product through the eyes of AI personas. They use your app to complete a mission, while you follow their actions and reactions—what works, what gets frustrating, and how the experience changes after a fix. Let me show you using Gather, our example app for booking office space. Here we have six personas, each with different motivations but the same goal: making a booking. Before we look at their journeys, let me show you how it works.",
+      "screen": "Home hero, six illustrative persona cards around Gather. Stay on the broad product story, then scroll to the workflow.",
+      "motion": "One continuous hero passage; deliberate cursor travel, one short scroll. Do not imply the illustrated arcs are recorded test results."
+    },
+    {
+      "start": 34,
+      "duration": 24,
+      "title": "Four stages",
+      "speech": "First, create an AI persona with motivations, context, expectations, and constraints. Meta's Muse Voice Transcribe lets you speak your brief. Then, create a mission: the objective, the scope, and what success looks like. Muse Wonder runs that mission in your live app, capturing the persona's actions and reactions. Finally, Journey Lab helps you create a fix candidate and rerun the mission, so you can compare what changed.",
+      "screen": "How Journey Lab works: persona, mission, live browser exploration, fix and rerun. Model names legible.",
+      "motion": "Follow the numbered cards; retain the scrolling motion between rows. No menu or generation wait."
+    },
+    {
+      "start": 58,
+      "duration": 36,
+      "title": "Maya and Alex; Maya findings and emotional arc",
+      "speech": "Let's start with Maya. She needs twelve seats and a projector, within two hundred fifty dollars. Alex mostly cares about booking quickly. This is Maya's recording. These markers show the findings. I can click one, then open it to see what happened and what we expected. Now, this is the emotional arc. These are the AI persona's recorded reactions. Maya sees the price go from two twenty to two eighty, with fees. And changing rooms clears her meeting name. Her reactions turn negative at both moments. Clicking that reaction takes me right to the screen. She gets there in the end, but has to repeat that work.",
+      "screen": "Brief Maya goal view, then the same findings marker → What happened / Expected → price reaction → lost-name reaction sequence as revision 3.",
+      "motion": "Retain pointer approach, click and resulting view for each interaction. Give the two timelines their own readable moments. Reuse the demonstrated sequence; recapture for continuity."
+    },
+    {
+      "start": 94,
+      "duration": 19,
+      "title": "Maya design and code repair",
+      "speech": "From there, I can try an improvement. Muse Image makes the visual proposal, and Muse Code, with Muse Spark one point three, turns it into a version I can test. Here's the result, and here's the patch. The full price shows up earlier, and the details stay filled in.",
+      "screen": "Pricing fix Round 4. Original → Muse Image proposal → implemented result. Brief actual patch, then result.",
+      "motion": "Same sequence as revision 3. Continue speaking while opening the result and patch; avoid cutting through a gesture."
+    },
+    {
+      "start": 113,
+      "duration": 11,
+      "title": "Maya and Alex retests",
+      "speech": "Then Muse Wonder tries it again. In these runs, Maya goes from ten actions to five. Alex stays at six. Both finish the booking, and the checks pass.",
+      "screen": "Exact Round 4 paired runs: Maya 10→5, Alex 6→6, both goals reached, configured checks passed.",
+      "motion": "Same comparison as revision 3; switch persona deliberately. This is the fix Before / after comparison, not the distinct older Change Impact record."
+    },
+    {
+      "start": 124,
+      "duration": 32,
+      "title": "Casey follows Maya and Alex",
+      "speech": "Now, Casey uses only the keyboard. This demo has a keyboard barrier on purpose. Casey reaches the review, but can't get to Confirm reservation. The reaction turns negative as those attempts fail. Muse Code replaces the control with a proper button. In the next Muse Wonder run, Casey can focus it, press Enter, and finish the booking. Here, the positive reaction is when the button gets focus. I can compare both emotional arcs beside the recordings and see exactly what changed.",
+      "screen": "Seeded keyboard fixture → final confirmation blocker → negative arc → native-button patch → fresh Wonder retest → positive focus reaction → Enter confirmation and paired arcs.",
+      "motion": "A continuous passage through the issue and comparison. Keep the confirmation and arcs visible naturally; do not add a frozen frame to fill time."
+    },
+    {
+      "start": 156,
+      "duration": 7,
+      "title": "Local Muse Glimmer",
+      "speech": "For a quick summary, I use Meta's Muse Glimmer locally on my Mac. The original evidence is still there to check.",
+      "screen": "Actual completed Casey local text summary, using Muse Glimmer on Edson’s Mac.",
+      "motion": "Short scroll to local analysis and readable result; no generation wait."
+    },
+    {
+      "start": 163,
+      "duration": 12,
+      "title": "Personal closing",
+      "speech": "So that's Journey Lab. I built it to help teams understand different experiences, spot problems, and discover opportunities to make their product better—without waiting for feedback to arrive. I hope you like it.",
+      "screen": "Home hero and product identity. Unobtrusive contribution caption: Built during the Meta AI Hackathon.",
+      "motion": "Settle the cursor and finish; preserve the natural end of the spoken line."
+    }
+  ],
+  "revision": 5,
+  "revisionReason": "User explicitly approved the new opening and opportunity-focused closing, and requested a new roughly 2:55 demo with natural-speed Edson voice, smooth mouse/scroll movements, Maya and Alex first, then Casey.",
+  "capturePriority": [
+    "Home definition",
+    "Four-step workflow and Meta roles",
+    "Separate, interactive findings timeline and emotional arc",
+    "Maya design-to-code and paired retest",
+    "Casey blocked-to-completed keyboard repair with recorded emotional arcs",
+    "Brief Glimmer mention",
+    "Hackathon contribution and close"
+  ],
+  "production": {
+    "capture": "Fresh real-app capture in continuous passages: Home/workflow; Maya/Alex; Casey; Glimmer/close. Preserve the demonstrated Maya/Alex content and sequence.",
+    "cursor": "Retain real cursor travel when supported. If native movement remains discontinuous, capture cursor-free and animate a presentation cursor over genuine footage using verified target coordinates and click times; never misstate it as unedited manual input.",
+    "scroll": "Rehearse supported scroll gestures and record continuous motion; avoid jump cuts mid-scroll. Exact native easing is not assumed available.",
+    "editing": "Meaningful section cuts, continuous navigation gestures, and no artificial frozen-frame padding, audio speed changes, fabricated reactions or missing evidence.",
+    "captionPolicy": "Selectable captions from final measured audio; keep app evidence legible.",
+    "accuracy": "Six Home arcs are illustrative. Casey uses the final confirmation barrier, not Home card copy about room selection. Casey has no saved Change Impact record; use its actual Before / after. Do not mix older Change Impact metrics with Round 4.",
+    "contributionCaption": "Built during the Meta AI Hackathon"
+  },
+  "approvedOpening": "Hi, I'm Edson, and this is Journey Lab. I built it to help you understand your product through the eyes of AI personas. They use your app to complete a mission, while you follow their actions and reactions—what works, what gets frustrating, and how the experience changes after a fix. Let me show you using Gather, our example app for booking office space.",
+  "approvedClosing": "So that's Journey Lab. I built it to help teams understand different experiences, spot problems, and discover opportunities to make their product better—without waiting for feedback to arrive. I hope you like it.",
+  "clarifications": [
+    {
+      "request": "Explicitly mention Maya negative/frustrated reactions, as already explicit in Casey narration.",
+      "addedSentence": "Her reactions turn negative at both moments.",
+      "location": "After the lost meeting-name statement in Maya journey narration.",
+      "evidence": "Recorded negative reactions at over-budget pricing and lost meeting name.",
+      "wordsAdded": 7
+    }
+  ]
+}

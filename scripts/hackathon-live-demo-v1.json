@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "status": "script_draft",
+  "title": "Journey Lab · Home-first live demo",
+  "created": "2026-11-03",
+  "language": "en",
+  "durationSeconds": 180,
+  "spokenWordCount": 384,
+  "timingStatus": "Editorial targets; audio duration has not been generated or measured.",
+  "format": "Live navigation of the actual app, reviewing retained model runs and completed candidate results.",
+  "voice": {
+    "provider": "ElevenLabs",
+    "modelId": "eleven_v4",
+    "requestedVoiceName": "edson",
+    "voiceId": null,
+    "voiceStatus": "Requested existing voice; resolve the exact account voice at the audio stage.",
+    "direction": "Natural, engaged founder walkthrough. Use Edson's normal voice and accent. Clear, confident, moderately brisk; short breaths at sentence boundaries. Let visible outcomes carry the emphasis.",
+    "targetActiveSpeechWordsPerMinute": [
+      140,
+      150
+    ],
+    "targetNarrationFinishSeconds": 178,
+    "textPolicy": "Use speech fields only. Keep screen directions, citations, filenames, timestamps and model metadata out of TTS. Use punctuation and paragraph breaks. No SSML break tags, forced accent, sound effects or dramatic long pauses.",
+    "renderStatus": "not_generated"
+  },
+  "evidence": {
+    "projectId": "gather",
+    "fixId": "4c801e88-44d9-4dfe-8148-2ffb9b9d78f1",
+    "roundNumber": 4,
+    "roundId": "db8c9735-6c04-41c0-8cc0-23901af7983b",
+    "candidateHash": "faaf100295c10e2fa4fc500f0e1adfb1c13eebfbf7498d2b797ce1e4fe122a41",
+    "designProposalId": "72c3a612-68f7-4223-8d2c-d5057f69e598",
+    "candidateStatus": "awaiting_review",
+    "maya": {
+      "beforeRunId": "7057d0f5-1593-4d58-9061-8a380bce78ad",
+      "afterRunId": "3a991669-d607-4f6f-bb7e-44ca57c65262",
+      "beforeActions": 10,
+      "afterActions": 5,
+      "beforeOutcome": "goal_reached",
+      "afterOutcome": "goal_reached",
+      "beforeReviewMs": 21009,
+      "afterReviewMs": 23936,
+      "lostNameMs": 30355
+    },
+    "alex": {
+      "beforeRunId": "f5425197-514c-4e06-8123-4daad2255a49",
+      "afterRunId": "ebb7eff9-868f-4542-9d40-fe35c3457881",
+      "beforeActions": 6,
+      "afterActions": 6,
+      "beforeOutcome": "goal_reached",
+      "afterOutcome": "goal_reached"
+    },
+    "actionDefinition": "Number of recorded events whose type is action. Within each persona pair, both runs reach the same final action type/label.",
+    "scopes": [
+      "Observed synthetic sessions only.",
+      "Do not reuse 12-to-6 or 11-to-6 counts from earlier rounds.",
+      "Round 4 configured test passed; baseline/build commands were not configured. Do not claim build verification or re-label earlier 16-check receipts as Round 4.",
+      "Human approval, PR delivery and deployment are not part of this demo.",
+      "Glimmer is optional local analysis of supplied text, not the browser-driving model."
+    ],
+    "localAnalysisReceipt": "outputs/media-assist-full-flow/local-ui-result.json"
+  },
+  "sources": {
+    "participantGuide": "https://cerebralvalley.ai/e/meta-ai-developer-hackathon/details",
+    "elevenModels": "https://elevenlabs.io/docs/overview/models",
+    "elevenPrompting": "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices",
+    "app": [
+      "journey-workspace/src/WorkspaceHomeV3.tsx",
+      "journey-workspace/src/HomeProcessSteps.tsx",
+      "journey-workspace/src/FixDetail.tsx",
+      "journey-workspace/src/FixDesignEvidence.tsx",
+      "docs/MEDIA_ASSIST.md"
+    ],
+    "candidate": "journey-engine/workspace-data/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1/fix.json"
+  },
+  "scenes": [
+    {
+      "start": 0,
+      "duration": 18,
+      "title": "Home · what Journey Lab is",
+      "speech": "Journey Lab helps you understand your product through the eyes of AI personas. Each brings different goals, expectations, and constraints. Follow their journeys, discover what helps or frustrates them, and turn that feedback into better experiences.",
+      "path": "/",
+      "screen": "Start on the Home hero. Hold the product definition and central Gather illustration; move the pointer from Alex to Maya. One gentle scroll reaches the four-step workflow.",
+      "models": [],
+      "rubric": [
+        "Impact",
+        "Demo"
+      ],
+      "actions": [
+        "Hold the real Home hero for the opening sentence.",
+        "Move from the shared app illustration to Alex and Maya as different goals are explained.",
+        "Scroll to How Journey Lab works near the end of this beat."
+      ],
+      "note": "The six Home persona curves are illustrative. Only Alex and Maya's recorded case is used as outcome evidence."
+    },
+    {
+      "start": 18,
+      "duration": 22,
+      "title": "Home · how Journey Lab works",
+      "speech": "The workflow is simple: define a persona, give it a mission, explore your app, then improve and compare. Meta’s Muse Voice Transcribe turns spoken briefs into editable text. Muse Wonder helps draft the persona and mission, then navigates the working interface. You choose the goals and review the outcome.",
+      "path": "/#home-process-title",
+      "screen": "Show How Journey Lab works in the app. Follow the four numbered cards and their model labels; finish on Meet the personas.",
+      "models": [
+        "Muse Voice Transcribe 1.0",
+        "Muse Wonder 1.0"
+      ],
+      "rubric": [
+        "Use of Meta AI Tooling",
+        "Demo"
+      ],
+      "actions": [
+        "Keep the four workflow stages legible.",
+        "Point briefly to Voice Transcribe and Wonder labels when spoken.",
+        "Click Meet the personas, then open Maya."
+      ],
+      "note": "Describe available voice input; do not mime recording or show a fabricated transcript. Model execution is not part of this timed beat."
+    },
+    {
+      "start": 40,
+      "duration": 20,
+      "title": "Gather · persona and mission",
+      "speech": "Let’s open Gather, our example booking app. Alex wants a quick reservation. Maya must stay within two hundred fifty dollars. Their mission is the same: book a room for twelve, with a projector. These constraints shape their choices. Maya’s budget includes equipment and service fees.",
+      "path": "/projects/gather/personas/gather-coordinator",
+      "screen": "Show Maya's live persona preview and Personal goal; then the existing Book a room that fits mission. The fixed session pair supplies the actual persona versions.",
+      "models": [],
+      "rubric": [
+        "Impact",
+        "Technical Depth & Execution"
+      ],
+      "actions": [
+        "Frame the live preview's goal and budget instead of scrolling every profile section.",
+        "Open Library → Missions → Book a room that fits.",
+        "Show the specific task and success conditions; move to the prepared recorded Maya journey at the next beat."
+      ],
+      "note": "Do not save edits or launch a fresh mission while presenting. Gather is explicitly introduced as an example app."
+    },
+    {
+      "start": 60,
+      "duration": 28,
+      "title": "Journey · discover the friction",
+      "speech": "Here’s Maya’s recorded journey, powered by Muse Wonder. It chooses what to click from the interface, guided by her constraints. She sees two hundred twenty dollars, but the full price is two eighty. Over budget. She changes rooms and loses the meeting name she already entered. She eventually books, but repeats work. A completed booking alone would hide that friction.",
+      "path": "/projects/gather/runs/7057d0f5-1593-4d58-9061-8a380bce78ad",
+      "screen": "Play the existing condensed Maya BEFORE recording, then use recorded moments to show the $280 review and the cleared meeting name.",
+      "models": [
+        "Muse Wonder 1.0"
+      ],
+      "rubric": [
+        "Use of Meta AI Tooling",
+        "Demo",
+        "Impact"
+      ],
+      "actions": [
+        "Show the room list and the $220 headline price.",
+        "Seek the recorded over-budget reaction at original time 21.009 seconds.",
+        "Seek the recorded lost-name reaction at original time 30.355 seconds.",
+        "Keep the completion outcome visible; Maya eventually booked successfully."
+      ],
+      "note": "Label as recorded AI journey. Condensed playback removes model waits. Do not imply that inference is completing live in the presentation."
+    },
+    {
+      "start": 88,
+      "duration": 20,
+      "title": "Evidence · inspect and understand",
+      "speech": "Click a reaction to jump to the exact recorded moment and inspect the finding. We can also use Meta’s open-weight Muse Glimmer locally on this Mac to summarize selected observations. The evidence stays available, so the team can check what supports each conclusion.",
+      "path": "/projects/gather/runs/7057d0f5-1593-4d58-9061-8a380bce78ad",
+      "screen": "Click the negative reaction, show its linked finding, then open the linked fix and its Local analysis pane.",
+      "models": [
+        "Muse Glimmer 30B"
+      ],
+      "rubric": [
+        "Technical Depth & Execution",
+        "Use of Meta AI Tooling"
+      ],
+      "actions": [
+        "Click the recorded lost-name reaction and show its source frame.",
+        "Open the corresponding finding's What happened / Expected evidence.",
+        "Follow Review fix to the selected fix; show Local analysis while describing Glimmer.",
+        "A short factual local summary may be prepared before capture. Treat this as optional supporting evidence, not part of the agent's browsing loop."
+      ],
+      "note": "Glimmer summarizes supplied text in Local analysis. It is not an automatic cloud fallback or the model navigating the browser. A prior real UI result exists, but the current pane's prepared output must be verified during raw-demo preparation."
+    },
+    {
+      "start": 108,
+      "duration": 30,
+      "title": "Fix · from image to working code",
+      "speech": "Now let’s turn those findings into a better experience. Muse Image creates a visual proposal from a captured screen. The design gives the coding agent visual direction. Muse Code, using Muse Spark one point three, implements the selected direction in an isolated candidate. Here are the proposal, the working result, and the actual code changes. Full prices appear earlier, and entered details are preserved.",
+      "path": "/projects/gather/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1",
+      "screen": "On fixed Round 4, open Code & checks. Show Original screen → Visual proposal → Implemented result; expand the actual Patch briefly and keep Code Checks Passed visible.",
+      "models": [
+        "Muse Image 1.0",
+        "Muse Code · Muse Spark 1.3"
+      ],
+      "rubric": [
+        "Use of Meta AI Tooling",
+        "Technical Depth & Execution",
+        "Demo"
+      ],
+      "actions": [
+        "Select Round 4 by its number, not whichever round is latest at capture time.",
+        "Open Code & checks and frame From image to implementation.",
+        "Enlarge the visual proposal, then the implemented result only if both fit the beat without extra navigation.",
+        "Briefly show the actual patch and the passed configured checks.",
+        "Click Watch the retest."
+      ],
+      "note": "The final candidate includes improvements across successive rounds. The selected image is visual direction, not authoritative pricing or a working UI. Use the verified app totals: Atlas $280, Willow $245."
+    },
+    {
+      "start": 138,
+      "duration": 24,
+      "title": "Retest · verify both perspectives",
+      "speech": "Then Muse Wonder retests both personas in fresh sessions. In this comparison, Maya goes from ten actions to five. Alex stays at six, preserving his quick path. Both still reach their original booking goal. The configured checks pass, and the code and recordings remain available for review. Your team decides what to ship.",
+      "path": "/projects/gather/fixes/4c801e88-44d9-4dfe-8148-2ffb9b9d78f1",
+      "screen": "Round 4 → Before / after. Show Maya's before/after review screens, then switch Comparison persona to Alex. Keep Awaiting Review visible.",
+      "models": [
+        "Muse Wonder 1.0"
+      ],
+      "rubric": [
+        "Demo",
+        "Impact",
+        "Technical Depth & Execution"
+      ],
+      "actions": [
+        "Show Maya: 10 actions before, 5 after; both goals reached.",
+        "Use the two recorded review milestones at 21.009 seconds before and 23.936 seconds after; do not call equal elapsed time a matched action.",
+        "Switch Comparison persona to Alex: 6 actions before, 6 after; both goals reached.",
+        "Show Code Checks Passed and Awaiting Review without opening operational controls."
+      ],
+      "note": "Action counts are computed from recorded action events in this exact pair. They are not elapsed-time savings, conversion lift, or measured human sentiment. If counters are absent from this screen, use a sourced lower-third in the final edit; the raw capture stays the app."
+    },
+    {
+      "start": 162,
+      "duration": 18,
+      "title": "Close · value and contribution",
+      "speech": "Built during this hackathon, Journey Lab helps developers, designers, and product teams investigate changes before release. These simulated journeys give us better questions to validate with real people. Journey Lab. One product. Many journeys.",
+      "path": "/",
+      "screen": "Return to Home for the closing statement. Finish on the hero and the product name, with a small Built during the hackathon caption in the final edit.",
+      "models": [],
+      "rubric": [
+        "Impact",
+        "Demo"
+      ],
+      "actions": [
+        "Leave the verified comparison visible for the first sentence if the return navigation would interrupt it.",
+        "Return to Home once and hold the hero for One product. Many journeys.",
+        "Finish speech around 2:58 and allow the image to settle by 3:00."
+      ],
+      "note": "State synthetic scope once naturally. Hackathon-contribution caption: persona exploration · evidence-linked findings · design-to-code workflow · paired retests."
+    }
+  ]
+}
+

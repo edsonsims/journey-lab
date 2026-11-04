@@ -1,0 +1,3 @@
+.run-budget{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 16px;margin-bottom:18px;border:1px solid #e4c48e;border-left:3px solid #bd7613;border-radius:10px;background:#fff8eb;color:#4e381a}
+.run-budget h3{font-size:14px;margin:0 0 5px}.run-budget p{font-size:12px;line-height:1.5;margin:0;max-width:550px}.run-budget dl{display:flex;gap:20px;flex-shrink:0;margin:0}.run-budget dt{font-size:10px;margin-bottom:4px}.run-budget dd{font-size:19px;font-weight:650;font-variant-numeric:tabular-nums;margin:0}
+@media(max-width:800px){.run-budget{align-items:flex-start;flex-direction:column;gap:12px}.run-budget dl{flex-wrap:wrap;gap:12px 20px;flex-shrink:1}}

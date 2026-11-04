@@ -1,0 +1,64 @@
+/* A compact mission brief that stays readable while the charter is edited. */
+.charter-editor .charter-section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 14px;
+}
+.charter-editor .charter-section-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 35px;
+  padding: 6px 9px;
+  border: 1px solid #e5dfd3;
+  border-radius: 8px;
+  background: var(--surface);
+  color: #6f604b;
+  font-size: 11px;
+  text-decoration: none;
+}
+.charter-editor .charter-section-nav a svg { color: #95774b; flex-shrink: 0; }
+.charter-editor .charter-section-nav a:hover { border-color: #cdb68d; background: #fff9ee; color: #775621; }
+.charter-editor .charter-section-nav a:focus-visible { outline: 2px solid var(--action); outline-offset: 3px; }
+.charter-editor .charter-profile-preview {
+  overflow: hidden;
+  padding: 16px;
+  border: 1px solid #e4d6bc;
+  border-radius: 16px;
+  background: linear-gradient(155deg, #fbf0da 0, #fffbf3 160px, #fff 340px);
+  box-shadow: 0 5px 20px #59401805;
+}
+.charter-editor .charter-profile-preview > header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.charter-editor .charter-profile-preview > header > span:first-child { display: inline-flex; align-items: center; gap: 6px; color: #84642f; font-size: 10px; font-weight: 650; }
+.charter-editor .charter-profile-preview > header > span:last-child { padding: 3px 6px; border: 1px solid #e6d7bd; border-radius: 5px; color: #89724e; font-size: 9px; line-height: 1.3; }
+.charter-editor .charter-preview-identity { display: flex; align-items: center; gap: 10px; margin: 16px 0; }
+.charter-editor .charter-preview-mark { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 42px; height: 46px; border: 1px solid #e1c997; border-radius: 10px; background: #f5e4be; color: #8a672d; box-shadow: 2px 3px 0 #ead6b14d; }
+.charter-editor .charter-preview-identity > div { min-width: 0; }
+.charter-editor .charter-preview-identity h2 { margin: 0; color: #55432a; font-size: 18px; font-weight: 650; line-height: 1.35; letter-spacing: -.025em; }
+.charter-editor .charter-preview-identity p { margin: 5px 0 0; color: #897456; font-size: 12px; line-height: 1.5; }
+.charter-editor .charter-preview-identity h2,
+.charter-editor .charter-preview-identity p { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
+.charter-editor .charter-preview-summary { display: grid; gap: 14px; margin: 0; padding-top: 14px; border-top: 1px solid #e9dfcc; }
+.charter-editor .charter-preview-summary > div { min-width: 0; }
+.charter-editor .charter-preview-summary dt { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; color: #8a7149; font-size: 10px; font-weight: 650; }
+.charter-editor .charter-preview-summary dd { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; margin: 0; color: #5b4d38; font-size: 13px; line-height: 1.6; white-space: pre-wrap; }
+.charter-editor .charter-preview-summary dd.is-placeholder { color: #8d806b; font-size: 12px; font-style: italic; }
+.charter-editor .charter-preview-launch { display: grid; gap: 12px; margin-top: 16px; padding-top: 13px; border-top: 1px solid #e9dfcc; }
+.charter-editor .charter-preview-launch > div { min-width: 0; }
+.charter-editor .charter-preview-launch > div > span { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; color: #8a7149; font-size: 10px; font-weight: 650; }
+.charter-editor .charter-preview-launch b { display: inline-flex; align-items: center; justify-content: center; min-width: 17px; min-height: 17px; padding: 0 4px; border-radius: 4px; background: #f3ead9; color: #806033; font-size: 9px; }
+.charter-editor .charter-preview-launch p { margin: 0; color: #7d705b; font-size: 12px; line-height: 1.5; overflow-wrap: anywhere; }
+.charter-editor .charter-preview-launch ul { display: flex; flex-wrap: wrap; gap: 5px; margin: 0; padding: 0; list-style: none; }
+.charter-editor .charter-preview-launch li { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 4px 7px; border: 1px solid #e8dfcf; border-radius: 6px; background: #fffdf8; color: #7a6545; font-size: 11px; line-height: 1.4; }
+.charter-editor .charter-preview-launch .charter-preview-more { border-color: transparent; background: transparent; color: #8c7b61; }
+@media (max-width: 1100px) {
+  .charter-editor .charter-preview-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 24px; }
+  .charter-editor .charter-preview-launch { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 24px; }
+}
+@media (max-width: 560px) {
+  .charter-editor .charter-section-nav { margin-bottom: 12px; }
+  .charter-editor .charter-section-nav a { min-height: 37px; }
+  .charter-editor .charter-preview-summary,
+  .charter-editor .charter-preview-launch { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "journey-lab-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "start:secure": "node start-secure.mjs",
+    "check": "node --check server.mjs && node --test",
+    "model:local": "node start-local-model.mjs",
+    "start:with-local": "node start-with-local.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.56.1"
+  }
+}

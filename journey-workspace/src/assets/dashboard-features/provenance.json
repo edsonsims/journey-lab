@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "capturedOn": "2026-11-02",
+  "purpose": "Home hero Gather feature previews",
+  "sourceCommit": "d2fff86f3ce3760af4bfe45efd22a014195cdd06",
+  "kind": "cropped_current_ui_screenshot",
+  "method": "Captured through CUA from a natively rendered source iframe with a 1440 × 1000 logical viewport at 2× scale (4× for Emotional Arc), then cropped and JPEG encoded. Existing screenshot assets were not resized or upscaled.",
+  "limitations": [
+    "Gather is a fictional local booking product.",
+    "Journey recordings and reactions belong to synthetic personas, not human participants or measured human sentiment.",
+    "Candidate previews do not establish approval, merge, or deployment."
+  ],
+  "assets": [
+    {
+      "file": "impact.jpg",
+      "route": "/projects/gather/impact/3c976cd2-5a9a-4c58-aef7-a40e4948f5e3?stage=repair&persona=gather-coordinator",
+      "description": "Current Gather Change Impact: headline, paired recordings, emotional arc, and first feelings.",
+      "sha256": "94aa7ed2731dc8db5e73c60d69ded04885130a942eaf7d0cd70c41a41501c67d",
+      "width": 2312,
+      "height": 1492,
+      "captureScale": 2
+    },
+    {
+      "file": "emotions.jpg",
+      "route": "/projects/gather/experience?feedback=feedback%3A%5B%22ea312038-a7e1-4169-a661-32ffb884503b%22%2C%22signal%22%2C4%5D",
+      "description": "Current Gather Experience detail: Maya’s emotional arc with the selected negative review-booking reaction at 0:22 and moment navigation controls.",
+      "sha256": "58f70dba330aa16c4e5c89d6ef714a7e0ef9282572156c7eae6a27763d62a81e",
+      "width": 2380,
+      "height": 1536,
+      "captureScale": 4
+    },
+    {
+      "file": "journeys.jpg",
+      "route": "/projects/gather/runs",
+      "description": "Current Gather journey history.",
+      "sha256": "22848dcd6fd8e517981e1796dcafae52d4024ad088f2c2b927a9c3862b468cc7",
+      "width": 2348,
+      "height": 1720,
+      "captureScale": 2
+    },
+    {
+      "file": "personas.jpg",
+      "route": "/projects/gather/personas/gather-coordinator",
+      "description": "Current Maya persona profile: identity, point of view, personal goal, and live preview.",
+      "sha256": "e3c6b34ec75f34be550c85438e20a265b60bf3560d81c8f7fd9e9a30494b8f9e",
+      "width": 2312,
+      "height": 1720,
+      "captureScale": 2
+    }
+  ],
+  "sourceState": "Current local working tree based on sourceCommit, including uncommitted changes present at capture time; not a pristine commit snapshot."
+}

@@ -1,0 +1,7 @@
+Asset: meeting-room.png
+Created: 2026-11-02
+Method: built-in image_gen tool (no CLI fallback)
+Purpose: Editorial scene-setting illustration for the fictional Gather room-booking case study. This is not a product screenshot, a real venue, or recorded journey evidence.
+
+Final prompt:
+Use case: illustration-story. Asset type: wide 3:2 editorial scene-setting illustration for a web dashboard case study about Gather, a fictional meeting-room booking app. Create a welcoming modern meeting room with an oval table, comfortable chairs, ceiling projector and blank projection screen, tall windows and a leafy potted plant. Soft late-morning light. Soft tactile 3D editorial illustration with subtle paper-like grain, warm cream, muted lilac, and sage palette. Polished, calm, restrained, not glossy or childish. Balanced wide composition, eye-level three-quarter perspective. No people, no text, no logos, no UI, no watermark. Full opaque background.

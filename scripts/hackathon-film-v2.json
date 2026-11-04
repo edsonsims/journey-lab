@@ -1,0 +1,18 @@
+[
+  {"start":0,"duration":8,"title":"What is Journey Lab?","speech":"Journey Lab uses AI personas to explore your app—and reveal how different users could experience it before launch."},
+  {"start":8,"duration":8,"title":"One change affects many journeys","speech":"One change can help one user and frustrate another. Find that difference while you can still fix it."},
+  {"start":16,"duration":12,"title":"See the discrepancy","speech":"In this booking app, quick booking takes Alex from eight actions to six. For Maya, seven becomes twelve. Same change. Very different experiences."},
+  {"start":28,"duration":8,"title":"Success can hide friction","speech":"Both complete the booking. A success metric would miss the extra work. Journey Lab makes that difference visible."},
+  {"start":36,"duration":12,"title":"Give each perspective context","speech":"Alex values speed. Maya has a strict budget. Meta’s Muse Wonder follows each persona’s goals and constraints through the working app, making choices as it goes."},
+  {"start":48,"duration":12,"title":"Catch the price surprise","speech":"Maya sees a room for two hundred twenty dollars. At review, the total is two eighty. Over budget. Now the team can see exactly where the trouble starts."},
+  {"start":60,"duration":10,"title":"Catch the repeated work","speech":"She changes rooms. Her meeting name disappears. She types it again. Journey Lab surfaces friction that completion alone would hide."},
+  {"start":70,"duration":12,"title":"Go from reaction to evidence","speech":"Choose a reaction. See the recorded screen and the action behind it. Your team gets a specific moment to investigate, with evidence it can inspect."},
+  {"start":82,"duration":12,"title":"Turn feedback into a fix","speech":"Muse Code turns those findings into a reviewable candidate: show the full price earlier, keep entered details, and preserve the quick path."},
+  {"start":94,"duration":12,"title":"Stay in control of the change","speech":"Inspect the actual patch and its checks. Review the candidate before approving it. The finding, the change, and the evidence stay connected."},
+  {"start":106,"duration":16,"title":"Retest both perspectives","speech":"Now retest both. Maya finds the two-hundred-forty-five-dollar option earlier. Twelve actions become six. Alex keeps his quick path. The prices are unchanged. The journey is better in these recorded sessions."},
+  {"start":122,"duration":12,"title":"See the whole journey","speech":"Compare the recordings and the full reaction arcs. See what improved and where friction remains. These simulated perspectives guide investigation and better questions for real users."},
+  {"start":134,"duration":10,"title":"Explore different needs","speech":"A parent on a phone. A first-time customer. Someone returning with different expectations. Explore the constraints your team might otherwise miss."},
+  {"start":144,"duration":14,"title":"Find it before release","speech":"Before launching a product or an update, compare who it could help and which journeys it could complicate. Give your team clearer priorities while there’s still time to act."},
+  {"start":158,"duration":12,"title":"Explore. Improve. Retest.","speech":"Built during this hackathon, Journey Lab connects Muse Wonder and Muse Code in one workflow: explore, understand, improve, and retest."},
+  {"start":170,"duration":10,"title":"See the impact before you ship","speech":"Journey Lab. One product. Many journeys. Find the differences. Improve the experience. See the impact before you ship."}
+]

@@ -1,0 +1,12 @@
+Room image assets — 2026-11-02
+
+Atlas: base/assets/atlas.webp and proposal/assets/atlas.webp
+Source: journey-workspace/src/assets/dashboard-story/meeting-room.png, the exact image used by Home v3.
+Conversion: lossless WebP; image pixels preserved. Original generation provenance: journey-workspace/src/assets/dashboard-story/meeting-room.txt.
+
+Willow: base/assets/willow.webp and proposal/assets/willow.webp
+Method: built-in image_gen tool, then WebP compression at quality 88.
+Purpose: photorealistic image of the fictional Willow workshop room, not a photograph of an actual venue or historical journey evidence.
+
+Final prompt:
+Use case: photorealistic-natural. Asset type: wide landscape meeting-room listing image for Gather, a fictional room-booking app. Primary request: a realistic photograph of Willow, a warm, creative workshop room for a 12-person team. Scene: welcoming contemporary meeting space with a long light-oak table, twelve comfortable sage-green upholstered chairs, a ceiling-mounted projector and blank projection screen, tall windows, leafy indoor plants, and a modest whiteboard. Natural materials, warm cream walls, subtle oak textures, authentic fabric details. Composition: eye-level wide architectural interior photography, view from one corner with the room and table centered; useful room details must remain legible in a wide horizontal card crop. Soft natural afternoon daylight, realistic shadows, crisp but natural exposure. Empty room. No people, text, logos, UI, or watermark. Full opaque background. Photographic realism, not illustration or stylized 3D.

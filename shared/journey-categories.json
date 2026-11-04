@@ -1,0 +1,22 @@
+[
+  {
+    "key": "broken",
+    "name": "Broken",
+    "description": "Functionality that fails to work as expected, supported by recorded evidence."
+  },
+  {
+    "key": "experience",
+    "name": "Experience",
+    "description": "How the interaction helps or hinders this persona’s understanding, effort, and confidence."
+  },
+  {
+    "key": "product",
+    "name": "Product",
+    "description": "Capabilities that meet or miss this persona’s needs and goals."
+  },
+  {
+    "key": "business",
+    "name": "Business",
+    "description": "Potential effects on adoption, revenue, retention, or support; hypotheses unless measured."
+  }
+]
